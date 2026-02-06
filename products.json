@@ -3012,5 +3012,72 @@
       "description": "AI Diagnostic module",
       "price": 1188.0
     }
+  ],
+  "Surgical Kits": [
+    {
+      "id": "87294",
+      "description": "NobelActive PureSet (Fully Loaded)",
+      "price": 19005
+    },
+    {
+      "id": "87295",
+      "description": "NobelParallel CC PureSet (Fully Loaded)",
+      "price": 15015
+    },
+    {
+      "id": "87296",
+      "description": "NobelReplace CC PureSet (Fully Loaded)",
+      "price": 17626
+    },
+    {
+      "id": "87293",
+      "description": "N1 PureSet (Fully Loaded)",
+      "price": 15190
+    },
+    {
+      "id": "87305",
+      "description": "NobelActive Guided PureSet (Fully Loaded)",
+      "price": 21281
+    },
+    {
+      "id": "87306",
+      "description": "NobelParallel CC Guided PureSet (Fully Loaded)",
+      "price": 19992
+    },
+    {
+      "id": "87307",
+      "description": "NobelReplace CC Guided PureSet (Fully Loaded)",
+      "price": 17500
+    },
+    {
+      "id": "87301",
+      "description": "Prosthetic PureSet Basic",
+      "price": 4086
+    },
+    {
+      "id": "87353",
+      "description": "Prosthetic PureSet (Full)",
+      "price": 6500
+    },
+    {
+      "id": "108236",
+      "description": "NobelZygoma PureSet TiUltra (Fully Loaded)",
+      "price": 14868
+    },
+    {
+      "id": "88521",
+      "description": "NobelZygoma PureSet TiUnite",
+      "price": 12000
+    },
+    {
+      "id": "87469",
+      "description": "NobelActive/NobelParallel CC Combo PureSet",
+      "price": 22000
+    },
+    {
+      "id": "301267",
+      "description": "NobelPearl Tapered Surgery Kit",
+      "price": 8500
+    }
   ]
 }

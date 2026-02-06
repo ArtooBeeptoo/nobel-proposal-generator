@@ -27,6 +27,28 @@ app.secret_key = os.environ.get('SECRET_KEY', 'nobel-proposal-2026')
 # Simple password - set via environment variable
 APP_PASSWORD = os.environ.get('APP_PASSWORD', 'nobel2026')
 
+# Discount groups - maps categories to discount group names
+DISCOUNT_GROUPS = {
+    'Implants': ['NobelActive TiUltra Implants', 'NobelActive Implants', 'Nobel Biocare N1 TiUltra Implants', 
+                 'NobelParallel CC TiUltra Implants', 'NobelReplace CC TiUltra Implants', 'NobelPearl Ceramic Implants', 
+                 'NobelZygoma Implants'],
+    'Abutments': ['Esthetic Abutments', 'Multi-Unit Abutments', 'Locator Abutments', 'GoldAdapt Abutments'],
+    'Kits': ['Surgical Kits'],
+    '3Shape': ['Capital - 3Shape'],
+    'SprintRay': ['Capital - SprintRay'],
+    'DEXIS': ['Capital - DEXIS'],
+    'X-Guide': ['Capital - X-Guide'],
+    'iCAM': ['Capital - iCAM'],
+    'DTX': ['Capital - DTX'],
+}
+
+def get_discount_group(category):
+    """Get the discount group for a category"""
+    for group, cats in DISCOUNT_GROUPS.items():
+        if category in cats:
+            return group
+    return 'Other'
+
 # Load product catalog
 def load_products():
     """Load products from JSON file"""
@@ -70,7 +92,9 @@ def logout():
 def index():
     products = get_products()
     categories = list(products.keys())
-    return render_template('index.html', categories=categories, products=products)
+    discount_groups = list(DISCOUNT_GROUPS.keys()) + ['Other']
+    return render_template('index.html', categories=categories, products=products, 
+                         discount_groups=discount_groups, get_discount_group=get_discount_group)
 
 @app.route('/generate', methods=['POST'])
 @login_required
@@ -79,9 +103,14 @@ def generate():
     
     # Get form data
     account_name = request.form.get('account_name', 'Customer')
-    discount_percent = float(request.form.get('discount', 0))
     output_format = request.form.get('output_format', 'docx')
     rep_name = request.form.get('rep_name', '')
+    
+    # Get per-group discounts
+    group_discounts = {}
+    for group in list(DISCOUNT_GROUPS.keys()) + ['Other']:
+        discount_key = f'discount_{group.replace(" ", "_").replace("-", "_")}'
+        group_discounts[group] = float(request.form.get(discount_key, 0))
     
     # Parse selected items
     items = []
@@ -90,15 +119,23 @@ def generate():
             item_id = key.replace('qty_', '')
             qty = int(value)
             
-            # Find the product
+            # Find the product and its category
             for category, prods in products.items():
                 for prod in prods:
                     if prod['id'] == item_id:
+                        discount_group = get_discount_group(category)
+                        discount_pct = group_discounts.get(discount_group, 0)
+                        list_price = prod['price']
+                        discounted_price = list_price * (1 - discount_pct / 100)
+                        
                         items.append({
                             'id': item_id,
                             'description': prod['description'],
-                            'list_price': prod['price'],
-                            'quantity': qty
+                            'list_price': list_price,
+                            'discount_pct': discount_pct,
+                            'discounted_price': discounted_price,
+                            'quantity': qty,
+                            'category': category
                         })
                         break
     
@@ -108,15 +145,14 @@ def generate():
     
     # Calculate totals
     list_total = sum(item['list_price'] * item['quantity'] for item in items)
-    discount_amount = list_total * (discount_percent / 100)
-    final_total = list_total - discount_amount
+    final_total = sum(item['discounted_price'] * item['quantity'] for item in items)
+    discount_amount = list_total - final_total
     
     proposal_data = {
         'account_name': account_name,
         'rep_name': rep_name,
         'date': datetime.now().strftime('%B %d, %Y'),
         'items': items,
-        'discount_percent': discount_percent,
         'list_total': list_total,
         'discount_amount': discount_amount,
         'final_total': final_total
@@ -147,7 +183,7 @@ def generate_docx(data):
     doc.add_paragraph()
     
     # Items table
-    table = doc.add_table(rows=1, cols=3)
+    table = doc.add_table(rows=1, cols=4)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     
@@ -156,6 +192,7 @@ def generate_docx(data):
     header_cells[0].text = 'Description'
     header_cells[1].text = 'Qty'
     header_cells[2].text = 'Item #'
+    header_cells[3].text = 'Discount'
     
     for cell in header_cells:
         cell.paragraphs[0].runs[0].bold = True
@@ -166,12 +203,13 @@ def generate_docx(data):
         row[0].text = item['description']
         row[1].text = str(item['quantity'])
         row[2].text = item['id']
+        row[3].text = f"{item['discount_pct']:.0f}%"
     
     doc.add_paragraph()
     
     # Totals
     doc.add_paragraph(f"List Price Total: ${data['list_total']:,.2f}")
-    doc.add_paragraph(f"Discount ({data['discount_percent']:.0f}%): -${data['discount_amount']:,.2f}")
+    doc.add_paragraph(f"Total Discount: -${data['discount_amount']:,.2f}")
     
     final_para = doc.add_paragraph()
     final_run = final_para.add_run(f"Your Price: ${data['final_total']:,.2f}")
@@ -210,7 +248,6 @@ def generate_pdf(data):
     title_style = ParagraphStyle('Title', parent=styles['Heading1'], fontSize=24, textColor=colors.HexColor('#003366'), alignment=1)
     subtitle_style = ParagraphStyle('Subtitle', parent=styles['Heading2'], fontSize=16, textColor=colors.grey, alignment=1)
     normal_style = styles['Normal']
-    bold_style = ParagraphStyle('Bold', parent=styles['Normal'], fontName='Helvetica-Bold')
     
     elements = []
     
@@ -227,30 +264,30 @@ def generate_pdf(data):
     elements.append(Spacer(1, 0.3*inch))
     
     # Table
-    table_data = [['Description', 'Qty', 'Item #']]
+    table_data = [['Description', 'Qty', 'Item #', 'Disc.']]
     for item in data['items']:
-        table_data.append([item['description'], str(item['quantity']), item['id']])
+        table_data.append([item['description'], str(item['quantity']), item['id'], f"{item['discount_pct']:.0f}%"])
     
-    table = Table(table_data, colWidths=[4*inch, 0.7*inch, 1.3*inch])
+    table = Table(table_data, colWidths=[3.5*inch, 0.5*inch, 1.2*inch, 0.6*inch])
     table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#003366')),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
-        ('ALIGN', (1, 0), (1, -1), 'CENTER'),
+        ('ALIGN', (1, 0), (-1, -1), 'CENTER'),
         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0, 0), (-1, 0), 11),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('FONTSIZE', (0, 0), (-1, 0), 10),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 10),
         ('BACKGROUND', (0, 1), (-1, -1), colors.white),
         ('GRID', (0, 0), (-1, -1), 1, colors.lightgrey),
-        ('FONTSIZE', (0, 1), (-1, -1), 10),
-        ('TOPPADDING', (0, 1), (-1, -1), 8),
-        ('BOTTOMPADDING', (0, 1), (-1, -1), 8),
+        ('FONTSIZE', (0, 1), (-1, -1), 9),
+        ('TOPPADDING', (0, 1), (-1, -1), 6),
+        ('BOTTOMPADDING', (0, 1), (-1, -1), 6),
     ]))
     elements.append(table)
     elements.append(Spacer(1, 0.3*inch))
     
     # Totals
     elements.append(Paragraph(f"List Price Total: ${data['list_total']:,.2f}", normal_style))
-    elements.append(Paragraph(f"Discount ({data['discount_percent']:.0f}%): -${data['discount_amount']:,.2f}", normal_style))
+    elements.append(Paragraph(f"Total Discount: -${data['discount_amount']:,.2f}", normal_style))
     elements.append(Spacer(1, 0.1*inch))
     
     final_style = ParagraphStyle('Final', parent=styles['Normal'], fontSize=14, fontName='Helvetica-Bold', textColor=colors.HexColor('#003366'))
