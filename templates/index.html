@@ -79,6 +79,33 @@
             font-size: 14px;
         }
         
+        .quick-nav {
+            background: #f0f4f8;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .quick-nav-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 13px;
+        }
+        .quick-nav a {
+            background: #003366;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .quick-nav a:hover {
+            background: #004d99;
+        }
         .search-box { margin-bottom: 20px; }
         .search-box input {
             width: 100%;
@@ -203,12 +230,23 @@
             <div class="card">
                 <h2>Select Products <span class="selected-count" id="selectedCount">0 selected</span></h2>
                 
+                <div class="quick-nav">
+                    <span class="quick-nav-label">Jump to:</span>
+                    <a href="#" onclick="jumpTo('Implants'); return false;">Implants</a>
+                    <a href="#" onclick="jumpTo('Abutments'); return false;">Abutments</a>
+                    <a href="#" onclick="jumpTo('Surgical Kits'); return false;">Surgical Kits</a>
+                    <a href="#" onclick="jumpTo('Capital - SprintRay'); return false;">SprintRay</a>
+                    <a href="#" onclick="jumpTo('Capital - 3Shape'); return false;">3Shape</a>
+                    <a href="#" onclick="jumpTo('Capital - DEXIS'); return false;">DEXIS</a>
+                    <a href="#" onclick="jumpTo('Capital - X-Guide'); return false;">X-Guide</a>
+                </div>
+                
                 <div class="search-box">
                     <input type="text" id="productSearch" placeholder="🔍 Search products by name or item #...">
                 </div>
                 
                 {% for category, prods in products.items() %}
-                <div class="category-section" data-category="{{ category }}">
+                <div class="category-section" data-category="{{ category }}" id="cat-{{ category | replace(' ', '-') | replace('/', '-') }}">
                     <div class="category-title" onclick="toggleCategory(this)">
                         <span>{{ category }} ({{ prods|length }})</span>
                         <span class="arrow">▼</span>
@@ -248,6 +286,22 @@
     </div>
     
     <script>
+        function jumpTo(categoryName) {
+            // Find all category sections and look for matching one
+            const sections = document.querySelectorAll('.category-section');
+            for (const section of sections) {
+                const cat = section.dataset.category;
+                if (cat.includes(categoryName) || categoryName.includes(cat.split(' ')[0])) {
+                    // Open the category
+                    section.querySelector('.products-list').classList.add('open');
+                    section.querySelector('.category-title').classList.add('open');
+                    // Scroll to it
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    return;
+                }
+            }
+        }
+        
         function toggleCategory(el) {
             el.classList.toggle('open');
             el.nextElementSibling.classList.toggle('open');
