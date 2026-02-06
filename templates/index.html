@@ -243,7 +243,9 @@
                     <span class="quick-nav-label">Jump to:</span>
                     <a href="#" onclick="jumpTo('Implants'); return false;">Implants</a>
                     <a href="#" onclick="jumpTo('Abutments'); return false;">Abutments</a>
-                    <a href="#" onclick="jumpTo('Regenerative'); return false;">Regenerative</a>
+                    <a href="#" onclick="jumpTo('Regenerative - Grafting'); return false;">Grafting</a>
+                    <a href="#" onclick="jumpTo('Regenerative - Membranes'); return false;">Membranes</a>
+                    <a href="#" onclick="jumpTo('Sutures'); return false;">Sutures</a>
                     <a href="#" onclick="jumpTo('Surgical Kits'); return false;">Surgical Kits</a>
                     <a href="#" onclick="jumpTo('Capital - 3Shape'); return false;">3Shape</a>
                     <a href="#" onclick="jumpTo('Capital - SprintRay'); return false;">SprintRay</a>
@@ -308,10 +310,10 @@
     <script>
         function applyPreset(preset) {
             const presets = {
-                'standard': { Implants: 30, Abutments: 25, Kits: 20, '3Shape': 10, SprintRay: 10, DEXIS: 10, 'X_Guide': 10, iCAM: 10, DTX: 10, Other: 15 },
-                'aggressive': { Implants: 40, Abutments: 35, Kits: 30, '3Shape': 15, SprintRay: 15, DEXIS: 15, 'X_Guide': 15, iCAM: 15, DTX: 15, Other: 25 },
-                'light': { Implants: 20, Abutments: 15, Kits: 10, '3Shape': 5, SprintRay: 5, DEXIS: 5, 'X_Guide': 5, iCAM: 5, DTX: 5, Other: 10 },
-                'clear': { Implants: 0, Abutments: 0, Kits: 0, '3Shape': 0, SprintRay: 0, DEXIS: 0, 'X_Guide': 0, iCAM: 0, DTX: 0, Other: 0 }
+                'standard': { Implants: 30, Abutments: 25, Kits: 20, Grafting: 20, Membranes: 20, Sutures: 15, '3Shape': 10, SprintRay: 10, DEXIS: 10, 'X_Guide': 10, iCAM: 10, DTX: 10, Other: 15 },
+                'aggressive': { Implants: 40, Abutments: 35, Kits: 30, Grafting: 30, Membranes: 30, Sutures: 25, '3Shape': 15, SprintRay: 15, DEXIS: 15, 'X_Guide': 15, iCAM: 15, DTX: 15, Other: 25 },
+                'light': { Implants: 20, Abutments: 15, Kits: 10, Grafting: 10, Membranes: 10, Sutures: 10, '3Shape': 5, SprintRay: 5, DEXIS: 5, 'X_Guide': 5, iCAM: 5, DTX: 5, Other: 10 },
+                'clear': { Implants: 0, Abutments: 0, Kits: 0, Grafting: 0, Membranes: 0, Sutures: 0, '3Shape': 0, SprintRay: 0, DEXIS: 0, 'X_Guide': 0, iCAM: 0, DTX: 0, Other: 0 }
             };
             const values = presets[preset];
             if (!values) return;
