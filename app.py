@@ -105,6 +105,7 @@ def generate():
     account_name = request.form.get('account_name', 'Customer')
     output_format = request.form.get('output_format', 'docx')
     rep_name = request.form.get('rep_name', '')
+    notes = request.form.get('notes', '')
     
     # Get per-group discounts
     group_discounts = {}
@@ -151,6 +152,7 @@ def generate():
     proposal_data = {
         'account_name': account_name,
         'rep_name': rep_name,
+        'notes': notes,
         'date': datetime.now().strftime('%B %d, %Y'),
         'items': items,
         'list_total': list_total,
@@ -219,6 +221,14 @@ def generate_docx(data):
     savings_para = doc.add_paragraph()
     savings_run = savings_para.add_run(f"You Save: ${data['discount_amount']:,.2f}")
     savings_run.bold = True
+    
+    # Notes
+    if data['notes']:
+        doc.add_paragraph()
+        notes_heading = doc.add_paragraph()
+        notes_run = notes_heading.add_run("Notes / Special Terms:")
+        notes_run.bold = True
+        doc.add_paragraph(data['notes'])
     
     # Footer
     doc.add_paragraph()
@@ -295,6 +305,14 @@ def generate_pdf(data):
     
     savings_style = ParagraphStyle('Savings', parent=styles['Normal'], fontSize=12, fontName='Helvetica-Bold', textColor=colors.HexColor('#228B22'))
     elements.append(Paragraph(f"You Save: ${data['discount_amount']:,.2f}", savings_style))
+    
+    # Notes
+    if data['notes']:
+        elements.append(Spacer(1, 0.3*inch))
+        notes_heading_style = ParagraphStyle('NotesHeading', parent=styles['Normal'], fontSize=11, fontName='Helvetica-Bold')
+        elements.append(Paragraph("Notes / Special Terms:", notes_heading_style))
+        elements.append(Paragraph(data['notes'], normal_style))
+    
     elements.append(Spacer(1, 0.4*inch))
     
     # Footer

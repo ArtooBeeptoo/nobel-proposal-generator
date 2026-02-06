@@ -214,6 +214,15 @@
             <div class="card">
                 <h2>Discounts by Category</h2>
                 <p style="color: #666; margin-top: 0;">Set different discount percentages for each product category</p>
+                
+                <div style="margin-bottom: 20px;">
+                    <span style="font-weight: 600; margin-right: 10px;">Quick presets:</span>
+                    <button type="button" onclick="applyPreset('standard')" style="padding: 8px 16px; margin-right: 8px; border: 2px solid #003366; background: white; color: #003366; border-radius: 6px; cursor: pointer; font-weight: 500;">Standard (30/25/20)</button>
+                    <button type="button" onclick="applyPreset('aggressive')" style="padding: 8px 16px; margin-right: 8px; border: 2px solid #003366; background: white; color: #003366; border-radius: 6px; cursor: pointer; font-weight: 500;">Aggressive (40/35/30)</button>
+                    <button type="button" onclick="applyPreset('light')" style="padding: 8px 16px; margin-right: 8px; border: 2px solid #003366; background: white; color: #003366; border-radius: 6px; cursor: pointer; font-weight: 500;">Light (20/15/10)</button>
+                    <button type="button" onclick="applyPreset('clear')" style="padding: 8px 16px; border: 2px solid #999; background: white; color: #666; border-radius: 6px; cursor: pointer; font-weight: 500;">Clear All</button>
+                </div>
+                
                 <div class="discount-grid">
                     {% for group in discount_groups %}
                     <div class="discount-item">
@@ -234,11 +243,14 @@
                     <span class="quick-nav-label">Jump to:</span>
                     <a href="#" onclick="jumpTo('Implants'); return false;">Implants</a>
                     <a href="#" onclick="jumpTo('Abutments'); return false;">Abutments</a>
+                    <a href="#" onclick="jumpTo('Regenerative'); return false;">Regenerative</a>
                     <a href="#" onclick="jumpTo('Surgical Kits'); return false;">Surgical Kits</a>
-                    <a href="#" onclick="jumpTo('Capital - SprintRay'); return false;">SprintRay</a>
                     <a href="#" onclick="jumpTo('Capital - 3Shape'); return false;">3Shape</a>
+                    <a href="#" onclick="jumpTo('Capital - SprintRay'); return false;">SprintRay</a>
                     <a href="#" onclick="jumpTo('Capital - DEXIS'); return false;">DEXIS</a>
                     <a href="#" onclick="jumpTo('Capital - X-Guide'); return false;">X-Guide</a>
+                    <a href="#" onclick="jumpTo('Capital - iCAM'); return false;">iCAM</a>
+                    <a href="#" onclick="jumpTo('Capital - DTX'); return false;">DTX</a>
                 </div>
                 
                 <div class="search-box">
@@ -268,6 +280,14 @@
             </div>
             
             <div class="card">
+                <h2>Notes / Comments</h2>
+                <div class="form-group">
+                    <label for="notes">Add any notes or special terms for this proposal (optional)</label>
+                    <textarea id="notes" name="notes" rows="4" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 15px; font-family: inherit; resize: vertical;" placeholder="e.g., Pricing valid for 30 days. Training included with capital equipment purchase."></textarea>
+                </div>
+            </div>
+            
+            <div class="card">
                 <h2>Output Format</h2>
                 <div class="output-options">
                     <label class="output-option">
@@ -286,6 +306,22 @@
     </div>
     
     <script>
+        function applyPreset(preset) {
+            const presets = {
+                'standard': { Implants: 30, Abutments: 25, Kits: 20, '3Shape': 10, SprintRay: 10, DEXIS: 10, 'X_Guide': 10, iCAM: 10, DTX: 10, Other: 15 },
+                'aggressive': { Implants: 40, Abutments: 35, Kits: 30, '3Shape': 15, SprintRay: 15, DEXIS: 15, 'X_Guide': 15, iCAM: 15, DTX: 15, Other: 25 },
+                'light': { Implants: 20, Abutments: 15, Kits: 10, '3Shape': 5, SprintRay: 5, DEXIS: 5, 'X_Guide': 5, iCAM: 5, DTX: 5, Other: 10 },
+                'clear': { Implants: 0, Abutments: 0, Kits: 0, '3Shape': 0, SprintRay: 0, DEXIS: 0, 'X_Guide': 0, iCAM: 0, DTX: 0, Other: 0 }
+            };
+            const values = presets[preset];
+            if (!values) return;
+            
+            for (const [group, val] of Object.entries(values)) {
+                const input = document.getElementById('discount_' + group);
+                if (input) input.value = val;
+            }
+        }
+        
         function jumpTo(categoryName) {
             // Find all category sections and look for matching one
             const sections = document.querySelectorAll('.category-section');
