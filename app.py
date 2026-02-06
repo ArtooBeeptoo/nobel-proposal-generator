@@ -15,7 +15,11 @@ from docx import Document
 from docx.shared import Inches, Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from weasyprint import HTML, CSS
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'nobel-proposal-2026')
@@ -198,79 +202,70 @@ def generate_docx(data):
     )
 
 def generate_pdf(data):
-    """Generate PDF document"""
-    
-    # Build HTML
-    items_html = ""
-    for item in data['items']:
-        items_html += f"""
-        <tr>
-            <td>{item['description']}</td>
-            <td style="text-align: center;">{item['quantity']}</td>
-            <td>{item['id']}</td>
-        </tr>
-        """
-    
-    html_content = f"""
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            body {{ font-family: Arial, sans-serif; margin: 40px; }}
-            h1 {{ color: #003366; text-align: center; margin-bottom: 5px; }}
-            h2 {{ color: #666; text-align: center; margin-top: 5px; font-weight: normal; }}
-            .info {{ margin: 30px 0; }}
-            table {{ width: 100%; border-collapse: collapse; margin: 20px 0; }}
-            th, td {{ border: 1px solid #ddd; padding: 10px; text-align: left; }}
-            th {{ background-color: #003366; color: white; }}
-            .totals {{ margin-top: 30px; }}
-            .totals p {{ margin: 5px 0; }}
-            .final-price {{ font-size: 18px; font-weight: bold; color: #003366; }}
-            .savings {{ font-size: 16px; font-weight: bold; color: #228B22; }}
-            .footer {{ margin-top: 40px; color: #666; font-size: 12px; }}
-        </style>
-    </head>
-    <body>
-        <h1>Nobel Biocare</h1>
-        <h2>Custom Sales Offer</h2>
-        
-        <div class="info">
-            <p><strong>Prepared for:</strong> {data['account_name']}</p>
-            <p><strong>Date:</strong> {data['date']}</p>
-            {"<p><strong>Territory Manager:</strong> " + data['rep_name'] + "</p>" if data['rep_name'] else ""}
-        </div>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Description</th>
-                    <th style="width: 60px;">Qty</th>
-                    <th style="width: 100px;">Item #</th>
-                </tr>
-            </thead>
-            <tbody>
-                {items_html}
-            </tbody>
-        </table>
-        
-        <div class="totals">
-            <p>List Price Total: ${data['list_total']:,.2f}</p>
-            <p>Discount ({data['discount_percent']:.0f}%): -${data['discount_amount']:,.2f}</p>
-            <p class="final-price">Your Price: ${data['final_total']:,.2f}</p>
-            <p class="savings">You Save: ${data['discount_amount']:,.2f}</p>
-        </div>
-        
-        <div class="footer">
-            <p>Thank you for choosing Nobel Biocare!</p>
-            <p>Prices valid for 30 days from date of proposal.</p>
-        </div>
-    </body>
-    </html>
-    """
-    
-    # Generate PDF
+    """Generate PDF document using ReportLab"""
     buffer = BytesIO()
-    HTML(string=html_content).write_pdf(buffer)
+    doc = SimpleDocTemplate(buffer, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch)
+    
+    styles = getSampleStyleSheet()
+    title_style = ParagraphStyle('Title', parent=styles['Heading1'], fontSize=24, textColor=colors.HexColor('#003366'), alignment=1)
+    subtitle_style = ParagraphStyle('Subtitle', parent=styles['Heading2'], fontSize=16, textColor=colors.grey, alignment=1)
+    normal_style = styles['Normal']
+    bold_style = ParagraphStyle('Bold', parent=styles['Normal'], fontName='Helvetica-Bold')
+    
+    elements = []
+    
+    # Title
+    elements.append(Paragraph("Nobel Biocare", title_style))
+    elements.append(Paragraph("Custom Sales Offer", subtitle_style))
+    elements.append(Spacer(1, 0.3*inch))
+    
+    # Info
+    elements.append(Paragraph(f"<b>Prepared for:</b> {data['account_name']}", normal_style))
+    elements.append(Paragraph(f"<b>Date:</b> {data['date']}", normal_style))
+    if data['rep_name']:
+        elements.append(Paragraph(f"<b>Territory Manager:</b> {data['rep_name']}", normal_style))
+    elements.append(Spacer(1, 0.3*inch))
+    
+    # Table
+    table_data = [['Description', 'Qty', 'Item #']]
+    for item in data['items']:
+        table_data.append([item['description'], str(item['quantity']), item['id']])
+    
+    table = Table(table_data, colWidths=[4*inch, 0.7*inch, 1.3*inch])
+    table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#003366')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('ALIGN', (1, 0), (1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, 0), 11),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('BACKGROUND', (0, 1), (-1, -1), colors.white),
+        ('GRID', (0, 0), (-1, -1), 1, colors.lightgrey),
+        ('FONTSIZE', (0, 1), (-1, -1), 10),
+        ('TOPPADDING', (0, 1), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 1), (-1, -1), 8),
+    ]))
+    elements.append(table)
+    elements.append(Spacer(1, 0.3*inch))
+    
+    # Totals
+    elements.append(Paragraph(f"List Price Total: ${data['list_total']:,.2f}", normal_style))
+    elements.append(Paragraph(f"Discount ({data['discount_percent']:.0f}%): -${data['discount_amount']:,.2f}", normal_style))
+    elements.append(Spacer(1, 0.1*inch))
+    
+    final_style = ParagraphStyle('Final', parent=styles['Normal'], fontSize=14, fontName='Helvetica-Bold', textColor=colors.HexColor('#003366'))
+    elements.append(Paragraph(f"Your Price: ${data['final_total']:,.2f}", final_style))
+    
+    savings_style = ParagraphStyle('Savings', parent=styles['Normal'], fontSize=12, fontName='Helvetica-Bold', textColor=colors.HexColor('#228B22'))
+    elements.append(Paragraph(f"You Save: ${data['discount_amount']:,.2f}", savings_style))
+    elements.append(Spacer(1, 0.4*inch))
+    
+    # Footer
+    footer_style = ParagraphStyle('Footer', parent=styles['Normal'], fontSize=10, textColor=colors.grey)
+    elements.append(Paragraph("Thank you for choosing Nobel Biocare!", footer_style))
+    elements.append(Paragraph("Prices valid for 30 days from date of proposal.", footer_style))
+    
+    doc.build(elements)
     buffer.seek(0)
     
     filename = f"Nobel_Proposal_{data['account_name'].replace(' ', '_')}_{datetime.now().strftime('%Y%m%d')}.pdf"

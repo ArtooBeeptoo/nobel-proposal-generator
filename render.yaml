@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nobel-proposal-generator
+    env: docker
+    plan: free
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: APP_PASSWORD
+        value: nobel2026
