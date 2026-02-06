@@ -1,224 +1,3016 @@
 {
   "NobelActive TiUltra Implants": [
-    {"id": "300240", "description": "NobelActive TiUltra 3.0 3.0 x 10 mm", "price": 575},
-    {"id": "300241", "description": "NobelActive TiUltra 3.0 3.0 x 11.5 mm", "price": 575},
-    {"id": "300242", "description": "NobelActive TiUltra 3.0 3.0 x 13 mm", "price": 575},
-    {"id": "300243", "description": "NobelActive TiUltra 3.0 3.0 x 15 mm", "price": 575},
-    {"id": "300244", "description": "NobelActive TiUltra NP 3.5 x 8.5 mm", "price": 575},
-    {"id": "300245", "description": "NobelActive TiUltra NP 3.5 x 10 mm", "price": 575},
-    {"id": "300246", "description": "NobelActive TiUltra NP 3.5 x 11.5 mm", "price": 575},
-    {"id": "300247", "description": "NobelActive TiUltra NP 3.5 x 13 mm", "price": 575},
-    {"id": "300248", "description": "NobelActive TiUltra NP 3.5 x 15 mm", "price": 575},
-    {"id": "300249", "description": "NobelActive TiUltra NP 3.5 x 18 mm", "price": 575},
-    {"id": "300250", "description": "NobelActive TiUltra RP 4.3 x 8.5 mm", "price": 575},
-    {"id": "300251", "description": "NobelActive TiUltra RP 4.3 x 10 mm", "price": 575},
-    {"id": "300252", "description": "NobelActive TiUltra RP 4.3 x 11.5 mm", "price": 575},
-    {"id": "300253", "description": "NobelActive TiUltra RP 4.3 x 13 mm", "price": 575},
-    {"id": "300254", "description": "NobelActive TiUltra RP 4.3 x 15 mm", "price": 575},
-    {"id": "300255", "description": "NobelActive TiUltra RP 4.3 x 18 mm", "price": 575},
-    {"id": "300256", "description": "NobelActive TiUltra RP 5.0 x 8.5 mm", "price": 575},
-    {"id": "300257", "description": "NobelActive TiUltra RP 5.0 x 10 mm", "price": 575},
-    {"id": "300258", "description": "NobelActive TiUltra RP 5.0 x 11.5 mm", "price": 575},
-    {"id": "300259", "description": "NobelActive TiUltra RP 5.0 x 13 mm", "price": 575},
-    {"id": "300260", "description": "NobelActive TiUltra RP 5.0 x 15 mm", "price": 575},
-    {"id": "300261", "description": "NobelActive TiUltra RP 5.0 x 18 mm", "price": 575},
-    {"id": "300262", "description": "NobelActive TiUltra WP 5.5 x 7 mm", "price": 575},
-    {"id": "300263", "description": "NobelActive TiUltra WP 5.5 x 8.5 mm", "price": 575},
-    {"id": "300264", "description": "NobelActive TiUltra WP 5.5 x 10 mm", "price": 575},
-    {"id": "300265", "description": "NobelActive TiUltra WP 5.5 x 11.5 mm", "price": 575},
-    {"id": "300266", "description": "NobelActive TiUltra WP 5.5 x 13 mm", "price": 575},
-    {"id": "300267", "description": "NobelActive TiUltra WP 5.5 x 15 mm", "price": 575}
+    {
+      "id": "300240",
+      "description": "NobelActive TiUltra 3.0 3.0 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300241",
+      "description": "NobelActive TiUltra 3.0 3.0 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300242",
+      "description": "NobelActive TiUltra 3.0 3.0 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300243",
+      "description": "NobelActive TiUltra 3.0 3.0 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300244",
+      "description": "NobelActive TiUltra NP 3.5 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300245",
+      "description": "NobelActive TiUltra NP 3.5 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300246",
+      "description": "NobelActive TiUltra NP 3.5 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300247",
+      "description": "NobelActive TiUltra NP 3.5 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300248",
+      "description": "NobelActive TiUltra NP 3.5 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300249",
+      "description": "NobelActive TiUltra NP 3.5 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300250",
+      "description": "NobelActive TiUltra RP 4.3 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300251",
+      "description": "NobelActive TiUltra RP 4.3 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300252",
+      "description": "NobelActive TiUltra RP 4.3 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300253",
+      "description": "NobelActive TiUltra RP 4.3 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300254",
+      "description": "NobelActive TiUltra RP 4.3 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300255",
+      "description": "NobelActive TiUltra RP 4.3 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300256",
+      "description": "NobelActive TiUltra RP 5.0 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300257",
+      "description": "NobelActive TiUltra RP 5.0 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300258",
+      "description": "NobelActive TiUltra RP 5.0 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300259",
+      "description": "NobelActive TiUltra RP 5.0 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300260",
+      "description": "NobelActive TiUltra RP 5.0 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300261",
+      "description": "NobelActive TiUltra RP 5.0 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300262",
+      "description": "NobelActive TiUltra WP 5.5 x 7 mm",
+      "price": 575
+    },
+    {
+      "id": "300263",
+      "description": "NobelActive TiUltra WP 5.5 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300264",
+      "description": "NobelActive TiUltra WP 5.5 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300265",
+      "description": "NobelActive TiUltra WP 5.5 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300266",
+      "description": "NobelActive TiUltra WP 5.5 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300267",
+      "description": "NobelActive TiUltra WP 5.5 x 15 mm",
+      "price": 575
+    }
   ],
   "NobelActive Implants": [
-    {"id": "36769", "description": "NobelActive 3.0 3.0 x 10 mm", "price": 555},
-    {"id": "36770", "description": "NobelActive 3.0 3.0 x 11.5 mm", "price": 555},
-    {"id": "36771", "description": "NobelActive 3.0 3.0 x 13 mm", "price": 555},
-    {"id": "36772", "description": "NobelActive 3.0 3.0 x 15 mm", "price": 555},
-    {"id": "35221", "description": "NobelActive NP 3.5 x 8.5 mm", "price": 555},
-    {"id": "34125", "description": "NobelActive NP 3.5 x 10 mm", "price": 555},
-    {"id": "34126", "description": "NobelActive NP 3.5 x 11.5 mm", "price": 555},
-    {"id": "34127", "description": "NobelActive NP 3.5 x 13 mm", "price": 555},
-    {"id": "34128", "description": "NobelActive NP 3.5 x 15 mm", "price": 555},
-    {"id": "35215", "description": "NobelActive NP 3.5 x 18 mm", "price": 555},
-    {"id": "35223", "description": "NobelActive RP 4.3 x 8.5 mm", "price": 555},
-    {"id": "34131", "description": "NobelActive RP 4.3 x 10 mm", "price": 555},
-    {"id": "34132", "description": "NobelActive RP 4.3 x 11.5 mm", "price": 555},
-    {"id": "34133", "description": "NobelActive RP 4.3 x 13 mm", "price": 555},
-    {"id": "34134", "description": "NobelActive RP 4.3 x 15 mm", "price": 555},
-    {"id": "35219", "description": "NobelActive RP 4.3 x 18 mm", "price": 555},
-    {"id": "35225", "description": "NobelActive RP 5.0 x 8.5 mm", "price": 555},
-    {"id": "34137", "description": "NobelActive RP 5.0 x 10 mm", "price": 555},
-    {"id": "34138", "description": "NobelActive RP 5.0 x 11.5 mm", "price": 555},
-    {"id": "34139", "description": "NobelActive RP 5.0 x 13 mm", "price": 555},
-    {"id": "34140", "description": "NobelActive RP 5.0 x 15 mm", "price": 555},
-    {"id": "35220", "description": "NobelActive RP 5.0 x 18 mm", "price": 555},
-    {"id": "37806", "description": "NobelActive WP 5.5 x 7 mm", "price": 555},
-    {"id": "37807", "description": "NobelActive WP 5.5 x 8.5 mm", "price": 555},
-    {"id": "37808", "description": "NobelActive WP 5.5 x 10 mm", "price": 555},
-    {"id": "37809", "description": "NobelActive WP 5.5 x 11.5 mm", "price": 555},
-    {"id": "37810", "description": "NobelActive WP 5.5 x 13 mm", "price": 555},
-    {"id": "37811", "description": "NobelActive WP 5.5 x 15 mm", "price": 555}
+    {
+      "id": "36769",
+      "description": "NobelActive 3.0 3.0 x 10 mm",
+      "price": 555
+    },
+    {
+      "id": "36770",
+      "description": "NobelActive 3.0 3.0 x 11.5 mm",
+      "price": 555
+    },
+    {
+      "id": "36771",
+      "description": "NobelActive 3.0 3.0 x 13 mm",
+      "price": 555
+    },
+    {
+      "id": "36772",
+      "description": "NobelActive 3.0 3.0 x 15 mm",
+      "price": 555
+    },
+    {
+      "id": "35221",
+      "description": "NobelActive NP 3.5 x 8.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34125",
+      "description": "NobelActive NP 3.5 x 10 mm",
+      "price": 555
+    },
+    {
+      "id": "34126",
+      "description": "NobelActive NP 3.5 x 11.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34127",
+      "description": "NobelActive NP 3.5 x 13 mm",
+      "price": 555
+    },
+    {
+      "id": "34128",
+      "description": "NobelActive NP 3.5 x 15 mm",
+      "price": 555
+    },
+    {
+      "id": "35215",
+      "description": "NobelActive NP 3.5 x 18 mm",
+      "price": 555
+    },
+    {
+      "id": "35223",
+      "description": "NobelActive RP 4.3 x 8.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34131",
+      "description": "NobelActive RP 4.3 x 10 mm",
+      "price": 555
+    },
+    {
+      "id": "34132",
+      "description": "NobelActive RP 4.3 x 11.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34133",
+      "description": "NobelActive RP 4.3 x 13 mm",
+      "price": 555
+    },
+    {
+      "id": "34134",
+      "description": "NobelActive RP 4.3 x 15 mm",
+      "price": 555
+    },
+    {
+      "id": "35219",
+      "description": "NobelActive RP 4.3 x 18 mm",
+      "price": 555
+    },
+    {
+      "id": "35225",
+      "description": "NobelActive RP 5.0 x 8.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34137",
+      "description": "NobelActive RP 5.0 x 10 mm",
+      "price": 555
+    },
+    {
+      "id": "34138",
+      "description": "NobelActive RP 5.0 x 11.5 mm",
+      "price": 555
+    },
+    {
+      "id": "34139",
+      "description": "NobelActive RP 5.0 x 13 mm",
+      "price": 555
+    },
+    {
+      "id": "34140",
+      "description": "NobelActive RP 5.0 x 15 mm",
+      "price": 555
+    },
+    {
+      "id": "35220",
+      "description": "NobelActive RP 5.0 x 18 mm",
+      "price": 555
+    },
+    {
+      "id": "37806",
+      "description": "NobelActive WP 5.5 x 7 mm",
+      "price": 555
+    },
+    {
+      "id": "37807",
+      "description": "NobelActive WP 5.5 x 8.5 mm",
+      "price": 555
+    },
+    {
+      "id": "37808",
+      "description": "NobelActive WP 5.5 x 10 mm",
+      "price": 555
+    },
+    {
+      "id": "37809",
+      "description": "NobelActive WP 5.5 x 11.5 mm",
+      "price": 555
+    },
+    {
+      "id": "37810",
+      "description": "NobelActive WP 5.5 x 13 mm",
+      "price": 555
+    },
+    {
+      "id": "37811",
+      "description": "NobelActive WP 5.5 x 15 mm",
+      "price": 555
+    }
   ],
   "Nobel Biocare N1 TiUltra Implants": [
-    {"id": "300857", "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 9 mm", "price": 599},
-    {"id": "300858", "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 11 mm", "price": 599},
-    {"id": "300859", "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 13 mm", "price": 599},
-    {"id": "301169", "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 15 mm", "price": 599},
-    {"id": "300860", "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 7 mm", "price": 599},
-    {"id": "300861", "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 9 mm", "price": 599},
-    {"id": "300862", "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 11 mm", "price": 599},
-    {"id": "300863", "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 13 mm", "price": 599},
-    {"id": "301170", "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 15 mm", "price": 599},
-    {"id": "300864", "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 7 mm", "price": 599},
-    {"id": "300865", "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 9 mm", "price": 599},
-    {"id": "300866", "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 11 mm", "price": 599}
+    {
+      "id": "300857",
+      "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 9 mm",
+      "price": 599
+    },
+    {
+      "id": "300858",
+      "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 11 mm",
+      "price": 599
+    },
+    {
+      "id": "300859",
+      "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 13 mm",
+      "price": 599
+    },
+    {
+      "id": "301169",
+      "description": "Nobel Biocare N1 TiUltra TCC NP 3.5 x 15 mm",
+      "price": 599
+    },
+    {
+      "id": "300860",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 7 mm",
+      "price": 599
+    },
+    {
+      "id": "300861",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 9 mm",
+      "price": 599
+    },
+    {
+      "id": "300862",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 11 mm",
+      "price": 599
+    },
+    {
+      "id": "300863",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 13 mm",
+      "price": 599
+    },
+    {
+      "id": "301170",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.0 x 15 mm",
+      "price": 599
+    },
+    {
+      "id": "300864",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 7 mm",
+      "price": 599
+    },
+    {
+      "id": "300865",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 9 mm",
+      "price": 599
+    },
+    {
+      "id": "300866",
+      "description": "Nobel Biocare N1 TiUltra TCC RP 4.8 x 11 mm",
+      "price": 599
+    }
   ],
   "NobelParallel CC TiUltra Implants": [
-    {"id": "300295", "description": "NobelParallel CC TiUltra NP 3.75 x 7 mm", "price": 575},
-    {"id": "300296", "description": "NobelParallel CC TiUltra NP 3.75 x 8.5 mm", "price": 575},
-    {"id": "300297", "description": "NobelParallel CC TiUltra NP 3.75 x 10 mm", "price": 575},
-    {"id": "300298", "description": "NobelParallel CC TiUltra NP 3.75 x 11.5 mm", "price": 575},
-    {"id": "300299", "description": "NobelParallel CC TiUltra NP 3.75 x 13 mm", "price": 575},
-    {"id": "300300", "description": "NobelParallel CC TiUltra NP 3.75 x 15 mm", "price": 575},
-    {"id": "300301", "description": "NobelParallel CC TiUltra NP 3.75 x 18 mm", "price": 575},
-    {"id": "300302", "description": "NobelParallel CC TiUltra RP 4.3 x 7 mm", "price": 575},
-    {"id": "300303", "description": "NobelParallel CC TiUltra RP 4.3 x 8.5 mm", "price": 575},
-    {"id": "300304", "description": "NobelParallel CC TiUltra RP 4.3 x 10 mm", "price": 575},
-    {"id": "300305", "description": "NobelParallel CC TiUltra RP 4.3 x 11.5 mm", "price": 575},
-    {"id": "300306", "description": "NobelParallel CC TiUltra RP 4.3 x 13 mm", "price": 575},
-    {"id": "300307", "description": "NobelParallel CC TiUltra RP 4.3 x 15 mm", "price": 575},
-    {"id": "300308", "description": "NobelParallel CC TiUltra RP 4.3 x 18 mm", "price": 575},
-    {"id": "300309", "description": "NobelParallel CC TiUltra RP 5.0 x 7 mm", "price": 575},
-    {"id": "300310", "description": "NobelParallel CC TiUltra RP 5.0 x 8.5 mm", "price": 575},
-    {"id": "300311", "description": "NobelParallel CC TiUltra RP 5.0 x 10 mm", "price": 575},
-    {"id": "300312", "description": "NobelParallel CC TiUltra RP 5.0 x 11.5 mm", "price": 575},
-    {"id": "300313", "description": "NobelParallel CC TiUltra RP 5.0 x 13 mm", "price": 575},
-    {"id": "300314", "description": "NobelParallel CC TiUltra RP 5.0 x 15 mm", "price": 575},
-    {"id": "300315", "description": "NobelParallel CC TiUltra RP 5.0 x 18 mm", "price": 575},
-    {"id": "300316", "description": "NobelParallel CC TiUltra WP 5.5 x 7 mm", "price": 575},
-    {"id": "300317", "description": "NobelParallel CC TiUltra WP 5.5 x 8.5 mm", "price": 575},
-    {"id": "300318", "description": "NobelParallel CC TiUltra WP 5.5 x 10 mm", "price": 575},
-    {"id": "300319", "description": "NobelParallel CC TiUltra WP 5.5 x 11.5 mm", "price": 575},
-    {"id": "300320", "description": "NobelParallel CC TiUltra WP 5.5 x 13 mm", "price": 575},
-    {"id": "300321", "description": "NobelParallel CC TiUltra WP 5.5 x 15 mm", "price": 575}
+    {
+      "id": "300295",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 7 mm",
+      "price": 575
+    },
+    {
+      "id": "300296",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300297",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300298",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300299",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300300",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300301",
+      "description": "NobelParallel CC TiUltra NP 3.75 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300302",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 7 mm",
+      "price": 575
+    },
+    {
+      "id": "300303",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300304",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300305",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300306",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300307",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300308",
+      "description": "NobelParallel CC TiUltra RP 4.3 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300309",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 7 mm",
+      "price": 575
+    },
+    {
+      "id": "300310",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300311",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300312",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300313",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300314",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 15 mm",
+      "price": 575
+    },
+    {
+      "id": "300315",
+      "description": "NobelParallel CC TiUltra RP 5.0 x 18 mm",
+      "price": 575
+    },
+    {
+      "id": "300316",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 7 mm",
+      "price": 575
+    },
+    {
+      "id": "300317",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 8.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300318",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 10 mm",
+      "price": 575
+    },
+    {
+      "id": "300319",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 11.5 mm",
+      "price": 575
+    },
+    {
+      "id": "300320",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 13 mm",
+      "price": 575
+    },
+    {
+      "id": "300321",
+      "description": "NobelParallel CC TiUltra WP 5.5 x 15 mm",
+      "price": 575
+    }
   ],
   "NobelReplace CC TiUltra Implants": [
-    {"id": "300337", "description": "NobelReplace CC TiUltra NP 3.5 x 8 mm", "price": 519},
-    {"id": "300338", "description": "NobelReplace CC TiUltra NP 3.5 x 10 mm", "price": 519},
-    {"id": "300339", "description": "NobelReplace CC TiUltra NP 3.5 x 11.5 mm", "price": 519},
-    {"id": "300340", "description": "NobelReplace CC TiUltra NP 3.5 x 13 mm", "price": 519},
-    {"id": "300341", "description": "NobelReplace CC TiUltra NP 3.5 x 16 mm", "price": 519},
-    {"id": "300342", "description": "NobelReplace CC TiUltra RP 4.3 x 8 mm", "price": 519},
-    {"id": "300343", "description": "NobelReplace CC TiUltra RP 4.3 x 10 mm", "price": 519},
-    {"id": "300344", "description": "NobelReplace CC TiUltra RP 4.3 x 11.5 mm", "price": 519},
-    {"id": "300345", "description": "NobelReplace CC TiUltra RP 4.3 x 13 mm", "price": 519},
-    {"id": "300346", "description": "NobelReplace CC TiUltra RP 4.3 x 16 mm", "price": 519},
-    {"id": "300347", "description": "NobelReplace CC TiUltra RP 5.0 x 8 mm", "price": 519},
-    {"id": "300348", "description": "NobelReplace CC TiUltra RP 5.0 x 10 mm", "price": 519},
-    {"id": "300349", "description": "NobelReplace CC TiUltra RP 5.0 x 11.5 mm", "price": 519},
-    {"id": "300350", "description": "NobelReplace CC TiUltra RP 5.0 x 13 mm", "price": 519},
-    {"id": "300351", "description": "NobelReplace CC TiUltra RP 5.0 x 16 mm", "price": 519}
+    {
+      "id": "300337",
+      "description": "NobelReplace CC TiUltra NP 3.5 x 8 mm",
+      "price": 519
+    },
+    {
+      "id": "300338",
+      "description": "NobelReplace CC TiUltra NP 3.5 x 10 mm",
+      "price": 519
+    },
+    {
+      "id": "300339",
+      "description": "NobelReplace CC TiUltra NP 3.5 x 11.5 mm",
+      "price": 519
+    },
+    {
+      "id": "300340",
+      "description": "NobelReplace CC TiUltra NP 3.5 x 13 mm",
+      "price": 519
+    },
+    {
+      "id": "300341",
+      "description": "NobelReplace CC TiUltra NP 3.5 x 16 mm",
+      "price": 519
+    },
+    {
+      "id": "300342",
+      "description": "NobelReplace CC TiUltra RP 4.3 x 8 mm",
+      "price": 519
+    },
+    {
+      "id": "300343",
+      "description": "NobelReplace CC TiUltra RP 4.3 x 10 mm",
+      "price": 519
+    },
+    {
+      "id": "300344",
+      "description": "NobelReplace CC TiUltra RP 4.3 x 11.5 mm",
+      "price": 519
+    },
+    {
+      "id": "300345",
+      "description": "NobelReplace CC TiUltra RP 4.3 x 13 mm",
+      "price": 519
+    },
+    {
+      "id": "300346",
+      "description": "NobelReplace CC TiUltra RP 4.3 x 16 mm",
+      "price": 519
+    },
+    {
+      "id": "300347",
+      "description": "NobelReplace CC TiUltra RP 5.0 x 8 mm",
+      "price": 519
+    },
+    {
+      "id": "300348",
+      "description": "NobelReplace CC TiUltra RP 5.0 x 10 mm",
+      "price": 519
+    },
+    {
+      "id": "300349",
+      "description": "NobelReplace CC TiUltra RP 5.0 x 11.5 mm",
+      "price": 519
+    },
+    {
+      "id": "300350",
+      "description": "NobelReplace CC TiUltra RP 5.0 x 13 mm",
+      "price": 519
+    },
+    {
+      "id": "300351",
+      "description": "NobelReplace CC TiUltra RP 5.0 x 16 mm",
+      "price": 519
+    }
   ],
   "NobelPearl Ceramic Implants": [
-    {"id": "300752", "description": "NobelPearl Tapered NP 3.5 x 8 mm", "price": 599},
-    {"id": "300753", "description": "NobelPearl Tapered NP 3.5 x 10 mm", "price": 599},
-    {"id": "300754", "description": "NobelPearl Tapered NP 3.5 x 12 mm", "price": 599},
-    {"id": "300755", "description": "NobelPearl Tapered RP 4.2 x 8 mm", "price": 599},
-    {"id": "300756", "description": "NobelPearl Tapered RP 4.2 x 10 mm", "price": 599},
-    {"id": "300757", "description": "NobelPearl Tapered RP 4.2 x 12 mm", "price": 599},
-    {"id": "300758", "description": "NobelPearl Tapered RP 4.2 x 14 mm", "price": 599},
-    {"id": "300759", "description": "NobelPearl Tapered WP 5.5 x 8 mm", "price": 599},
-    {"id": "300760", "description": "NobelPearl Tapered WP 5.5 x 10 mm", "price": 599},
-    {"id": "300761", "description": "NobelPearl Tapered WP 5.5 x 12 mm", "price": 599}
+    {
+      "id": "300752",
+      "description": "NobelPearl Tapered NP 3.5 x 8 mm",
+      "price": 599
+    },
+    {
+      "id": "300753",
+      "description": "NobelPearl Tapered NP 3.5 x 10 mm",
+      "price": 599
+    },
+    {
+      "id": "300754",
+      "description": "NobelPearl Tapered NP 3.5 x 12 mm",
+      "price": 599
+    },
+    {
+      "id": "300755",
+      "description": "NobelPearl Tapered RP 4.2 x 8 mm",
+      "price": 599
+    },
+    {
+      "id": "300756",
+      "description": "NobelPearl Tapered RP 4.2 x 10 mm",
+      "price": 599
+    },
+    {
+      "id": "300757",
+      "description": "NobelPearl Tapered RP 4.2 x 12 mm",
+      "price": 599
+    },
+    {
+      "id": "300758",
+      "description": "NobelPearl Tapered RP 4.2 x 14 mm",
+      "price": 599
+    },
+    {
+      "id": "300759",
+      "description": "NobelPearl Tapered WP 5.5 x 8 mm",
+      "price": 599
+    },
+    {
+      "id": "300760",
+      "description": "NobelPearl Tapered WP 5.5 x 10 mm",
+      "price": 599
+    },
+    {
+      "id": "300761",
+      "description": "NobelPearl Tapered WP 5.5 x 12 mm",
+      "price": 599
+    }
   ],
   "NobelZygoma Implants": [
-    {"id": "38275", "description": "NobelZygoma 0° 30 mm", "price": 599},
-    {"id": "38276", "description": "NobelZygoma 0° 35 mm", "price": 599},
-    {"id": "38277", "description": "NobelZygoma 0° 37.5 mm", "price": 599},
-    {"id": "38278", "description": "NobelZygoma 0° 40 mm", "price": 599},
-    {"id": "38279", "description": "NobelZygoma 0° 42.5 mm", "price": 599},
-    {"id": "38280", "description": "NobelZygoma 0° 45 mm", "price": 599},
-    {"id": "38281", "description": "NobelZygoma 0° 47.5 mm", "price": 599},
-    {"id": "38282", "description": "NobelZygoma 0° 50 mm", "price": 599},
-    {"id": "38283", "description": "NobelZygoma 45° 30 mm", "price": 599},
-    {"id": "38284", "description": "NobelZygoma 45° 32.5 mm", "price": 599},
-    {"id": "38285", "description": "NobelZygoma 45° 35 mm", "price": 599},
-    {"id": "38286", "description": "NobelZygoma 45° 37.5 mm", "price": 599},
-    {"id": "38287", "description": "NobelZygoma 45° 40 mm", "price": 599},
-    {"id": "38288", "description": "NobelZygoma 45° 42.5 mm", "price": 599},
-    {"id": "38289", "description": "NobelZygoma 45° 45 mm", "price": 599},
-    {"id": "38290", "description": "NobelZygoma 45° 47.5 mm", "price": 599},
-    {"id": "38291", "description": "NobelZygoma 45° 50 mm", "price": 599},
-    {"id": "38292", "description": "NobelZygoma 45° 52.5 mm", "price": 599}
+    {
+      "id": "38275",
+      "description": "NobelZygoma 0\u00b0 30 mm",
+      "price": 599
+    },
+    {
+      "id": "38276",
+      "description": "NobelZygoma 0\u00b0 35 mm",
+      "price": 599
+    },
+    {
+      "id": "38277",
+      "description": "NobelZygoma 0\u00b0 37.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38278",
+      "description": "NobelZygoma 0\u00b0 40 mm",
+      "price": 599
+    },
+    {
+      "id": "38279",
+      "description": "NobelZygoma 0\u00b0 42.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38280",
+      "description": "NobelZygoma 0\u00b0 45 mm",
+      "price": 599
+    },
+    {
+      "id": "38281",
+      "description": "NobelZygoma 0\u00b0 47.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38282",
+      "description": "NobelZygoma 0\u00b0 50 mm",
+      "price": 599
+    },
+    {
+      "id": "38283",
+      "description": "NobelZygoma 45\u00b0 30 mm",
+      "price": 599
+    },
+    {
+      "id": "38284",
+      "description": "NobelZygoma 45\u00b0 32.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38285",
+      "description": "NobelZygoma 45\u00b0 35 mm",
+      "price": 599
+    },
+    {
+      "id": "38286",
+      "description": "NobelZygoma 45\u00b0 37.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38287",
+      "description": "NobelZygoma 45\u00b0 40 mm",
+      "price": 599
+    },
+    {
+      "id": "38288",
+      "description": "NobelZygoma 45\u00b0 42.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38289",
+      "description": "NobelZygoma 45\u00b0 45 mm",
+      "price": 599
+    },
+    {
+      "id": "38290",
+      "description": "NobelZygoma 45\u00b0 47.5 mm",
+      "price": 599
+    },
+    {
+      "id": "38291",
+      "description": "NobelZygoma 45\u00b0 50 mm",
+      "price": 599
+    },
+    {
+      "id": "38292",
+      "description": "NobelZygoma 45\u00b0 52.5 mm",
+      "price": 599
+    }
   ],
   "Esthetic Abutments": [
-    {"id": "36665", "description": "Esthetic Abutment CC NP 1.5 mm", "price": 262},
-    {"id": "36666", "description": "Esthetic Abutment CC NP 3 mm", "price": 262},
-    {"id": "36249", "description": "Esthetic Abutment CC NP 4.5 mm", "price": 262},
-    {"id": "36669", "description": "Esthetic Abutment CC RP 1.5 mm", "price": 262},
-    {"id": "36671", "description": "Esthetic Abutment CC RP 3 mm", "price": 262},
-    {"id": "36251", "description": "Esthetic Abutment CC RP 4.5 mm", "price": 262},
-    {"id": "36667", "description": "15° Esthetic Abutment CC NP 1.5 mm", "price": 323},
-    {"id": "36668", "description": "15° Esthetic Abutment CC NP 3 mm", "price": 323},
-    {"id": "36250", "description": "15° Esthetic Abutment CC NP 4.5 mm", "price": 323},
-    {"id": "36672", "description": "15° Esthetic Abutment CC RP 1.5 mm", "price": 323},
-    {"id": "36673", "description": "15° Esthetic Abutment CC RP 3 mm", "price": 323},
-    {"id": "36252", "description": "15° Esthetic Abutment CC RP 4.5 mm", "price": 323},
-    {"id": "300938", "description": "Esthetic Abutment N1 TCC NP 1.75 mm", "price": 240},
-    {"id": "300940", "description": "Esthetic Abutment N1 TCC NP 3 mm", "price": 240},
-    {"id": "300942", "description": "Esthetic Abutment N1 TCC RP 1.75 mm", "price": 240},
-    {"id": "300944", "description": "Esthetic Abutment N1 TCC RP 3 mm", "price": 240}
+    {
+      "id": "36665",
+      "description": "Esthetic Abutment CC NP 1.5 mm",
+      "price": 262
+    },
+    {
+      "id": "36666",
+      "description": "Esthetic Abutment CC NP 3 mm",
+      "price": 262
+    },
+    {
+      "id": "36249",
+      "description": "Esthetic Abutment CC NP 4.5 mm",
+      "price": 262
+    },
+    {
+      "id": "36669",
+      "description": "Esthetic Abutment CC RP 1.5 mm",
+      "price": 262
+    },
+    {
+      "id": "36671",
+      "description": "Esthetic Abutment CC RP 3 mm",
+      "price": 262
+    },
+    {
+      "id": "36251",
+      "description": "Esthetic Abutment CC RP 4.5 mm",
+      "price": 262
+    },
+    {
+      "id": "36667",
+      "description": "15\u00b0 Esthetic Abutment CC NP 1.5 mm",
+      "price": 323
+    },
+    {
+      "id": "36668",
+      "description": "15\u00b0 Esthetic Abutment CC NP 3 mm",
+      "price": 323
+    },
+    {
+      "id": "36250",
+      "description": "15\u00b0 Esthetic Abutment CC NP 4.5 mm",
+      "price": 323
+    },
+    {
+      "id": "36672",
+      "description": "15\u00b0 Esthetic Abutment CC RP 1.5 mm",
+      "price": 323
+    },
+    {
+      "id": "36673",
+      "description": "15\u00b0 Esthetic Abutment CC RP 3 mm",
+      "price": 323
+    },
+    {
+      "id": "36252",
+      "description": "15\u00b0 Esthetic Abutment CC RP 4.5 mm",
+      "price": 323
+    },
+    {
+      "id": "300938",
+      "description": "Esthetic Abutment N1 TCC NP 1.75 mm",
+      "price": 240
+    },
+    {
+      "id": "300940",
+      "description": "Esthetic Abutment N1 TCC NP 3 mm",
+      "price": 240
+    },
+    {
+      "id": "300942",
+      "description": "Esthetic Abutment N1 TCC RP 1.75 mm",
+      "price": 240
+    },
+    {
+      "id": "300944",
+      "description": "Esthetic Abutment N1 TCC RP 3 mm",
+      "price": 240
+    }
   ],
   "Multi-Unit Abutments": [
-    {"id": "29187", "description": "Multi-unit Abutment CC NP 1 mm", "price": 195},
-    {"id": "29188", "description": "Multi-unit Abutment CC NP 2 mm", "price": 195},
-    {"id": "29189", "description": "Multi-unit Abutment CC NP 3 mm", "price": 195},
-    {"id": "29190", "description": "Multi-unit Abutment CC NP 4 mm", "price": 195},
-    {"id": "29191", "description": "Multi-unit Abutment CC RP 1 mm", "price": 195},
-    {"id": "29192", "description": "Multi-unit Abutment CC RP 2 mm", "price": 195},
-    {"id": "29193", "description": "Multi-unit Abutment CC RP 3 mm", "price": 195},
-    {"id": "29194", "description": "Multi-unit Abutment CC RP 4 mm", "price": 195},
-    {"id": "38888", "description": "17° Multi-unit Abutment Plus CC NP 2.5 mm", "price": 280},
-    {"id": "38891", "description": "17° Multi-unit Abutment Plus CC NP 3.5 mm", "price": 280},
-    {"id": "38889", "description": "17° Multi-unit Abutment Plus CC RP 2.5 mm", "price": 280},
-    {"id": "38892", "description": "17° Multi-unit Abutment Plus CC RP 3.5 mm", "price": 280},
-    {"id": "38890", "description": "17° Multi-unit Abutment Plus CC WP 2.5 mm", "price": 280},
-    {"id": "38893", "description": "17° Multi-unit Abutment Plus CC WP 3.5 mm", "price": 280},
-    {"id": "300181", "description": "17° Multi-unit Abutment Xeal CC NP 2.5 mm", "price": 287},
-    {"id": "300184", "description": "17° Multi-unit Abutment Xeal CC NP 3.5 mm", "price": 287},
-    {"id": "300182", "description": "17° Multi-unit Abutment Xeal CC RP 2.5 mm", "price": 287},
-    {"id": "300185", "description": "17° Multi-unit Abutment Xeal CC RP 3.5 mm", "price": 287},
-    {"id": "300183", "description": "17° Multi-unit Abutment Xeal CC WP 2.5 mm", "price": 287},
-    {"id": "300186", "description": "17° Multi-unit Abutment Xeal CC WP 3.5 mm", "price": 287}
+    {
+      "id": "29187",
+      "description": "Multi-unit Abutment CC NP 1 mm",
+      "price": 195
+    },
+    {
+      "id": "29188",
+      "description": "Multi-unit Abutment CC NP 2 mm",
+      "price": 195
+    },
+    {
+      "id": "29189",
+      "description": "Multi-unit Abutment CC NP 3 mm",
+      "price": 195
+    },
+    {
+      "id": "29190",
+      "description": "Multi-unit Abutment CC NP 4 mm",
+      "price": 195
+    },
+    {
+      "id": "29191",
+      "description": "Multi-unit Abutment CC RP 1 mm",
+      "price": 195
+    },
+    {
+      "id": "29192",
+      "description": "Multi-unit Abutment CC RP 2 mm",
+      "price": 195
+    },
+    {
+      "id": "29193",
+      "description": "Multi-unit Abutment CC RP 3 mm",
+      "price": 195
+    },
+    {
+      "id": "29194",
+      "description": "Multi-unit Abutment CC RP 4 mm",
+      "price": 195
+    },
+    {
+      "id": "38888",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC NP 2.5 mm",
+      "price": 280
+    },
+    {
+      "id": "38891",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC NP 3.5 mm",
+      "price": 280
+    },
+    {
+      "id": "38889",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC RP 2.5 mm",
+      "price": 280
+    },
+    {
+      "id": "38892",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC RP 3.5 mm",
+      "price": 280
+    },
+    {
+      "id": "38890",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC WP 2.5 mm",
+      "price": 280
+    },
+    {
+      "id": "38893",
+      "description": "17\u00b0 Multi-unit Abutment Plus CC WP 3.5 mm",
+      "price": 280
+    },
+    {
+      "id": "300181",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC NP 2.5 mm",
+      "price": 287
+    },
+    {
+      "id": "300184",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC NP 3.5 mm",
+      "price": 287
+    },
+    {
+      "id": "300182",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC RP 2.5 mm",
+      "price": 287
+    },
+    {
+      "id": "300185",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC RP 3.5 mm",
+      "price": 287
+    },
+    {
+      "id": "300183",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC WP 2.5 mm",
+      "price": 287
+    },
+    {
+      "id": "300186",
+      "description": "17\u00b0 Multi-unit Abutment Xeal CC WP 3.5 mm",
+      "price": 287
+    }
   ],
   "Locator Abutments": [
-    {"id": "REF02069", "description": "Locator Abutment CC NP 1.0 mm", "price": 200},
-    {"id": "REF02070", "description": "Locator Abutment CC NP 2.0 mm", "price": 200},
-    {"id": "REF02071", "description": "Locator Abutment CC NP 3.0 mm", "price": 200},
-    {"id": "REF02072", "description": "Locator Abutment CC NP 4.0 mm", "price": 200},
-    {"id": "REF02073", "description": "Locator Abutment CC NP 5.0 mm", "price": 200},
-    {"id": "REF02074", "description": "Locator Abutment CC NP 6.0 mm", "price": 200},
-    {"id": "REF02075", "description": "Locator Abutment CC RP 1.0 mm", "price": 200},
-    {"id": "REF02076", "description": "Locator Abutment CC RP 2.0 mm", "price": 200},
-    {"id": "REF02077", "description": "Locator Abutment CC RP 3.0 mm", "price": 200},
-    {"id": "REF02078", "description": "Locator Abutment CC RP 4.0 mm", "price": 200},
-    {"id": "REF02079", "description": "Locator Abutment CC RP 5.0 mm", "price": 200},
-    {"id": "REF02080", "description": "Locator Abutment CC RP 6.0 mm", "price": 200},
-    {"id": "REF30506-01", "description": "Locator R-Tx CC NP 1 mm", "price": 230},
-    {"id": "REF30506-02", "description": "Locator R-Tx CC NP 2 mm", "price": 230},
-    {"id": "REF30506-03", "description": "Locator R-Tx CC NP 3 mm", "price": 230},
-    {"id": "REF30506-04", "description": "Locator R-Tx CC NP 4 mm", "price": 230},
-    {"id": "REF30507-01", "description": "Locator R-Tx CC RP 1 mm", "price": 230},
-    {"id": "REF30507-02", "description": "Locator R-Tx CC RP 2 mm", "price": 230},
-    {"id": "REF30507-03", "description": "Locator R-Tx CC RP 3 mm", "price": 230},
-    {"id": "REF30507-04", "description": "Locator R-Tx CC RP 4 mm", "price": 230}
+    {
+      "id": "REF02069",
+      "description": "Locator Abutment CC NP 1.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02070",
+      "description": "Locator Abutment CC NP 2.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02071",
+      "description": "Locator Abutment CC NP 3.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02072",
+      "description": "Locator Abutment CC NP 4.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02073",
+      "description": "Locator Abutment CC NP 5.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02074",
+      "description": "Locator Abutment CC NP 6.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02075",
+      "description": "Locator Abutment CC RP 1.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02076",
+      "description": "Locator Abutment CC RP 2.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02077",
+      "description": "Locator Abutment CC RP 3.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02078",
+      "description": "Locator Abutment CC RP 4.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02079",
+      "description": "Locator Abutment CC RP 5.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF02080",
+      "description": "Locator Abutment CC RP 6.0 mm",
+      "price": 200
+    },
+    {
+      "id": "REF30506-01",
+      "description": "Locator R-Tx CC NP 1 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30506-02",
+      "description": "Locator R-Tx CC NP 2 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30506-03",
+      "description": "Locator R-Tx CC NP 3 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30506-04",
+      "description": "Locator R-Tx CC NP 4 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30507-01",
+      "description": "Locator R-Tx CC RP 1 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30507-02",
+      "description": "Locator R-Tx CC RP 2 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30507-03",
+      "description": "Locator R-Tx CC RP 3 mm",
+      "price": 230
+    },
+    {
+      "id": "REF30507-04",
+      "description": "Locator R-Tx CC RP 4 mm",
+      "price": 230
+    }
   ],
   "GoldAdapt Abutments": [
-    {"id": "36728", "description": "GoldAdapt Engaging CC NP", "price": 363},
-    {"id": "36729", "description": "GoldAdapt Engaging CC RP", "price": 363},
-    {"id": "37849", "description": "GoldAdapt Engaging CC WP", "price": 363},
-    {"id": "36726", "description": "GoldAdapt Non-Engaging CC NP", "price": 363},
-    {"id": "36727", "description": "GoldAdapt Non-Engaging CC RP", "price": 363},
-    {"id": "37848", "description": "GoldAdapt Non-Engaging CC WP", "price": 363}
+    {
+      "id": "36728",
+      "description": "GoldAdapt Engaging CC NP",
+      "price": 363
+    },
+    {
+      "id": "36729",
+      "description": "GoldAdapt Engaging CC RP",
+      "price": 363
+    },
+    {
+      "id": "37849",
+      "description": "GoldAdapt Engaging CC WP",
+      "price": 363
+    },
+    {
+      "id": "36726",
+      "description": "GoldAdapt Non-Engaging CC NP",
+      "price": 363
+    },
+    {
+      "id": "36727",
+      "description": "GoldAdapt Non-Engaging CC RP",
+      "price": 363
+    },
+    {
+      "id": "37848",
+      "description": "GoldAdapt Non-Engaging CC WP",
+      "price": 363
+    }
+  ],
+  "Capital - 3Shape": [
+    {
+      "id": "3SHL1P-2",
+      "description": "TRIOS 6",
+      "price": 28800.0
+    },
+    {
+      "id": "3SHL1P-1",
+      "description": "TRIOS 5",
+      "price": 26700.0
+    },
+    {
+      "id": "3SHS2P-2",
+      "description": "TRIOS 3 Wireless Pod",
+      "price": 19900.0
+    },
+    {
+      "id": "3SHS1P-2",
+      "description": "TRIOS 3",
+      "price": 18000.0
+    },
+    {
+      "id": "3SHS1P-4",
+      "description": "TRIOS Core",
+      "price": 12800.0
+    },
+    {
+      "id": "3SHC4.1",
+      "description": "TRIOS Move+ (Standalone)",
+      "price": 7200.0
+    },
+    {
+      "id": "3SHC4.2",
+      "description": "TRIOS MOVE Pro (Stand-alone)",
+      "price": 8000.0
+    },
+    {
+      "id": "3SHL1P-2-EDU",
+      "description": "TRIOS 6 EDU",
+      "price": 22300.0
+    },
+    {
+      "id": "3SHL1P-1-EDU",
+      "description": "TRIOS 5 EDU",
+      "price": 19600.0
+    },
+    {
+      "id": "3SHL1P-1F-EDU",
+      "description": "TRIOS 5 EDU",
+      "price": 19600.0
+    },
+    {
+      "id": "3SHS1P-2-EDU",
+      "description": "TRIOS 3 EDU",
+      "price": 13900.0
+    },
+    {
+      "id": "3SHS1P-4-EDU",
+      "description": "TRIOS Core EDU",
+      "price": 9900.0
+    },
+    {
+      "id": "3SHTSL-01",
+      "description": "TRIOS 5/6 Sleeve",
+      "price": 70.0
+    },
+    {
+      "id": "3SHTST-11-3",
+      "description": "TRIOS 5/6 Tips 3-pack",
+      "price": 495.0
+    },
+    {
+      "id": "3SHTST-13",
+      "description": "TRIOS 5/6 Protection Tip",
+      "price": 90.0
+    },
+    {
+      "id": "3SHTST-15",
+      "description": "TRIOS Ready Tip",
+      "price": 75.0
+    },
+    {
+      "id": "3SHLP1-2",
+      "description": "TRIOS 5/6 Pod",
+      "price": 180.0
+    },
+    {
+      "id": "3SHC2BP",
+      "description": "TRIOS 5/6 Battery Charger",
+      "price": 450.0
+    },
+    {
+      "id": "3SHTB-04-3",
+      "description": "TRIOS 5/6 Battery 3-pack",
+      "price": 450.0
+    },
+    {
+      "id": "3SH82620172",
+      "description": "TRIOS Move/Move+ Stylus Pen",
+      "price": 55.0
+    },
+    {
+      "id": "3SHC3BP",
+      "description": "TRIOS Charger for TRIOS 4 Wireless & TRIOS 3 Wireless Pen",
+      "price": 500.0
+    },
+    {
+      "id": "3SH80600142",
+      "description": "TRIOS Wireless Adapter",
+      "price": 105.0
+    },
+    {
+      "id": "3SHS3-tip",
+      "description": "TRIOS 3 Tips (Box of 3 tips)",
+      "price": 565.0
+    },
+    {
+      "id": "3SHS-Ptip",
+      "description": "TRIOS 3 Protection Tip (Box of 1 tip )",
+      "price": 95.0
+    },
+    {
+      "id": "3SHS-Ctip",
+      "description": "TRIOS 3 Calibration Tip (Box of 1 tip)",
+      "price": 480.0
+    },
+    {
+      "id": "3SHPS1-2",
+      "description": "TRIOS 3 Pod",
+      "price": 1815.0
+    },
+    {
+      "id": "3SH10035808",
+      "description": "TRIOS 3 USB-C Cable 1m",
+      "price": 65.0
+    },
+    {
+      "id": "3SHTB-021",
+      "description": "TRIOS Battery for TRIOS 3 Wireless Pen (Box of 3)",
+      "price": 500.0
+    },
+    {
+      "id": "3SHS1-ACC-1",
+      "description": "TRIOS 3 Extension cable \u2013 2.5 M",
+      "price": 375.0
+    },
+    {
+      "id": "3SHS1-ACC-2",
+      "description": "TRIOS 3 Extension cable \u2013 5 M",
+      "price": 400.0
+    },
+    {
+      "id": "3SHS1-ACC-3",
+      "description": "TRIOS 3 Extension cable \u2013 8 M",
+      "price": 430.0
+    },
+    {
+      "id": "3SH80000144",
+      "description": "Foundational Training Model",
+      "price": 195.0
+    },
+    {
+      "id": "3SH10014056",
+      "description": "TRIOS 3 Pod PSU",
+      "price": 235.0
+    },
+    {
+      "id": "3SH10015550",
+      "description": "TRIOS 3 Pod PSU",
+      "price": 235.0
+    },
+    {
+      "id": "3SH10008432",
+      "description": "TRIOS AC Power Cord",
+      "price": 20.0
+    },
+    {
+      "id": "3SH10014250",
+      "description": "Ethernet-to-USB adapter (ASIX J5 adapter)",
+      "price": 60.0
+    },
+    {
+      "id": "3SH10009664",
+      "description": "Ethernet Cable with ferrites",
+      "price": 35.0
+    },
+    {
+      "id": "3SH10020435",
+      "description": "Power cord for MOVE+",
+      "price": 15.0
+    },
+    {
+      "id": "3SH10022631",
+      "description": "Tool Box with screw drivers",
+      "price": 70.0
+    },
+    {
+      "id": "3SH20000250",
+      "description": "HP Zbook with 3 Year Support",
+      "price": 1850.0
+    },
+    {
+      "id": "3SH20000216",
+      "description": "Dell Precision with Touchscreen with 3 Year Support",
+      "price": 3500.0
+    },
+    {
+      "id": "3SH20000128",
+      "description": "Desktop Ultra PC (for TRIOS)",
+      "price": 3100.0
+    },
+    {
+      "id": "3SH82241300_Renew",
+      "description": "TRIOS Software Subscription",
+      "price": 1900.0
+    },
+    {
+      "id": "3SH82241320_Renew",
+      "description": "TRIOS 3 Basic Subscription 1 Year",
+      "price": 1400.0
+    },
+    {
+      "id": "3SH82241008_Renew",
+      "description": "TRIOS Subscription 1 Year \u2013 Regular",
+      "price": 3400.0
+    },
+    {
+      "id": "3SH85240040",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240040_Renew",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240040_Add1",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240040_Add2",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240040_Add3",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240040_Add4",
+      "description": "Implant Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH85240041",
+      "description": "Implant Planner Additional seat",
+      "price": 960.0
+    },
+    {
+      "id": "3SH85240041_Renew",
+      "description": "Implant Planner Additional seat",
+      "price": 960.0
+    },
+    {
+      "id": "3SH80245500",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80245500_Renew",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80245500_Add1",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80245500_Add2",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80245500_Add3",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80245500_Add4",
+      "description": "Orthodontic Planner",
+      "price": 1230.0
+    },
+    {
+      "id": "3SH80241166",
+      "description": "TRIOS Design Studio",
+      "price": 1500.0
+    },
+    {
+      "id": "3SH80241166_Renew",
+      "description": "TRIOS Design Studio",
+      "price": 1500.0
+    },
+    {
+      "id": "3SH85240081",
+      "description": "Implant Studio",
+      "price": 2000.0
+    },
+    {
+      "id": "3SH85240081_Renew",
+      "description": "Implant Studio",
+      "price": 2000.0
+    },
+    {
+      "id": "3SH80245531",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH80245531_Renew",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH80245531_Add1",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH80245531_Add2",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH80245531_Add3",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH80245531_Add4",
+      "description": "Clear Aligner Studio",
+      "price": 3030.0
+    },
+    {
+      "id": "3SH88100001_Renew",
+      "description": "TRIOS Dx Plus \u2013 Annual payment",
+      "price": 1990.0
+    },
+    {
+      "id": "3SH88100001_MthRen",
+      "description": "TRIOS Dx Plus  \u2013 Monthly payment",
+      "price": 199.0
+    },
+    {
+      "id": "3SH88100005_Renew",
+      "description": "TRIOS Dx Plus \u2013 Additional 3 Seats (Annual payment)",
+      "price": 1490.0
+    },
+    {
+      "id": "3SH88100005_MthRen",
+      "description": "TRIOS Dx Plus \u2013 Additional 3 Seats (Monthly payment)",
+      "price": 149.0
+    },
+    {
+      "id": "3SH80241398",
+      "description": "Splint Studio",
+      "price": 770.0
+    },
+    {
+      "id": "3SH80241398_Renew",
+      "description": "Splint Studio",
+      "price": 770.0
+    },
+    {
+      "id": "3SH80248041",
+      "description": "Upgrade Implant Planner to Implant Studio",
+      "price": 260.0
+    },
+    {
+      "id": "3SH80248610",
+      "description": "Upgrade Orthodontic Planner to Clear Aligner Studio",
+      "price": 1800.0
+    },
+    {
+      "id": "3SH82242110_Renew",
+      "description": "TRIOS 6 Software \u2013 TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242110_MthRen",
+      "description": "TRIOS 6 Software \u2013 TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH82242080_Renew",
+      "description": "TRIOS Software \u2013 TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242080_MthRen",
+      "description": "TRIOS Software \u2013 TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH82242081_Renew",
+      "description": "TRIOS Basic Software \u2013 TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242081_MthRen",
+      "description": "TRIOS Basic Software \u2013 TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH82242106_Renew",
+      "description": "TRIOS Core Software \u2013 TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242106_MthRen",
+      "description": "TRIOS Core Software \u2013 TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH82242100_Renew",
+      "description": "TRIOS Software - Converted to TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242100_MthRen",
+      "description": "TRIOS Software - Converted to TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH82242101_Renew",
+      "description": "TRIOS Basic Software - Converted to TRIOS Care",
+      "price": 2499.0
+    },
+    {
+      "id": "3SH82242101_MthRen",
+      "description": "TRIOS Basic Software - Converted to TRIOS Care",
+      "price": 219.0
+    },
+    {
+      "id": "3SH99100031",
+      "description": "TRIOS Only Support Fee",
+      "price": 149.0
+    }
+  ],
+  "Capital - SprintRay": [
+    {
+      "id": "SPRSRI-0102047 ",
+      "description": "SprintRay Midas 3D Printer",
+      "price": 10995.0
+    },
+    {
+      "id": "SPRSRI-0102046",
+      "description": "SprintRay Pro 2 3D Printer",
+      "price": 10995.0
+    },
+    {
+      "id": "SPRSRI-0102015",
+      "description": "SprintRay Pro 95 S ",
+      "price": 9495.0
+    },
+    {
+      "id": "SPRSRI-0102016",
+      "description": "SprintRay Pro 55 S ",
+      "price": 9495.0
+    },
+    {
+      "id": "SPRSRI-0102001",
+      "description": "SprintRay Pro 95 ",
+      "price": 6750.0
+    },
+    {
+      "id": "SPRSRI-0102002",
+      "description": "SprintRay Pro 55 ",
+      "price": 6750.0
+    },
+    {
+      "id": "SPRSRI-0504001",
+      "description": "Pro Cure Automated Post-processing",
+      "price": 990.0
+    },
+    {
+      "id": "SPRSRI-0504013",
+      "description": "ProCure 2 Automated Post-Processing",
+      "price": 3299.0
+    },
+    {
+      "id": "SPRSRI-0504012",
+      "description": "SprintRay Pro Wash S",
+      "price": 3299.0
+    },
+    {
+      "id": "SPRSRI-0504025",
+      "description": "SprintRay NanoCure",
+      "price": 3599.0
+    },
+    {
+      "id": "SPRSRI-0503069",
+      "description": "SprintRay Pro 2 Duo Kit Platform & Tank Bundle\n\n",
+      "price": 2350.0
+    },
+    {
+      "id": "SPRSRI-0503070",
+      "description": "SprintRay Pro 2 Duo Kit Build Platform\n\n",
+      "price": 1100.0
+    },
+    {
+      "id": "SPRSRI-0503071",
+      "description": "SprintRay Pro 2 Duo Kit Resin Tank\n\n",
+      "price": 200.0
+    },
+    {
+      "id": "SPRSRI-0503072\n\n",
+      "description": "SprintRay Pro 2 Duo Kit Smart Adapter\n\n",
+      "price": 850.0
+    },
+    {
+      "id": "SPRSRI-0503062",
+      "description": "SprintRay Pro 55/55S Full Size Resin Tank V5\n\n",
+      "price": 319.0
+    },
+    {
+      "id": "SPRSRI-0503063",
+      "description": "SprintRay Pro 95/95S Full Size Resin Tank V5\n\n",
+      "price": 319.0
+    },
+    {
+      "id": "SPRSRI-0503064\n\n",
+      "description": "SprintRay Pro 55/55S Full Size Resin Tank with Optical Polish V2",
+      "price": 324.0
+    },
+    {
+      "id": "SPRSRI-0503065\n\n",
+      "description": "SprintRay Pro 95/95S Full Size Resin Tank with Optical Polish V2\n\n",
+      "price": 324.0
+    },
+    {
+      "id": "SPRSRI-0503067",
+      "description": "SprintRay Pro S Arch Kit Resin Tank with Optical Polish V2\n\n",
+      "price": 509.0
+    },
+    {
+      "id": "SPRSRI-0503068",
+      "description": "SprintRay Pro S Arch Kit Platform + Tank with Optical Polish Bundle V2",
+      "price": 1543.0
+    },
+    {
+      "id": "SPRSRI-0309046",
+      "description": "SprintRay Pro 2 Resin Tank Lid\n\n",
+      "price": 21.0
+    },
+    {
+      "id": "SPRSRI-0309211",
+      "description": "SprintRay Pro 2 Arch Kit Lid\n\n",
+      "price": 21.0
+    },
+    {
+      "id": "SPRSRI-0503049",
+      "description": "SprintRay Pro 2 Arch Kit Platform + Tank Bundle",
+      "price": 1599.0
+    },
+    {
+      "id": "SPRSRI-0503046",
+      "description": "SprintRay Pro 2 Arch Kit Build Platform",
+      "price": 1069.0
+    },
+    {
+      "id": "SPRSRI-0503047",
+      "description": "SprintRay Pro 2 Arch Kit Resin Tank",
+      "price": 535.0
+    },
+    {
+      "id": "SPRSRI-0503034",
+      "description": "SprintRay Pro 2 Standard Resin Tank ",
+      "price": 320.0
+    },
+    {
+      "id": "SPRSRI-0503035",
+      "description": "SprintRay Pro 2 Standard Build Platform",
+      "price": 438.0
+    },
+    {
+      "id": "SPRSRI-0309001",
+      "description": "SprintRay Pro 2 Optical Panel ",
+      "price": 744.0
+    },
+    {
+      "id": "SPRSRI-0503030",
+      "description": "SprintRay Pro S Arch Kit Build Platform",
+      "price": 1014.0
+    },
+    {
+      "id": "SPRSRI-0503029",
+      "description": "SprintRay Pro S Crown Kit",
+      "price": 1300.0
+    },
+    {
+      "id": "SPRSRI-0503025",
+      "description": "SprintRay Pro S Crown Kit Build Platform",
+      "price": 858.0
+    },
+    {
+      "id": "SPRSRI-0503026",
+      "description": "SprintRay Pro S Crown Kit Resin Tank",
+      "price": 442.0
+    },
+    {
+      "id": "SPRSRI-0503009",
+      "description": "Pro 55 S Build Platform",
+      "price": 416.0
+    },
+    {
+      "id": "SPRSRI-0503008",
+      "description": "Pro 95 S Build Platform",
+      "price": 416.0
+    },
+    {
+      "id": "SPRSRI-0503001",
+      "description": "Pro 95 Build Platform",
+      "price": 260.0
+    },
+    {
+      "id": "SPRSRI-0503005",
+      "description": "Pro 55 Build Platform",
+      "price": 260.0
+    },
+    {
+      "id": "SPRSRI-0503022",
+      "description": "Pro 55S High Strength Build Platform",
+      "price": 624.0
+    },
+    {
+      "id": "SPRSRI-0204023",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (A1) 3-Pack\n\n\n\n",
+      "price": 59.0
+    },
+    {
+      "id": "SPRSRI-0204024",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (A2) 3-Pack\n\n",
+      "price": 59.0
+    },
+    {
+      "id": "SPRSRI-0204026",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (Bleach) 3-Pack\n\n",
+      "price": 59.0
+    },
+    {
+      "id": "SPRSRI-0204027\n\n",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (B1) 3-Pack\n\n",
+      "price": 59.0
+    },
+    {
+      "id": "SPRSRI-0204030\n\n",
+      "description": "SprintRay Crown HT - Single-unit Capsule (A1) 3-Pack",
+      "price": 71.0
+    },
+    {
+      "id": "SPRSRI-0204031",
+      "description": "SprintRay Crown HT - Single-unit Capsule (A2) 3-Pack\n\n",
+      "price": 71.0
+    },
+    {
+      "id": "SPRSRI-0204033\n\n",
+      "description": "SprintRay Crown HT - Single-unit Capsule (B1) 3-Pack\n\n",
+      "price": 71.0
+    },
+    {
+      "id": "SPRSRI-0204034",
+      "description": "SprintRay Crown HT - Single-unit Capsule (BL) 3-Pack",
+      "price": 71.0
+    },
+    {
+      "id": "SPRSRI-0204053\n\n",
+      "description": "SprintRay OnX Tough 2 - A1 - Capsule 3-Pack",
+      "price": 70.0
+    },
+    {
+      "id": "SPRSRI-0204056\n\n",
+      "description": "SprintRay OnX Tough 2 - Bleach - Capsule 3-Pack\n\n",
+      "price": 70.0
+    },
+    {
+      "id": "SPSRI-0204010",
+      "description": "SprintRay Ceramic Crown - A1 - Single-unit Capsule 3-Pack",
+      "price": 67.0
+    },
+    {
+      "id": "SPSRI-0204011",
+      "description": "SprintRay Ceramic Crown - A2 - Single-unit Capsule 3-Pack",
+      "price": 67.0
+    },
+    {
+      "id": "SPSRI-0204012",
+      "description": "SprintRay Ceramic Crown - B1 - Single-unit Capsule 3-Pack",
+      "price": 67.0
+    },
+    {
+      "id": "SPSRI-0204013",
+      "description": "SprintRay Ceramic Crown - BL - Single-unit Capsule 3-Pack\n",
+      "price": 67.0
+    },
+    {
+      "id": "SPRSRI-0204016\n\n",
+      "description": "SprintRay Digital Temp - A1 - 250g\n\n",
+      "price": 283.0
+    },
+    {
+      "id": "SPRSRI-0204017",
+      "description": "SprintRay Digital Temp - A2 - 250g\n\n",
+      "price": 283.0
+    },
+    {
+      "id": "SPRSRI-0204019\n\n",
+      "description": "SprintRay Digital Temp - B1 - 250g",
+      "price": 283.0
+    },
+    {
+      "id": "SPRSRI-0204020",
+      "description": "SprintRay Digital Temp - Bleach - 250g\n\n",
+      "price": 283.0
+    },
+    {
+      "id": "SPRSRI-0202162",
+      "description": "SprintRay SportsGuard - Crimson Red - 500g",
+      "price": 300.0
+    },
+    {
+      "id": "SPRSRI-0202163",
+      "description": "SprintRay SportsGuard - Cobalt Blue - 500g",
+      "price": 300.0
+    },
+    {
+      "id": "SPRSRI-0202095",
+      "description": "SprintRay Dental Model - Slate - 1 kg",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202096",
+      "description": "SprintRay Dental Model - Stone",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202011",
+      "description": "SprintRay Die & Model 2 (Gray)",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202010",
+      "description": "SprintRay Die & Model 2 (Tan)",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202022",
+      "description": "SprintRay Die & Model 2 Natural",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202161",
+      "description": "SprintRay Retainer",
+      "price": 479.0
+    },
+    {
+      "id": "SPRSRI-0202028",
+      "description": "SprintRay Gingiva Mask",
+      "price": 232.0
+    },
+    {
+      "id": "SPRSRI-0205004",
+      "description": "SprintRay Castable 2",
+      "price": 232.0
+    },
+    {
+      "id": "SPRSRI-0205011",
+      "description": "SprintRay  Surgical Guide 3",
+      "price": 323.0
+    },
+    {
+      "id": "SPRSRI-0202027",
+      "description": "SprintRay OnX - A1",
+      "price": 699.0
+    },
+    {
+      "id": "SPRSRI-0202026",
+      "description": "SprintRay OnX - B1",
+      "price": 699.0
+    },
+    {
+      "id": "SPRSRI-0202021",
+      "description": "SprintRay OnX - Bleach",
+      "price": 699.0
+    },
+    {
+      "id": "SPRSRI-0202015",
+      "description": "SprintRay NightGuard Flex",
+      "price": 514.0
+    },
+    {
+      "id": "SPRSRI-0202012",
+      "description": "SprintRay IDB2",
+      "price": 308.0
+    },
+    {
+      "id": "SPRSRI-0202031",
+      "description": "SprintRay Try-In 2",
+      "price": 360.0
+    },
+    {
+      "id": "SPRSRI-0202014",
+      "description": "SprintRay Study Model 2 White",
+      "price": 149.0
+    },
+    {
+      "id": "SPRSRI-0202057",
+      "description": "SprintRay Ceramic Crown - A1",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202086",
+      "description": "SprintRay Ceramic Crown - A2",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202087",
+      "description": "SprintRay Ceramic Crown - A3",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202058",
+      "description": "SprintRay Ceramic Crown - B1",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202089",
+      "description": "SprintRay Ceramic Crown - C2",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202122",
+      "description": "SprintRay Ceramic Crown - D2",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202056",
+      "description": "SprintRay Ceramic Crown - Bleach",
+      "price": 490.0
+    },
+    {
+      "id": "SPRSRI-0202123",
+      "description": "SprintRay OnX Tough 2 - A1 ",
+      "price": 749.0
+    },
+    {
+      "id": "SPRSRI-0202124",
+      "description": "SprintRay OnX Tough 2 - A2 ",
+      "price": 749.0
+    },
+    {
+      "id": "SPRSRI-0202126",
+      "description": "SprintRay OnX Tough 2 - B1",
+      "price": 749.0
+    },
+    {
+      "id": "SPRSRI-0202125",
+      "description": "SprintRay OnX Tough 2 - Bleach ",
+      "price": 749.0
+    },
+    {
+      "id": "SPRSRI-0202164",
+      "description": "SprintRay OnX Tough 2 - Hollywood White ",
+      "price": 749.0
+    },
+    {
+      "id": "SPRSRI-0202145",
+      "description": "SprintRay NightGuard Flex 2 - Simply Clear ",
+      "price": 535.0
+    },
+    {
+      "id": "SPRSRI-0202146",
+      "description": "SprintRay NightGuard Flex 2 - Ocean Blue ",
+      "price": 535.0
+    },
+    {
+      "id": "SPRSRI-0202147",
+      "description": "SprintRay NightGuard Firm 2 - Midnight Purple ",
+      "price": 535.0
+    },
+    {
+      "id": "SPRSRI-0202187",
+      "description": "SprintRay Apex Flex Base - Standard Pink ",
+      "price": 500.0
+    },
+    {
+      "id": "SPRSRI-0202188",
+      "description": "SprintRay Apex Flex Base - Light Pink",
+      "price": 500.0
+    },
+    {
+      "id": "SPRSRI-0202153",
+      "description": "SprintRay APEX Base - Light Pink ",
+      "price": 752.0
+    },
+    {
+      "id": "SPRSRI-0202154",
+      "description": "SprintRay APEX Base - Original Pink",
+      "price": 752.0
+    },
+    {
+      "id": "SPRSRI-0202155",
+      "description": "SprintRay APEX Base - Dark Reddish Pink",
+      "price": 752.0
+    },
+    {
+      "id": "SPRSRI-0202156",
+      "description": "SprintRay APEX Base - Opaque Original Pink",
+      "price": 752.0
+    },
+    {
+      "id": "SPRSRI-0202157",
+      "description": "SprintRay APEX Teeth - A1 ",
+      "price": 450.0
+    },
+    {
+      "id": "SPRSRI-0202158",
+      "description": "SprintRay APEX Teeth - A2",
+      "price": 450.0
+    },
+    {
+      "id": "SPRSRI-0202159",
+      "description": "SprintRay APEX Teeth - B1",
+      "price": 450.0
+    },
+    {
+      "id": "SPRSRI-0202160",
+      "description": "SprintRay APEX Teeth - Bleach",
+      "price": 450.0
+    },
+    {
+      "id": "SPRSRI-0809032",
+      "description": "$600 Cloud Design Credit",
+      "price": 500.0
+    },
+    {
+      "id": "SPRSRI-0809033",
+      "description": "$1500 Cloud Design Credit",
+      "price": 1200.0
+    },
+    {
+      "id": "SPRSRI- 0809034",
+      "description": "$300 Cloud Design Credit",
+      "price": 300.0
+    },
+    {
+      "id": "SPRSRI-0809003",
+      "description": "Decision Point White Install - Installation and Operational Overview of Hardware",
+      "price": 1499.0
+    },
+    {
+      "id": "SPRSRI-7004001",
+      "description": "Virtual Training - Up to 2 Workflows",
+      "price": 750.0
+    },
+    {
+      "id": "SPRSRI-700409",
+      "description": "SprintRay Workflow Expansion Training",
+      "price": 300.0
+    },
+    {
+      "id": "SPRSRI-7004002",
+      "description": "1 Day In-Office Training - up to 4 Workflows",
+      "price": 2499.0
+    },
+    {
+      "id": "SPRSRI-0904001",
+      "description": "Pro 2 1 Day In-Office Training Bundle\n\n",
+      "price": 2499.99
+    },
+    {
+      "id": "SPRSRI-0904002",
+      "description": "Pro55S 1 Day In-Office Training Bundle",
+      "price": 2499.99
+    },
+    {
+      "id": "SPRSRI-0904003",
+      "description": "Pro95S 1 Day In-Office Training Bundle",
+      "price": 2499.99
+    },
+    {
+      "id": "SPRSRI-7004003",
+      "description": "Group Training 1.5 Days- Up to 5 Workflows",
+      "price": 1500.0
+    },
+    {
+      "id": "SPRSRI-7004123",
+      "description": "Group Training 1.5 Days - Additional Seat",
+      "price": 750.0
+    },
+    {
+      "id": "SPRSRI-7004114",
+      "description": "On-Demand Ceramic Crown Training powered by MOD",
+      "price": 499.0
+    },
+    {
+      "id": "SPRSRI-7004129",
+      "description": "Digital Workflow Specialist Certification Program - 3 days",
+      "price": 3250.0
+    },
+    {
+      "id": "SPRSRI-7004130 ",
+      "description": "Midas 2-Hour Virtual Training.",
+      "price": 500.0
+    },
+    {
+      "id": "SPRSRI-0802007",
+      "description": "Ecosystem ProTection Plan (Bundle for Pro55 S, Pro95 S, Pro 2, Wash/Dry,\nProCure 2 ) - 1 yr",
+      "price": 2022.0
+    },
+    {
+      "id": "SPRSRI-0802009",
+      "description": "ProTection Plan SprintRay 3D Printer - 1 yr (Pro55 S, Pro95 S, Pro 2 and Midas)",
+      "price": 1381.0
+    },
+    {
+      "id": "SPRSRI -0802005",
+      "description": "ProTection Plan (ProWash S, Pro Wash/Dry) - 1 yr",
+      "price": 447.0
+    },
+    {
+      "id": "SPRSRI-0802010",
+      "description": "ProTection Plan (ProCure 2, NanoCure) 1 Yr",
+      "price": 447.0
+    },
+    {
+      "id": "SPRSRI-0802021",
+      "description": "ProTection Plan for Additional SprintRay 3D Printer - 1 y",
+      "price": 691.0
+    },
+    {
+      "id": "SPRSRI-0802022",
+      "description": "ProTection Plan - Midas + NanoCure (Bundle) - 1 yr",
+      "price": 1628.0
+    }
+  ],
+  "Capital - DEXIS": [
+    {
+      "id": "5945148",
+      "description": "DEXIS Imprevo I/O 3D Scanner",
+      "price": 23000.0
+    },
+    {
+      "id": "5943063",
+      "description": "IS 3800W SCANNER",
+      "price": 9400.0
+    },
+    {
+      "id": "5943725",
+      "description": "IS 3800 WIRED SCANNER",
+      "price": 12700.0
+    },
+    {
+      "id": "5941307",
+      "description": "IS 3700 SCANNER",
+      "price": 6700.0
+    },
+    {
+      "id": "8.000.4901",
+      "description": "AIO Gen 2 Bundle",
+      "price": 4017.0
+    },
+    {
+      "id": "8.000.4902",
+      "description": "Voyager Bundle (cart, basket, UPC box/ battery)",
+      "price": 3257.0
+    },
+    {
+      "id": "8.000.4796",
+      "description": "DEXIS Imprevo + AIO + Voyager Cart Bundle",
+      "price": 29000.0
+    },
+    {
+      "id": "1759313",
+      "description": "DEXIS IS ScanFlow Premium SW 2 YR Upfront",
+      "price": 3576.0
+    },
+    {
+      "id": "1758632",
+      "description": "DEXIS IS Training Remote",
+      "price": 960.0
+    },
+    {
+      "id": "8.000.2432",
+      "description": "DEXIS IS Training, virtual, 1 hour ",
+      "price": 150.0
+    },
+    {
+      "id": "8.000.2433",
+      "description": "DEXIS IS Training, in-person, 4 hours ",
+      "price": 1000.0
+    },
+    {
+      "id": "8.000.2434",
+      "description": "DEXIS IS Training, in-person, 1 hour",
+      "price": 300.0
+    },
+    {
+      "id": "8.000.2430",
+      "description": "DEXIS IS Training (Onsite)",
+      "price": 1500.0
+    },
+    {
+      "id": "5943782",
+      "description": "DESKTOP SUPPORT FOR AIO PC",
+      "price": 291.0
+    },
+    {
+      "id": "8.000.4535",
+      "description": "DELL Precision 7680 Laptop",
+      "price": 3885.0
+    },
+    {
+      "id": "8.000.4973",
+      "description": "DELL Pro Max 16 MB16250",
+      "price": 4200.0
+    },
+    {
+      "id": "5945340",
+      "description": "DEXIS Imprevo BATTERY",
+      "price": 105.0
+    },
+    {
+      "id": "5945365",
+      "description": "DEXIS Imprevo CHARGING STATION",
+      "price": 425.0
+    },
+    {
+      "id": "5945366",
+      "description": "DEXIS Imprevo BATTERY CHARGER",
+      "price": 425.0
+    },
+    {
+      "id": "5945453",
+      "description": "DEXIS Imprevo POWER ADAPTER",
+      "price": 99.0
+    },
+    {
+      "id": "5945149",
+      "description": "DEXIS Imprevo TIP 5 PCS",
+      "price": 329.0
+    },
+    {
+      "id": "5945368",
+      "description": "DEXIS Imprevo BEAUTY BOX (Scanner Box)",
+      "price": 190.0
+    },
+    {
+      "id": "5945369",
+      "description": "DEXIS Imprevo PROTECTIVE COVER",
+      "price": 55.0
+    },
+    {
+      "id": "5945370",
+      "description": "DEXIS Imprevo HOLDER",
+      "price": 70.0
+    },
+    {
+      "id": "5945454",
+      "description": "DEXIS Imprevo WRIST STRAP",
+      "price": 45.0
+    },
+    {
+      "id": "5945367",
+      "description": "DEXIS Imprevo SHADE CALIBRATION UNIT",
+      "price": 120.0
+    },
+    {
+      "id": "5943659",
+      "description": "IS 3800 Normal Tip 5 PIS",
+      "price": 514.0
+    },
+    {
+      "id": "5943667",
+      "description": "IS 3800 Side Tip 5 PIS",
+      "price": 514.0
+    },
+    {
+      "id": "5943675",
+      "description": "IS 3800 Posterior Tip 5 PIS",
+      "price": 514.0
+    },
+    {
+      "id": "5943881",
+      "description": "IS 3800 Rubber Cap (1PC)",
+      "price": 25.0
+    },
+    {
+      "id": "5943865",
+      "description": "IS 3800 Rubber Cap (10pc)",
+      "price": 250.0
+    },
+    {
+      "id": "5943592",
+      "description": "IS 3800 Battery, 1 PIS",
+      "price": 154.0
+    },
+    {
+      "id": "5945045",
+      "description": "IS 3800 Wi-Fi Dongle",
+      "price": 274.0
+    },
+    {
+      "id": "5943642",
+      "description": "IS 3800 Backup Power Cable",
+      "price": 189.0
+    },
+    {
+      "id": "5943618",
+      "description": "IS 3800 Charging Station",
+      "price": 463.0
+    },
+    {
+      "id": "5943634",
+      "description": "IS 3800 Power Adapter",
+      "price": 102.0
+    },
+    {
+      "id": "5943626",
+      "description": "IS 3800 Battery Charging Station",
+      "price": 449.0
+    },
+    {
+      "id": "5943683",
+      "description": "IS 3800 Shade Calibration Unit",
+      "price": 123.0
+    },
+    {
+      "id": "5942156",
+      "description": "IS 3700 Arctic White Normal Tip (5PIS)",
+      "price": 257.0
+    },
+    {
+      "id": "5942172",
+      "description": "IS 3700 Arctic White Side Tip (5PIS)",
+      "price": 257.0
+    },
+    {
+      "id": "5942164",
+      "description": "IS 3700 Arctic WH Posterior Tip (5PIS)",
+      "price": 257.0
+    },
+    {
+      "id": "5942818",
+      "description": "IS 3700 Wrist Strap",
+      "price": 35.0
+    },
+    {
+      "id": "5942180",
+      "description": "IS 3700\u00a0 Arctic White Holder",
+      "price": 105.0
+    },
+    {
+      "id": "5942198",
+      "description": "IS 3700 Arctic White Shade Calibration",
+      "price": 102.0
+    }
+  ],
+  "Capital - X-Guide": [
+    {
+      "id": "XNVP007839",
+      "description": "X-Guide Classic unit",
+      "price": 36789.0
+    },
+    {
+      "id": "XNVP011000NA",
+      "description": "X-Guide NXT",
+      "price": 39999.0
+    },
+    {
+      "id": "XNVP011995",
+      "description": "IconiX AI Initial Subscription",
+      "price": 2900.0
+    },
+    {
+      "id": "XNVP012096",
+      "description": "IconiX AI Subscription Extension (1 yr)",
+      "price": 750.0
+    },
+    {
+      "id": "XNVP011942",
+      "description": "FastMap License",
+      "price": 16100.0
+    },
+    {
+      "id": "XNVP011922",
+      "description": "FastMap Nobel Biocare Multi-unit WP",
+      "price": 350.0
+    },
+    {
+      "id": "XNVP011645",
+      "description": "FastMap Scan Body Multi-unit NP/RP",
+      "price": 350.0
+    },
+    {
+      "id": "XNVP007505",
+      "description": "Tracker Arm Assembly - Universal",
+      "price": 387.0
+    },
+    {
+      "id": "XNVP007591",
+      "description": "Control Interface Board Assembly",
+      "price": 450.0
+    },
+    {
+      "id": "XNVP007640",
+      "description": "Handpiece Tracker",
+      "price": 733.0
+    },
+    {
+      "id": "XNVP007645",
+      "description": "Handpiece Connector Assembly - Nouvag",
+      "price": 434.0
+    },
+    {
+      "id": "XNVP007652",
+      "description": "Patient Tracker",
+      "price": 563.0
+    },
+    {
+      "id": "XNVP007747",
+      "description": "Calibration Disc Asm",
+      "price": 371.0
+    },
+    {
+      "id": "XNVP007842",
+      "description": "X-Guide Screw Driver",
+      "price": 541.0
+    },
+    {
+      "id": "XNVP007872",
+      "description": "X-Guide Navigation Assembly",
+      "price": 9420.0
+    },
+    {
+      "id": "XNVP007884",
+      "description": "PSOC USB CABLE",
+      "price": 46.0
+    },
+    {
+      "id": "XNVP008296",
+      "description": "Windows Planning Software",
+      "price": 30.0
+    },
+    {
+      "id": "XNVP008381",
+      "description": "X-Clip Bulk Kit 12/pkg",
+      "price": 1138.0
+    },
+    {
+      "id": "XNVP008395",
+      "description": "X-Guide Safety Glasses",
+      "price": 40.0
+    },
+    {
+      "id": "XNVP008435",
+      "description": "Cable Assembly PC Reset Switch",
+      "price": 153.0
+    },
+    {
+      "id": "XNVP008514",
+      "description": "SSD",
+      "price": 375.0
+    },
+    {
+      "id": "XNVP008516",
+      "description": "PROTEK POWER SUPPLY",
+      "price": 640.0
+    },
+    {
+      "id": "XNVP008521",
+      "description": "ATX Power Supply",
+      "price": 804.0
+    },
+    {
+      "id": "XNVP008536",
+      "description": "GPU Video Graphics Card",
+      "price": 1372.0
+    },
+    {
+      "id": "XNVP008539",
+      "description": "X-Guide Computer Assembly",
+      "price": 6204.0
+    },
+    {
+      "id": "XNVP008574",
+      "description": "Protek Power Supply",
+      "price": 870.0
+    },
+    {
+      "id": "XNVP008641",
+      "description": "Go Plate",
+      "price": 383.0
+    },
+    {
+      "id": "XNVP008818",
+      "description": "X-Guide Instrument Kit",
+      "price": 2758.0
+    },
+    {
+      "id": "XNVP008824",
+      "description": "X-Clip Practice Pack 8/pkg",
+      "price": 75.0
+    },
+    {
+      "id": "XNVP008835",
+      "description": "Bone Screw 2.0mm Dia x 4mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008836",
+      "description": "Bone Screw 2.0mm Dia x 6mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008837",
+      "description": "Bone Screw 2.0mm Dia x 8mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008838",
+      "description": "Bone Screw 2.0mm Dia x 10mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008840",
+      "description": "Bone Screw 2.7mm Dia x 4mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008841",
+      "description": "Bone Screw 2.7mm Dia x 6mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008842",
+      "description": "Bone Screw 2.7mm Dia x 8mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008843",
+      "description": "Bone Screw 2.7mm Dia x 10mm 3/pkg",
+      "price": 185.0
+    },
+    {
+      "id": "XNVP008931",
+      "description": "Glide Bar Chair Mount",
+      "price": 375.0
+    },
+    {
+      "id": "XNVP008932",
+      "description": "Adult FRP Head",
+      "price": 270.0
+    },
+    {
+      "id": "XNVP008947",
+      "description": "CodeMeter Dongle",
+      "price": 284.0
+    },
+    {
+      "id": "XNVP009016",
+      "description": "Sawbone Mtg Fixture Asm 2 Plc",
+      "price": 155.0
+    },
+    {
+      "id": "XNVP009082",
+      "description": "Dual Port NIC",
+      "price": 375.0
+    },
+    {
+      "id": "XNVP009083",
+      "description": "X-Clip 1/pkg excl. surgery credit",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP009088",
+      "description": "X-Guide Enclosure Corner Bumper",
+      "price": 67.0
+    },
+    {
+      "id": "XNVP009102",
+      "description": "X-Guide Wooden Crate",
+      "price": 1870.0
+    },
+    {
+      "id": "XNVP009154",
+      "description": "Wrench",
+      "price": 102.0
+    },
+    {
+      "id": "XNVP009174",
+      "description": "Electr. surgery credit",
+      "price": 74.0
+    },
+    {
+      "id": "XNVP009181",
+      "description": "Probe Tracker",
+      "price": 733.0
+    },
+    {
+      "id": "XNVP009229",
+      "description": "Handpiece Assembly Tool",
+      "price": 170.0
+    },
+    {
+      "id": "XNVP009311",
+      "description": "Straight Handpiece Calibration Bit",
+      "price": 109.0
+    },
+    {
+      "id": "XNVP009586",
+      "description": "Offset Tracker Arm - Left",
+      "price": 449.0
+    },
+    {
+      "id": "XNVP009587",
+      "description": "Offset Tracker Arm - Right",
+      "price": 449.0
+    },
+    {
+      "id": "XNVP009937",
+      "description": "Base Computer Assembly",
+      "price": 3650.0
+    },
+    {
+      "id": "XNVP010069",
+      "description": "GPU Video Graphics Card - RTX 4000",
+      "price": 1372.0
+    },
+    {
+      "id": "XNVP010227",
+      "description": "Calibration Disc Asm - Friction Grip",
+      "price": 339.0
+    },
+    {
+      "id": "XNVP010301",
+      "description": "MegaViolet Navigation Assembly",
+      "price": 4600.0
+    },
+    {
+      "id": "XNVP010410",
+      "description": "MegaViolet PSOC Power PCBA",
+      "price": 250.0
+    },
+    {
+      "id": "XNVP010445",
+      "description": "Caster Tente (1 wheel)",
+      "price": 140.0
+    },
+    {
+      "id": "XNVP010647",
+      "description": "Sawbone Double Insert Practice Pack",
+      "price": 32.0
+    },
+    {
+      "id": "XNVP010648",
+      "description": "Sawbone Single Insert Practice Pack",
+      "price": 27.0
+    },
+    {
+      "id": "XNVP010670",
+      "description": "Marketing X-Guide Training Kit",
+      "price": 2192.25
+    },
+    {
+      "id": "XNVP010673",
+      "description": "X-Mark probe tool",
+      "price": 500.0
+    },
+    {
+      "id": "XNVP010701",
+      "description": "ADAPTOR SLEEVE - 1 (FORZA/NSK)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010702",
+      "description": "HANDPIECE ADAPTOR",
+      "price": 170.0
+    },
+    {
+      "id": "XNVP010720",
+      "description": "Adaptor sleeve - 5 (Anthogyr Mont Blanc)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010722",
+      "description": "Adaptor sleeve - 7 (Anthogyr Micro NITI)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010723",
+      "description": "Adaptor sleeve - 8 (Bien Air straight)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010724",
+      "description": "ADAPTOR SLEEVE (KAVO SURG CONTRA-ANGLE)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010725",
+      "description": "Adaptor sleeve - 9 (Kavo S11L straight)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010726",
+      "description": "Adaptor sleeve - 10 (Nouvag)",
+      "price": 30.0
+    },
+    {
+      "id": "XNVP010727",
+      "description": "ADAPTOR SLEEVE (W&H WI-75 CONTRA-ANGLE)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010728",
+      "description": "Adaptor sleeve - 11 (W&H WS-XX WS-XXLG)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010729",
+      "description": "Adaptor sleeve - 12 (W&H S-XX straight)",
+      "price": 31.0
+    },
+    {
+      "id": "XNVP010824",
+      "description": "Power Supply, 48V, 150W Single Phase",
+      "price": 345.0
+    },
+    {
+      "id": "XNVP010837",
+      "description": "X-Guide Monitor",
+      "price": 737.0
+    },
+    {
+      "id": "XNVP010857",
+      "description": "TRACKER ARM ASSEMBLY, EDX-C, LOWER",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010860",
+      "description": "TRACKER ARM ASSEMBLY, EDX-C, UPPER",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010869",
+      "description": "Tracker Arm, EDX-S, Vertical, Right",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010870",
+      "description": "Tracker Arm, EDX-S, Vertical, Left",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010871",
+      "description": "TRACKER ARM ASSEMBLY, EDX, ANTERIOR, UR",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010872",
+      "description": "TRACKER ARM ASSEMBLY, EDX, ANTERIOR, UL",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010873",
+      "description": "Tracker Arm , EDX-S, Horizontal, Right",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010874",
+      "description": "Tracker Arm, EDX-S, Horizontal, Left",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010875",
+      "description": "TRACKER ARM ASSEMBLY, EDX, ANTERIOR LR",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010876",
+      "description": "TRACKER ARM ASSEMBLY, EDX, ANTERIOR, LL",
+      "price": 323.0
+    },
+    {
+      "id": "XNVP010885",
+      "description": "ATX Power Supply 850W",
+      "price": 550.0
+    },
+    {
+      "id": "XNVP010920",
+      "description": "BONE SCREW AND CAP, EDX - 2.7\u00d8 x 4mm",
+      "price": 180.0
+    },
+    {
+      "id": "XNVP010921",
+      "description": "BONE SCREW AND CAP, EDX - 2.7\u00d8 x 8mm",
+      "price": 180.0
+    },
+    {
+      "id": "XNVP010922",
+      "description": "BONE SCREW AND CAP, EDX - 2.7\u00d8 x 16mm",
+      "price": 180.0
+    },
+    {
+      "id": "XNVP010923",
+      "description": "BONE SCREW AND CAP, EDX - 3.2\u00d8 x 4mm",
+      "price": 174.0
+    },
+    {
+      "id": "XNVP010924",
+      "description": "BONE SCREW AND CAP, EDX - 3.2\u00d8 x 8mm",
+      "price": 174.0
+    },
+    {
+      "id": "XNVP010925",
+      "description": "BONE SCREW AND CAP, EDX - 3.2\u00d8 x 16mm",
+      "price": 174.0
+    },
+    {
+      "id": "XNVP010949",
+      "description": "Adaptor sleeve - 13 (W&H WS-75L)",
+      "price": 33.0
+    },
+    {
+      "id": "XNVP011051",
+      "description": "MegaViolet Boom Arm Assembly",
+      "price": 5191.0
+    },
+    {
+      "id": "XNVP011052",
+      "description": "24V 350W Isolated AC/DC Supply",
+      "price": 928.0
+    },
+    {
+      "id": "XNVP011054",
+      "description": "Maxilla Sawbone Kit (w/ USB)",
+      "price": 550.0
+    },
+    {
+      "id": "XNVP011055",
+      "description": "Mandible Sawbone  Kit\u00a0(w/ USB)",
+      "price": 550.0
+    },
+    {
+      "id": "XNVP0110621Y",
+      "description": "1 year purchased X-Guide warranty",
+      "price": 2809.0
+    },
+    {
+      "id": "XNVP0110622Y",
+      "description": "2 year purchased X-Guide warranty",
+      "price": 5202.0
+    },
+    {
+      "id": "XNVP011064",
+      "description": "MegaViolet Base Computer",
+      "price": 3496.0
+    },
+    {
+      "id": "XNVP011065",
+      "description": "MegaViolet Computer Asm",
+      "price": 6365.0
+    },
+    {
+      "id": "XNVP011156",
+      "description": "Classic Boom Arm Assembly",
+      "price": 5191.0
+    },
+    {
+      "id": "XNVP011196",
+      "description": "KiloViolet AmBright LED PCBA",
+      "price": 2616.0
+    },
+    {
+      "id": "XNVP011204",
+      "description": "X-Guide on-site training",
+      "price": 2884.0
+    },
+    {
+      "id": "XNVP011204V",
+      "description": "X-Guide virtual training",
+      "price": 1236.0
+    },
+    {
+      "id": "XNVP011211",
+      "description": "X-Mark upgrade kit",
+      "price": 5150.0
+    },
+    {
+      "id": "XNVP011287",
+      "description": "Breaker Assembly - Rocker- 230V",
+      "price": 2791.0
+    },
+    {
+      "id": "XNVP011453",
+      "description": "X-Guide SDU",
+      "price": 10000.0
+    },
+    {
+      "id": "XNVP011490",
+      "description": "Kilgore Folding Stand",
+      "price": 310.0
+    },
+    {
+      "id": "XNVP011500",
+      "description": "GPU RTX A4000 Video Graphics Card",
+      "price": 2620.0
+    },
+    {
+      "id": "XNVP011528",
+      "description": "Computer Mouse",
+      "price": 90.0
+    },
+    {
+      "id": "XNVP011803",
+      "description": "Tracker Arm, EDX-S, Vertical, Center",
+      "price": 313.0
+    },
+    {
+      "id": "XNVP011838",
+      "description": "X-Guide NXT SSD 2TB",
+      "price": 568.0
+    }
+  ],
+  "Capital - iCAM": [
+    {
+      "id": "ICAM-CORE-NB",
+      "description": "ICam Core Bundle NB",
+      "price": 29900.0
+    },
+    {
+      "id": "ICAM-FASTSTART-NB",
+      "description": "ICam Fast Start Bundle NB",
+      "price": 34900.0
+    },
+    {
+      "id": "ICAM-5-US",
+      "description": "ICam 5 with US power cable",
+      "price": 36900.0
+    },
+    {
+      "id": "ICB-46-23-01-08",
+      "description": "ICamBody C:MUA  \u00d8 4.6/4.8 - H2.3 (01-08)",
+      "price": 3400.0
+    },
+    {
+      "id": "ICB-46-23-09-16",
+      "description": "ICamBody C:MUA  \u00d8 4.6/4.8 - H2.3 (09-16)",
+      "price": 3400.0
+    },
+    {
+      "id": "ICB-NBAV-NP-01-08",
+      "description": "ICamBody C: IMP NB\u00ae -CC - NP (01-08)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICB-NBAV-NP-09-16",
+      "description": "ICamBody C: IMP NB\u00ae -CC - NP (09-16)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICB-NBAV-RP-01-08",
+      "description": "ICamBody C: IMP NB\u00ae -CC - RP (01-08)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICB-NBAV-RP-09-16",
+      "description": "ICamBody C: IMP NB\u00ae -CC - RP (09-16)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICB-NBAV-WP-01-08",
+      "description": "ICamBody C: IMP NB\u00ae -CC - WP (01-08)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICB-NBAV-WP-09-16",
+      "description": "ICamBody C: IMP NB\u00ae -CC - WP (09-16)",
+      "price": 4000.0
+    },
+    {
+      "id": "ICR-46-23-14-08",
+      "description": "ICamRef Multi-Unit NP/RP",
+      "price": 400.0
+    },
+    {
+      "id": "ICBD-TORX-8-11",
+      "description": "ICamBody Driver Torx T6",
+      "price": 480.0
+    },
+    {
+      "id": "ICBS-14-0955-08",
+      "description": "ICamBody ScrewSet for ICB MUA M1.4 L9.55",
+      "price": 480.0
+    },
+    {
+      "id": "ICBSI-16-175-08",
+      "description": "ICamBodyScrewSet for ICB IMP M1.6 L17.50",
+      "price": 480.0
+    },
+    {
+      "id": "ICBSI-20-175-08",
+      "description": "ICamBodyScrewSet for ICB IMP M2.0 L17.50",
+      "price": 480.0
+    },
+    {
+      "id": "ICAM-WARR",
+      "description": "ICam Warranty (annual)",
+      "price": 1600.0
+    },
+    {
+      "id": "ICAM-HOTS5",
+      "description": "Hot Swap ICam 5 (ICam only)",
+      "price": 8800.0
+    },
+    {
+      "id": "ICAM-HOTSP",
+      "description": "ICam Hot Swap Protection",
+      "price": 3200.0
+    },
+    {
+      "id": "ICAM-ONS",
+      "description": "ICam On-Site training (1.5 days)",
+      "price": 4500.0
+    },
+    {
+      "id": "ICAM-TCLINIC",
+      "description": "Hands-on Training ICam clinic",
+      "price": 2995.0
+    },
+    {
+      "id": "ICAM-TLAB",
+      "description": "Hands-on Training ICam lab",
+      "price": 2995.0
+    },
+    {
+      "id": "IMCCP100",
+      "description": "Calibration plate and support in box",
+      "price": 4000.0
+    },
+    {
+      "id": "ICam-CB 5",
+      "description": "Cable bundle for ICam 5",
+      "price": 300.0
+    }
+  ],
+  "Capital - DTX": [
+    {
+      "id": "108498",
+      "description": "DTX Studio Clinic Single SLA annual fee",
+      "price": 1668.0
+    },
+    {
+      "id": "108499",
+      "description": "Implant extension module - yearly",
+      "price": 720.0
+    },
+    {
+      "id": "108496",
+      "description": "DTX Studio Clinic Team SLA annual fee",
+      "price": 1668.0
+    },
+    {
+      "id": "108499",
+      "description": "Implant extension module - yearly",
+      "price": 720.0
+    },
+    {
+      "id": "302557",
+      "description": "DTX Studio Clinic Team Network Setup Fee",
+      "price": 2499.0
+    },
+    {
+      "id": "107456",
+      "description": "AI Diagnostic module",
+      "price": 1188.0
+    }
   ]
 }
