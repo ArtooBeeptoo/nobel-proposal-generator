@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block title %}Promotions - Nobel Biocare{% endblock %}
+
+{% block extra_style %}
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+.promo-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    padding: 22px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-left: 4px solid #003087;
+}
+.promo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+.promo-card h3 { color: #003087; margin: 0 0 8px; font-size: 16px; }
+.promo-card .promo-desc { color: #555; font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
+.promo-card .promo-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.section-title {
+    color: #003087;
+    font-size: 20px;
+    margin: 30px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+.section-title:first-child { margin-top: 0; }
+.q1-badge {
+    background: #ff6b00;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card" style="border-left: 4px solid #00A3E0;">
+    <h2 style="border-bottom: none; margin-bottom: 8px;">2026 Promotions Playbook</h2>
+    <p style="color: #555; font-size: 14px; margin: 0;">Select a promotion to configure and generate a proposal. All pricing is in USD. <span class="badge badge-orange">Internal Use Only</span></p>
+</div>
+
+<!-- Q1 Specials -->
+<h2 class="section-title"><span class="q1-badge">Q1</span> Q1 Special Offers (Expires 3/27/2026)</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'q1' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Implant Bundles -->
+<h2 class="section-title">Implant + Kit / Motor Bundles</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'implant_bundles' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Specialty Bundles -->
+<h2 class="section-title">Specialty Implant Bundles</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'specialty' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Tooling -->
+<h2 class="section-title">Tooling & Education</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'tooling' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Digital -->
+<h2 class="section-title">Digital Enablement Bundles</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'digital' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Regen -->
+<h2 class="section-title">Regenerative Bundles</h2>
+<div class="promo-grid">
+    {% for promo in promos if promo.category == 'regen' %}
+    <a href="{{ url_for('promo_detail', promo_id=promo.id) }}" class="promo-card">
+        <h3>{{ promo.name }}</h3>
+        <div class="promo-desc">{{ promo.summary }}</div>
+        <div class="promo-meta">
+            {% if promo.deal_id %}<span class="badge badge-blue">{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.savings_pct %}<span class="badge badge-green">~{{ promo.savings_pct }}% savings</span>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

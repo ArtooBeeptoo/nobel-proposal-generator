@@ -3016,13 +3016,13 @@
   "Surgical Kits": [
     {
       "id": "87294",
-      "description": "NobelActive PureSet (Fully Loaded)",
-      "price": 19005
+      "description": "NobelActive PureSet (excl. Bone Mills)",
+      "price": 6119
     },
     {
       "id": "87295",
-      "description": "NobelParallel CC PureSet (Fully Loaded)",
-      "price": 15015
+      "description": "NobelParallel CC PureSet (excl. Bone Mills)",
+      "price": 4789
     },
     {
       "id": "87296",
@@ -3078,6 +3078,86 @@
       "id": "301267",
       "description": "NobelPearl Tapered Surgery Kit",
       "price": 8500
+    },
+    {
+      "id": "87465",
+      "description": "Bone Mill Set 3.0-WP",
+      "price": 1200
+    },
+    {
+      "id": "87466",
+      "description": "Bone Mill Set NP-WP",
+      "price": 1200
+    },
+    {
+      "id": "87467",
+      "description": "Guided Twist Step Drills 7-18mm",
+      "price": 900
+    },
+    {
+      "id": "87468",
+      "description": "NobelParallel CC Guided Drills & Screw Taps 7-18mm",
+      "price": 900
+    },
+    {
+      "id": "87712",
+      "description": "NobelActive Screw Taps and 7-15mm Drills",
+      "price": 1100
+    },
+    {
+      "id": "87713",
+      "description": "NobelActive Guided Screw Taps + Components",
+      "price": 1100
+    },
+    {
+      "id": "87714",
+      "description": "NobelParallel CC Screw Taps + Drills",
+      "price": 1100
+    },
+    {
+      "id": "87715",
+      "description": "NobelParallel CC Guided Screw Taps + Components",
+      "price": 1100
+    },
+    {
+      "id": "87716",
+      "description": "NobelReplace Guided WP + Components",
+      "price": 1100
+    },
+    {
+      "id": "35425",
+      "description": "Drill Kit 7-15mm",
+      "price": 800
+    },
+    {
+      "id": "87303",
+      "description": "Drill Stop Kit",
+      "price": 500
+    },
+    {
+      "id": "87304",
+      "description": "Guided Drill Stop Kit",
+      "price": 500
+    },
+    {
+      "id": "87308",
+      "description": "Abutment Screw Retrieval Set",
+      "price": 600
+    },
+    {
+      "id": "87309",
+      "description": "Implant Retrieval Set",
+      "price": 600
+    },
+    {
+      "id": "87338",
+      "description": "Abutment Retrieval Set",
+      "price": 600
+    },
+    {
+      "id": "87302",
+      "description": "Prosthetic PureSet N1",
+      "price": 2043
     }
   ],
   "Regenerative - Grafting": [

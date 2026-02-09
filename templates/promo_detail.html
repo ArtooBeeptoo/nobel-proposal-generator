@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+{% block title %}{{ promo.name }} - Nobel Biocare{% endblock %}
+
+{% block extra_style %}
+.promo-header {
+    border-left: 4px solid #00A3E0;
+}
+.included-list { list-style: none; padding: 0; }
+.included-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.included-list li::before { content: "✓"; color: #00A3E0; font-weight: bold; }
+.calc-summary {
+    background: #f0f7ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+}
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+}
+.calc-row.total {
+    border-top: 2px solid #003087;
+    margin-top: 8px;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #003087;
+}
+.calc-row.savings { color: #1a7a1a; font-weight: 600; }
+.implant-select-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 12px 0;
+}
+.implant-option {
+    background: #f8f9fa;
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.implant-option:hover { background: #e8f0fe; }
+.implant-option input[type="radio"] { width: 16px; height: 16px; }
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('promotions') }}" style="color: #003087; text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 16px;">← Back to Promotions</a>
+
+<form method="POST" action="{{ url_for('generate_promo', promo_id=promo.id) }}" id="promoForm">
+    <div class="card promo-header">
+        <h2 style="border-bottom: none; margin-bottom: 4px;">{{ promo.name }}</h2>
+        <div style="margin-bottom: 16px;">
+            {% if promo.deal_id %}<span class="badge badge-blue">Deal #{{ promo.deal_id }}</span>{% endif %}
+            {% if promo.expires %}<span class="badge badge-orange">Expires {{ promo.expires }}</span>{% endif %}
+            <span class="badge badge-blue">Valid through 12/31/2026</span>
+        </div>
+        <p style="color: #555; font-size: 14px;">{{ promo.description }}</p>
+    </div>
+    
+    <div class="card">
+        <h2>What's Included</h2>
+        <ul class="included-list">
+            {% for item in promo.includes %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>Configure This Promotion</h2>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label>Account Name *</label>
+                <input type="text" name="account_name" required placeholder="e.g., Smith Dental">
+            </div>
+            <div class="form-group">
+                <label>Territory Manager</label>
+                <input type="text" name="rep_name" placeholder="Your name">
+            </div>
+        </div>
+        
+        {% if promo.needs_implant_selection %}
+        <div class="form-group">
+            <label>Select Implant Type *</label>
+            <div class="implant-select-grid">
+                {% for impl in implant_types %}
+                <label class="implant-option">
+                    <input type="radio" name="implant_type" value="{{ impl.category }}" {% if loop.first %}checked{% endif %} onchange="recalc()">
+                    {{ impl.name }} — ${{ "{:,.0f}".format(impl.price) }}/ea
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if promo.needs_discount %}
+        <div class="form-group" style="max-width: 300px;">
+            <label>Customer's Standing Discount % (max 40%)</label>
+            <input type="number" name="discount_pct" id="discountPct" value="30" min="0" max="40" step="1" onchange="recalc()">
+        </div>
+        {% endif %}
+        
+        {% if promo.needs_kit_selection %}
+        <div class="form-group">
+            <label>Select Kit</label>
+            <select name="kit_selection" onchange="recalc()">
+                {% for kit in available_kits %}
+                <option value="{{ kit.id }}" data-price="{{ kit.price }}">{{ kit.description }} — ${{ "{:,.0f}".format(kit.price) }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        {% endif %}
+        
+        <div class="form-group">
+            <label>Notes (optional)</label>
+            <textarea name="notes" rows="2" placeholder="Special terms, conditions..."></textarea>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>Estimated Pricing Summary</h2>
+        <div class="calc-summary" id="calcSummary">
+            <div class="calc-row"><span>Loading calculation...</span></div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>Output Format</h2>
+        <div class="output-options" style="display: flex; gap: 20px; margin: 12px 0;">
+            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                <input type="radio" name="output_format" value="docx" checked> 📄 Word (.docx)
+            </label>
+            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                <input type="radio" name="output_format" value="pdf"> 📕 PDF
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Generate Promotion Proposal</button>
+    </div>
+</form>
+
+<script>
+const promoData = {{ promo_json | safe }};
+const implantPrices = {{ implant_prices_json | safe }};
+
+function recalc() {
+    const summary = document.getElementById('calcSummary');
+    let html = '';
+    
+    const discountEl = document.getElementById('discountPct');
+    const discount = discountEl ? Math.min(parseFloat(discountEl.value) || 0, 40) : 0;
+    
+    // Get selected implant price
+    const implantRadio = document.querySelector('input[name="implant_type"]:checked');
+    const implantCategory = implantRadio ? implantRadio.value : null;
+    const implantPrice = implantCategory ? (implantPrices[implantCategory] || 615) : 615;
+    
+    const qty = promoData.implant_qty || 0;
+    const implantList = implantPrice * qty;
+    const implantDiscounted = implantList * (1 - discount / 100);
+    
+    let equipmentPrice = promoData.equipment_price || 0;
+    let equipmentMSRP = promoData.equipment_msrp || 0;
+    
+    // Kit selection
+    const kitSelect = document.querySelector('select[name="kit_selection"]');
+    let kitPrice = 0;
+    if (kitSelect) {
+        kitPrice = parseFloat(kitSelect.options[kitSelect.selectedIndex].dataset.price) || 0;
+    }
+    let kitSavings = promoData.kit_free ? kitPrice : 0;
+    
+    let totalSale = implantDiscounted + equipmentPrice;
+    let totalList = implantList + equipmentMSRP + (promoData.kit_free ? kitPrice : 0);
+    let totalSavings = totalList - totalSale;
+    
+    if (qty > 0) {
+        html += `<div class="calc-row"><span>${qty} Implants @ $${implantPrice.toLocaleString()} list (${discount}% off)</span><span>$${implantDiscounted.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</span></div>`;
+    }
+    
+    if (equipmentPrice > 0) {
+        html += `<div class="calc-row"><span>${promoData.equipment_name || 'Equipment'} (MSRP $${equipmentMSRP.toLocaleString()})</span><span>$${equipmentPrice.toLocaleString()}</span></div>`;
+    }
+    
+    if (promoData.kit_free && kitPrice > 0) {
+        html += `<div class="calc-row"><span>Kit at No Charge (value $${kitPrice.toLocaleString()})</span><span>$0</span></div>`;
+    }
+    
+    if (promoData.extra_items) {
+        for (const item of promoData.extra_items) {
+            html += `<div class="calc-row"><span>${item.name} (MSRP $${item.msrp.toLocaleString()})</span><span>$${item.price.toLocaleString()}</span></div>`;
+            totalSale += item.price;
+            totalList += item.msrp;
+            totalSavings = totalList - totalSale;
+        }
+    }
+    
+    if (promoData.fixed_total) {
+        totalSale = promoData.fixed_total_amount || totalSale;
+        totalSavings = totalList - totalSale;
+    }
+    
+    html += `<div class="calc-row total"><span>Estimated Total Sale</span><span>$${totalSale.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</span></div>`;
+    html += `<div class="calc-row savings"><span>Estimated Savings</span><span>$${totalSavings.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</span></div>`;
+    
+    const savingsPct = totalList > 0 ? ((totalSavings / totalList) * 100).toFixed(1) : 0;
+    html += `<div class="calc-row savings"><span>Savings %</span><span>${savingsPct}%</span></div>`;
+    
+    summary.innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', recalc);
+</script>
+{% endblock %}
