@@ -3016,148 +3016,163 @@
   "Surgical Kits": [
     {
       "id": "87294",
-      "description": "NobelActive PureSet (excl. Bone Mills)",
+      "description": "NobelActive\u00ae PureSet\u2122 (Complete)",
       "price": 6119
     },
     {
       "id": "87295",
-      "description": "NobelParallel CC PureSet (excl. Bone Mills)",
+      "description": "NobelParallel\u2122 CC PureSet\u2122 (Complete)",
       "price": 4789
     },
     {
       "id": "87296",
-      "description": "NobelReplace CC PureSet (Fully Loaded)",
-      "price": 17626
+      "description": "NobelReplace\u00ae CC PureSet\u2122",
+      "price": 8813
     },
     {
       "id": "87293",
-      "description": "N1 PureSet (Fully Loaded)",
-      "price": 15190
+      "description": "N1\u00ae PureSet\u2122 (Complete)",
+      "price": 7127
     },
     {
       "id": "87305",
-      "description": "NobelActive Guided PureSet (Fully Loaded)",
-      "price": 21281
+      "description": "NobelActive\u00ae Guided PureSet\u2122 (Complete)",
+      "price": 13770
     },
     {
       "id": "87306",
-      "description": "NobelParallel CC Guided PureSet (Fully Loaded)",
-      "price": 19992
+      "description": "NobelParallel\u2122 CC Guided PureSet\u2122 (Complete)",
+      "price": 13010
     },
     {
       "id": "87307",
-      "description": "NobelReplace CC Guided PureSet (Fully Loaded)",
-      "price": 17500
+      "description": "NobelReplace\u00ae CC Guided PureSet\u2122 (Complete)",
+      "price": 16681
     },
     {
       "id": "87301",
-      "description": "Prosthetic PureSet Basic",
-      "price": 4086
+      "description": "Prosthetic PureSet\u2122 Basic",
+      "price": 2043
     },
     {
       "id": "87353",
-      "description": "Prosthetic PureSet (Full)",
-      "price": 6500
+      "description": "Prosthetic PureSet\u2122 (Full)",
+      "price": 2846
     },
     {
       "id": "108236",
-      "description": "NobelZygoma PureSet TiUltra (Fully Loaded)",
-      "price": 14868
+      "description": "NobelZygoma PureSet\u2122 TiUltra",
+      "price": 7434
     },
     {
       "id": "88521",
-      "description": "NobelZygoma PureSet TiUnite",
-      "price": 12000
+      "description": "NobelZygoma PureSet\u2122 TiUnite",
+      "price": 5785
     },
     {
       "id": "87469",
-      "description": "NobelActive/NobelParallel CC Combo PureSet",
-      "price": 22000
+      "description": "NobelActive\u00ae/NobelParallel\u2122 CC Combo PureSet\u2122",
+      "price": 7721
     },
     {
       "id": "301267",
       "description": "NobelPearl Tapered Surgery Kit",
-      "price": 8500
+      "price": 3845
     },
     {
       "id": "87465",
       "description": "Bone Mill Set 3.0-WP",
-      "price": 1200
+      "price": 2154
     },
     {
       "id": "87466",
       "description": "Bone Mill Set NP-WP",
-      "price": 1200
+      "price": 1795
     },
     {
       "id": "87467",
       "description": "Guided Twist Step Drills 7-18mm",
-      "price": 900
+      "price": 693
     },
     {
       "id": "87468",
-      "description": "NobelParallel CC Guided Drills & Screw Taps 7-18mm",
-      "price": 900
+      "description": "NobelParallel\u2122 CC Guided Drills & Screw Taps 7-18mm",
+      "price": 1373
     },
     {
       "id": "87712",
-      "description": "NobelActive Screw Taps and 7-15mm Drills",
-      "price": 1100
+      "description": "NobelActive\u00ae Screw Taps and 7-15mm Drills",
+      "price": 2165
     },
     {
       "id": "87713",
-      "description": "NobelActive Guided Screw Taps + Components",
-      "price": 1100
+      "description": "NobelActive\u00ae Guided Screw Taps + Components",
+      "price": 6237
     },
     {
       "id": "87714",
       "description": "NobelParallel CC Screw Taps + Drills",
-      "price": 1100
+      "price": 1375
     },
     {
       "id": "87715",
       "description": "NobelParallel CC Guided Screw Taps + Components",
-      "price": 1100
+      "price": 6105
     },
     {
       "id": "87716",
-      "description": "NobelReplace Guided WP + Components",
-      "price": 1100
+      "description": "NobelReplace\u00ae Guided WP + Components",
+      "price": 5103
     },
     {
       "id": "35425",
       "description": "Drill Kit 7-15mm",
-      "price": 800
+      "price": 68
     },
     {
       "id": "87303",
       "description": "Drill Stop Kit",
-      "price": 500
+      "price": 1087
     },
     {
       "id": "87304",
       "description": "Guided Drill Stop Kit",
-      "price": 500
+      "price": 1031
     },
     {
       "id": "87308",
       "description": "Abutment Screw Retrieval Set",
-      "price": 600
+      "price": 3303
     },
     {
       "id": "87309",
       "description": "Implant Retrieval Set",
-      "price": 600
+      "price": 2474
     },
     {
       "id": "87338",
       "description": "Abutment Retrieval Set",
-      "price": 600
+      "price": 547
     },
     {
       "id": "87302",
-      "description": "Prosthetic PureSet N1",
-      "price": 2043
+      "description": "Prosthetic PureSet\u2122 N1",
+      "price": 1992
+    },
+    {
+      "id": "87297",
+      "description": "NobelSpeedy\u00ae Groovy PureSet\u2122 (Complete)",
+      "price": 5506
+    },
+    {
+      "id": "87298",
+      "description": "Br\u00e5nemark System\u00ae PureSet\u2122 (Complete)",
+      "price": 4572
+    },
+    {
+      "id": "87299",
+      "description": "Replace Select\u2122 TC PureSet\u2122 (Complete)",
+      "price": 3803
     }
   ],
   "Regenerative - Grafting": [
@@ -3844,6 +3859,28 @@
       "id": "GC5016P45",
       "description": "Chromic gut 45 cm 5-0 USP, 3/8 circle 16 mm needle, 12/box",
       "price": 43
+    }
+  ],
+  "Motors": [
+    {
+      "id": "87289",
+      "description": "OsseoSet\u2122 300 (Wireless Foot Control)",
+      "price": 9728
+    },
+    {
+      "id": "87290",
+      "description": "OsseoSet\u2122 300 (Wired Foot Control)",
+      "price": 9073
+    },
+    {
+      "id": "81074",
+      "description": "MASTERsurg LUX Wireless Set",
+      "price": 9669
+    },
+    {
+      "id": "81076",
+      "description": "EXPERTsurg LUX Set",
+      "price": 8328
     }
   ]
 }
