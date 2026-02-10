@@ -24,6 +24,11 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'nobel-proposal-2026')
 APP_PASSWORD = os.environ.get('APP_PASSWORD', 'nobel2026')
 
+# ── Kit component data for tooltips ──
+from kit_data import (SURGICAL_KITS, GUIDED_KITS, ZYGOMATIC_KITS, LEGACY_KITS,
+                      NOBELPEARL, PROSTHETIC_KITS, MOTORS, ADDON_SETS,
+                      DRILL_STOP_RETRIEVAL, ALL_KITS)
+
 # ── Brand colors (Nobel Biocare 2026) ──
 BRAND_PRIMARY = '#000000'
 BRAND_ACCENT = '#FED880'
@@ -146,6 +151,70 @@ def get_addon_tools():
 # STANDARD PROPOSALS
 # ══════════════════════════════════════════════════════════
 
+@app.route('/api/kit/<kit_id>')
+@login_required
+def api_kit_details(kit_id):
+    """Return kit component details as JSON for tooltips/popups."""
+    kit = ALL_KITS.get(kit_id)
+    if not kit:
+        # Check motors
+        kit = MOTORS.get(kit_id)
+        if kit:
+            return json.dumps({"name": kit["name"], "price": kit["price"],
+                              "components": kit.get("components", [])})
+        return json.dumps({"error": "Kit not found"}), 404
+    return json.dumps({
+        "name": kit["name"],
+        "bom": kit["bom"],
+        "bom_price": kit["bom_price"],
+        "addon_price": kit.get("addon_price", 0),
+        "complete_price": kit["complete_price"],
+        "notes": kit.get("notes", ""),
+        "base_components": kit.get("base_components", []),
+        "addon_components": kit.get("addon_components", []),
+    })
+
+@app.route('/api/save_quote', methods=['POST'])
+@login_required
+def api_save_quote():
+    """Save a quote to server-side storage."""
+    data = request.get_json()
+    quote_id = data.get('id', datetime.now().strftime('%Y%m%d%H%M%S'))
+    quotes_dir = os.path.join(os.path.dirname(__file__), 'saved_quotes')
+    os.makedirs(quotes_dir, exist_ok=True)
+    filepath = os.path.join(quotes_dir, f'{quote_id}.json')
+    with open(filepath, 'w') as f:
+        json.dump(data, f, indent=2)
+    return json.dumps({"ok": True, "id": quote_id})
+
+@app.route('/api/load_quote/<quote_id>')
+@login_required
+def api_load_quote(quote_id):
+    """Load a saved quote."""
+    filepath = os.path.join(os.path.dirname(__file__), 'saved_quotes', f'{quote_id}.json')
+    if not os.path.exists(filepath):
+        return json.dumps({"error": "Quote not found"}), 404
+    with open(filepath) as f:
+        return f.read()
+
+@app.route('/api/list_quotes')
+@login_required
+def api_list_quotes():
+    """List all saved quotes."""
+    quotes_dir = os.path.join(os.path.dirname(__file__), 'saved_quotes')
+    if not os.path.exists(quotes_dir):
+        return json.dumps([])
+    quotes = []
+    for fn in sorted(os.listdir(quotes_dir), reverse=True):
+        if fn.endswith('.json'):
+            with open(os.path.join(quotes_dir, fn)) as f:
+                data = json.load(f)
+                quotes.append({"id": fn.replace('.json', ''),
+                              "account": data.get("account_name", "Unknown"),
+                              "date": data.get("date", ""),
+                              "total": data.get("total", 0)})
+    return json.dumps(quotes)
+
 @app.route('/')
 @login_required
 def index():
@@ -154,7 +223,11 @@ def index():
     discount_groups = list(DISCOUNT_GROUPS.keys()) + ['Other']
     return render_template('index.html', categories=categories, products=products,
                          discount_groups=discount_groups, get_discount_group=get_discount_group,
-                         bone_mills=get_bone_mills(), addon_tools=get_addon_tools())
+                         bone_mills=get_bone_mills(), addon_tools=get_addon_tools(),
+                         all_kits=ALL_KITS, motors=MOTORS, addon_sets=ADDON_SETS,
+                         drill_stop_retrieval=DRILL_STOP_RETRIEVAL,
+                         surgical_kits=SURGICAL_KITS, guided_kits=GUIDED_KITS,
+                         zygomatic_kits=ZYGOMATIC_KITS, prosthetic_kits=PROSTHETIC_KITS)
 
 @app.route('/generate', methods=['POST'])
 @login_required
