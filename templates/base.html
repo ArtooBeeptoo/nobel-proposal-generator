@@ -12,7 +12,7 @@
             min-height: 100vh;
         }
         .top-bar {
-            background: #003087;
+            background: #000000;
             color: white;
             padding: 0;
         }
@@ -39,7 +39,7 @@
         .top-bar a.logout:hover { opacity: 1; }
         
         nav.main-nav {
-            background: #002266;
+            background: #1a1a1a;
         }
         nav.main-nav .nav-inner {
             max-width: 1300px;
@@ -60,7 +60,7 @@
         nav.main-nav a:hover { color: white; background: rgba(255,255,255,0.05); }
         nav.main-nav a.active {
             color: white;
-            border-bottom-color: #00A3E0;
+            border-bottom-color: #FED880;
             background: rgba(255,255,255,0.08);
         }
         
@@ -74,12 +74,12 @@
         }
         .card h2 {
             margin: 0 0 16px 0;
-            color: #003087;
+            color: #000;
             font-size: 18px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #003087;
+            border-bottom: 2px solid #000;
         }
-        .card h3 { color: #003087; margin-bottom: 12px; font-size: 16px; }
+        .card h3 { color: #333; margin-bottom: 12px; font-size: 16px; }
         
         .form-row {
             display: grid;
@@ -196,9 +196,9 @@
 <body>
     <div class="top-bar">
         <div class="top-bar-inner">
-            <div class="brand">
-                Nobel Biocare
-                <small>Proposal Generator</small>
+            <div class="brand" style="display:flex;align-items:center;gap:12px;">
+                <img src="https://www.nobelbiocare.com/themes/custom/nobel/logo-small.svg" alt="Nobel Biocare" style="height:28px;filter:brightness(0) invert(1);">
+                <span>Proposal Generator</span>
             </div>
             <a href="{{ url_for('logout') }}" class="logout">Logout</a>
         </div>

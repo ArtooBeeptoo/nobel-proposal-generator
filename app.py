@@ -24,11 +24,14 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'nobel-proposal-2026')
 APP_PASSWORD = os.environ.get('APP_PASSWORD', 'nobel2026')
 
-# ── Brand colors ──
-BRAND_BLUE = '#003087'
-BRAND_ACCENT = '#00A3E0'
-BRAND_BLUE_RGB = RGBColor(0x00, 0x30, 0x87)
-BRAND_ACCENT_RGB = RGBColor(0x00, 0xA3, 0xE0)
+# ── Brand colors (Nobel Biocare 2026) ──
+BRAND_PRIMARY = '#000000'
+BRAND_ACCENT = '#FED880'
+BRAND_GREY = '#F2F1F0'
+BRAND_BLUE = '#000000'  # kept for backward compat
+BRAND_BLUE_RGB = RGBColor(0x00, 0x00, 0x00)
+BRAND_ACCENT_RGB = RGBColor(0xFE, 0xD8, 0x80)
+BRAND_GOLD_RGB = RGBColor(0xFE, 0xD8, 0x80)
 
 # ── Discount Groups ──
 DISCOUNT_GROUPS = {
