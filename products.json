@@ -486,129 +486,129 @@
     {
       "id": "300337",
       "description": "NobelReplace CC TiUltra NP 3.5 x 8 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300338",
       "description": "NobelReplace CC TiUltra NP 3.5 x 10 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300339",
       "description": "NobelReplace CC TiUltra NP 3.5 x 11.5 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300340",
       "description": "NobelReplace CC TiUltra NP 3.5 x 13 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300341",
       "description": "NobelReplace CC TiUltra NP 3.5 x 16 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300342",
       "description": "NobelReplace CC TiUltra RP 4.3 x 8 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300343",
       "description": "NobelReplace CC TiUltra RP 4.3 x 10 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300344",
       "description": "NobelReplace CC TiUltra RP 4.3 x 11.5 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300345",
       "description": "NobelReplace CC TiUltra RP 4.3 x 13 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300346",
       "description": "NobelReplace CC TiUltra RP 4.3 x 16 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300347",
       "description": "NobelReplace CC TiUltra RP 5.0 x 8 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300348",
       "description": "NobelReplace CC TiUltra RP 5.0 x 10 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300349",
       "description": "NobelReplace CC TiUltra RP 5.0 x 11.5 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300350",
       "description": "NobelReplace CC TiUltra RP 5.0 x 13 mm",
-      "price": 615
+      "price": 555
     },
     {
       "id": "300351",
       "description": "NobelReplace CC TiUltra RP 5.0 x 16 mm",
-      "price": 615
+      "price": 555
     }
   ],
   "NobelPearl Ceramic Implants": [
     {
       "id": "300752",
       "description": "NobelPearl Tapered NP 3.5 x 8 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300753",
       "description": "NobelPearl Tapered NP 3.5 x 10 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300754",
       "description": "NobelPearl Tapered NP 3.5 x 12 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300755",
       "description": "NobelPearl Tapered RP 4.2 x 8 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300756",
       "description": "NobelPearl Tapered RP 4.2 x 10 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300757",
       "description": "NobelPearl Tapered RP 4.2 x 12 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300758",
       "description": "NobelPearl Tapered RP 4.2 x 14 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300759",
       "description": "NobelPearl Tapered WP 5.5 x 8 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300760",
       "description": "NobelPearl Tapered WP 5.5 x 10 mm",
-      "price": 685
+      "price": 635
     },
     {
       "id": "300761",
       "description": "NobelPearl Tapered WP 5.5 x 12 mm",
-      "price": 685
+      "price": 635
     }
   ],
   "NobelZygoma Implants": [
@@ -3881,6 +3881,297 @@
       "id": "81076",
       "description": "EXPERTsurg LUX Set",
       "price": 8328
+    }
+  ],
+  "NobelReplace CC Implants": [
+    {
+      "id": "36699",
+      "description": "NobelReplace\u00ae CC NP 3.5 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "36700",
+      "description": "NobelReplace\u00ae CC NP 3.5 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "36701",
+      "description": "NobelReplace\u00ae CC NP 3.5 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "36702",
+      "description": "NobelReplace\u00ae CC NP 3.5 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "36703",
+      "description": "NobelReplace\u00ae CC NP 3.5 x 16 mm",
+      "price": 545
+    },
+    {
+      "id": "36704",
+      "description": "NobelReplace\u00ae CC RP 4.3 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "36705",
+      "description": "NobelReplace\u00ae CC RP 4.3 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "36707",
+      "description": "NobelReplace\u00ae CC RP 4.3 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "36708",
+      "description": "NobelReplace\u00ae CC RP 4.3 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "36709",
+      "description": "NobelReplace\u00ae CC RP 4.3 x 16 mm",
+      "price": 545
+    },
+    {
+      "id": "36710",
+      "description": "NobelReplace\u00ae CC RP 5.0 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "36711",
+      "description": "NobelReplace\u00ae CC RP 5.0 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "36712",
+      "description": "NobelReplace\u00ae CC RP 5.0 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "36713",
+      "description": "NobelReplace\u00ae CC RP 5.0 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "36714",
+      "description": "NobelReplace\u00ae CC RP 5.0 x 16 mm",
+      "price": 545
+    }
+  ],
+  "NobelReplace CC PMC Implants": [
+    {
+      "id": "37284",
+      "description": "NobelReplace\u00ae CC PMC NP 3.5 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "37285",
+      "description": "NobelReplace\u00ae CC PMC NP 3.5 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "37287",
+      "description": "NobelReplace\u00ae CC PMC NP 3.5 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "37288",
+      "description": "NobelReplace\u00ae CC PMC NP 3.5 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "37289",
+      "description": "NobelReplace\u00ae CC PMC NP 3.5 x 16 mm",
+      "price": 545
+    },
+    {
+      "id": "37290",
+      "description": "NobelReplace\u00ae CC PMC RP 4.3 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "37291",
+      "description": "NobelReplace\u00ae CC PMC RP 4.3 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "37292",
+      "description": "NobelReplace\u00ae CC PMC RP 4.3 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "37293",
+      "description": "NobelReplace\u00ae CC PMC RP 4.3 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "37294",
+      "description": "NobelReplace\u00ae CC PMC RP 4.3 x 16 mm",
+      "price": 545
+    },
+    {
+      "id": "37295",
+      "description": "NobelReplace\u00ae CC PMC RP 5.0 x 8 mm",
+      "price": 545
+    },
+    {
+      "id": "37296",
+      "description": "NobelReplace\u00ae CC PMC RP 5.0 x 10 mm",
+      "price": 545
+    },
+    {
+      "id": "37297",
+      "description": "NobelReplace\u00ae CC PMC RP 5.0 x 11.5 mm",
+      "price": 545
+    },
+    {
+      "id": "37298",
+      "description": "NobelReplace\u00ae CC PMC RP 5.0 x 13 mm",
+      "price": 545
+    },
+    {
+      "id": "37299",
+      "description": "NobelReplace\u00ae CC PMC RP 5.0 x 16 mm",
+      "price": 545
+    }
+  ],
+  "NobelParallel CC Implants": [
+    {
+      "id": "37963",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 7 mm",
+      "price": 590
+    },
+    {
+      "id": "37964",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 8.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37965",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 10 mm",
+      "price": 590
+    },
+    {
+      "id": "37966",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 11.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37967",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 13 mm",
+      "price": 590
+    },
+    {
+      "id": "37968",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 15 mm",
+      "price": 590
+    },
+    {
+      "id": "37969",
+      "description": "NobelParallel\u2122 CC NP 3.75 x 18 mm",
+      "price": 590
+    },
+    {
+      "id": "37970",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 7 mm",
+      "price": 590
+    },
+    {
+      "id": "37971",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 8.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37972",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 10 mm",
+      "price": 590
+    },
+    {
+      "id": "37973",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 11.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37974",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 13 mm",
+      "price": 590
+    },
+    {
+      "id": "37975",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 15 mm",
+      "price": 590
+    },
+    {
+      "id": "37976",
+      "description": "NobelParallel\u2122 CC RP 4.3 x 18 mm",
+      "price": 590
+    },
+    {
+      "id": "37977",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 7 mm",
+      "price": 590
+    },
+    {
+      "id": "37978",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 8.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37979",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 10 mm",
+      "price": 590
+    },
+    {
+      "id": "37980",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 11.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37981",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 13 mm",
+      "price": 590
+    },
+    {
+      "id": "37982",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 15 mm",
+      "price": 590
+    },
+    {
+      "id": "37983",
+      "description": "NobelParallel\u2122 CC RP 5.0 x 18 mm",
+      "price": 590
+    },
+    {
+      "id": "37984",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 7 mm",
+      "price": 590
+    },
+    {
+      "id": "37985",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 8.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37986",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 10 mm",
+      "price": 590
+    },
+    {
+      "id": "37987",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 11.5 mm",
+      "price": 590
+    },
+    {
+      "id": "37988",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 13 mm",
+      "price": 590
+    },
+    {
+      "id": "37989",
+      "description": "NobelParallel\u2122 CC WP 5.5 x 15 mm",
+      "price": 590
     }
   ]
 }

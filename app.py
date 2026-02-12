@@ -41,8 +41,9 @@ BRAND_GOLD_RGB = RGBColor(0xFE, 0xD8, 0x80)
 # ── Discount Groups ──
 DISCOUNT_GROUPS = {
     'Implants': ['NobelActive TiUltra Implants', 'NobelActive Implants', 'Nobel Biocare N1 TiUltra Implants',
-                 'NobelParallel CC TiUltra Implants', 'NobelReplace CC TiUltra Implants', 'NobelPearl Ceramic Implants',
-                 'NobelZygoma Implants'],
+                 'NobelParallel CC TiUltra Implants', 'NobelParallel CC Implants',
+                 'NobelReplace CC TiUltra Implants', 'NobelReplace CC Implants', 'NobelReplace CC PMC Implants',
+                 'NobelPearl Ceramic Implants', 'NobelZygoma Implants'],
     'Abutments': ['Esthetic Abutments', 'Multi-Unit Abutments', 'Locator Abutments', 'GoldAdapt Abutments'],
     'Kits': ['Surgical Kits'],
     'Grafting': ['Regenerative - Grafting'],
@@ -118,7 +119,10 @@ def get_implant_types():
         ('NobelActive Implants', 'NobelActive'),
         ('Nobel Biocare N1 TiUltra Implants', 'N1 TiUltra'),
         ('NobelParallel CC TiUltra Implants', 'NobelParallel CC TiUltra'),
+        ('NobelParallel CC Implants', 'NobelParallel CC'),
         ('NobelReplace CC TiUltra Implants', 'NobelReplace CC TiUltra'),
+        ('NobelReplace CC Implants', 'NobelReplace CC'),
+        ('NobelReplace CC PMC Implants', 'NobelReplace CC PMC'),
         ('NobelPearl Ceramic Implants', 'NobelPearl'),
     ]
     for cat, name in implant_cats:
@@ -994,7 +998,9 @@ def new_starts():
     products = get_products()
     implant_categories = {}
     for cat_name in ['NobelActive TiUltra Implants', 'NobelActive Implants', 'Nobel Biocare N1 TiUltra Implants',
-                     'NobelParallel CC TiUltra Implants', 'NobelReplace CC TiUltra Implants', 'NobelPearl Ceramic Implants']:
+                     'NobelParallel CC TiUltra Implants', 'NobelParallel CC Implants',
+                     'NobelReplace CC TiUltra Implants', 'NobelReplace CC Implants', 'NobelReplace CC PMC Implants',
+                     'NobelPearl Ceramic Implants']:
         if cat_name in products:
             implant_categories[cat_name] = products[cat_name]
     
