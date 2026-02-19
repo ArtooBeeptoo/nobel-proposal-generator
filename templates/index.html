@@ -472,11 +472,24 @@
         <p style="color:#666;margin:-8px 0 12px;font-size:13px;">Implants, abutments, regeneratives, digital equipment, and more.</p>
         <div class="quick-nav">
             <span class="quick-nav-label">Jump to:</span>
-            {% for cat in categories %}
-            {% if cat not in ['Surgical Kits', 'Motors'] %}
-            <a href="#" onclick="jumpTo('{{ cat }}'); return false;">{{ cat.replace('Capital - ', '').split(' ')[0] }}</a>
-            {% endif %}
-            {% endfor %}
+            <a href="#" onclick="jumpTo('NobelActive TiUltra Implants'); return false;">NobelActive</a>
+            <a href="#" onclick="jumpTo('NobelParallel CC TiUltra Implants'); return false;">NobelParallel</a>
+            <a href="#" onclick="jumpTo('NobelReplace CC TiUltra Implants'); return false;">NobelReplace</a>
+            <a href="#" onclick="jumpTo('NobelPearl Ceramic Implants'); return false;">NobelPearl</a>
+            <a href="#" onclick="jumpTo('NobelZygoma Implants'); return false;">NobelZygoma</a>
+            <a href="#" onclick="jumpTo('Esthetic Abutments'); return false;">Esthetic</a>
+            <a href="#" onclick="jumpTo('Multi-Unit Abutments'); return false;">Multi-Unit</a>
+            <a href="#" onclick="jumpTo('Locator Abutments'); return false;">Locator</a>
+            <a href="#" onclick="jumpTo('GoldAdapt Abutments'); return false;">GoldAdapt</a>
+            <a href="#" onclick="jumpTo('Regenerative - Grafting'); return false;">Grafting</a>
+            <a href="#" onclick="jumpTo('Regenerative - Membranes'); return false;">Membranes</a>
+            <a href="#" onclick="jumpTo('Sutures'); return false;">Sutures</a>
+            <a href="#" onclick="jumpTo('Capital - 3Shape'); return false;">3Shape</a>
+            <a href="#" onclick="jumpTo('Capital - SprintRay'); return false;">SprintRay</a>
+            <a href="#" onclick="jumpTo('Capital - DEXIS'); return false;">DEXIS</a>
+            <a href="#" onclick="jumpTo('Capital - X-Guide'); return false;">X-Guide</a>
+            <a href="#" onclick="jumpTo('Capital - iCAM'); return false;">iCAM</a>
+            <a href="#" onclick="jumpTo('Capital - DTX'); return false;">DTX</a>
         </div>
         <div class="search-box">
             <input type="text" id="productSearch" placeholder="🔍 Search products by name or item #...">
