@@ -45,6 +45,7 @@ DISCOUNT_GROUPS = {
                  'NobelReplace CC TiUltra Implants', 'NobelReplace CC Implants', 'NobelReplace CC PMC Implants',
                  'NobelPearl Ceramic Implants', 'NobelZygoma Implants'],
     'Abutments': ['Esthetic Abutments', 'Multi-Unit Abutments', 'Locator Abutments', 'GoldAdapt Abutments'],
+    'Healing': ['Healing Abutments', 'Cover Screws'],
     'Kits': ['Surgical Kits'],
     'Grafting': ['Regenerative - Grafting'],
     'Membranes': ['Regenerative - Membranes'],
