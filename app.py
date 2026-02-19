@@ -46,6 +46,7 @@ DISCOUNT_GROUPS = {
                  'NobelPearl Ceramic Implants', 'NobelZygoma Implants'],
     'Abutments': ['Esthetic Abutments', 'Multi-Unit Abutments', 'Locator Abutments', 'GoldAdapt Abutments'],
     'Healing': ['Healing Abutments', 'Cover Screws'],
+    'Instrumentation': ['Instrumentation'],
     'Kits': ['Surgical Kits'],
     'Grafting': ['Regenerative - Grafting'],
     'Membranes': ['Regenerative - Membranes'],

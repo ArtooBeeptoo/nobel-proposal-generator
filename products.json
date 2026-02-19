@@ -4173,5 +4173,4166 @@
       "description": "NobelParallel\u2122 CC WP 5.5 x 15 mm",
       "price": 590
     }
+  ],
+  "Healing Abutments": [
+    {
+      "id": "37819",
+      "description": "Healing Abutment Anatomical PEEK Conical Connection WP 6 x 7 mm",
+      "price": 92.0
+    },
+    {
+      "id": "37820",
+      "description": "Healing Abutment Anatomical PEEK Conical Connection WP 7 x 8 mm",
+      "price": 92.0
+    },
+    {
+      "id": "33441",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae NP \u00d8 3.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33442",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae NP \u00d8 3.5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33443",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae NP \u00d8 4.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33444",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae NP \u00d8 4.5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33445",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae RP \u00d8 4 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33446",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae RP \u00d8 4 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29137",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae RP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29139",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae RP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33447",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae WP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33448",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae WP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29141",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae WP \u00d8 6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29143",
+      "description": "Healing Abutment Br\u00e5nemark System\u00ae WP \u00d8 6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36794",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.2 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36795",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.2 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36796",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.2 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36797",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.8 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36798",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.8 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36799",
+      "description": "Healing Abutment Conical Connection 3.0 \u00d8 3.8 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36864",
+      "description": "Healing Abutment Conical Connection NP Bridge \u00d8 4 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36865",
+      "description": "Healing Abutment Conical Connection NP Bridge \u00d8 4 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36866",
+      "description": "Healing Abutment Conical Connection NP Bridge \u00d8 4 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36639",
+      "description": "Healing Abutment Conical Connection NP \u00d8 3.6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36640",
+      "description": "Healing Abutment Conical Connection NP \u00d8 3.6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36867",
+      "description": "Healing Abutment Conical Connection NP \u00d8 3.6 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36641",
+      "description": "Healing Abutment Conical Connection NP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36642",
+      "description": "Healing Abutment Conical Connection NP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36868",
+      "description": "Healing Abutment Conical Connection NP \u00d8 5 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36869",
+      "description": "Healing Abutment Conical Connection RP Bridge \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36870",
+      "description": "Healing Abutment Conical Connection RP Bridge \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36871",
+      "description": "Healing Abutment Conical Connection RP Bridge \u00d8 5 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36643",
+      "description": "Healing Abutment Conical Connection RP \u00d8 3.6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36644",
+      "description": "Healing Abutment Conical Connection RP \u00d8 3.6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36872",
+      "description": "Healing Abutment Conical Connection RP \u00d8 3.6 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36645",
+      "description": "Healing Abutment Conical Connection RP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36646",
+      "description": "Healing Abutment Conical Connection RP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36873",
+      "description": "Healing Abutment Conical Connection RP \u00d8 5 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36647",
+      "description": "Healing Abutment Conical Connection RP \u00d8 6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36648",
+      "description": "Healing Abutment Conical Connection RP \u00d8 6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "36874",
+      "description": "Healing Abutment Conical Connection RP \u00d8 6 x 7 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37817",
+      "description": "Healing Abutment Conical Connection WP Bridge \u00d8 6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37818",
+      "description": "Healing Abutment Conical Connection WP Bridge \u00d8 6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37813",
+      "description": "Healing Abutment Conical Connection WP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37814",
+      "description": "Healing Abutment Conical Connection WP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37815",
+      "description": "Healing Abutment Conical Connection WP \u00d8 6.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "37816",
+      "description": "Healing Abutment Conical Connection WP \u00d8 6.5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "301672",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base NP 2 mm",
+      "price": 28.0
+    },
+    {
+      "id": "301673",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base NP 4 mm",
+      "price": 28.0
+    },
+    {
+      "id": "301674",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base NP Anatomic 3 mm",
+      "price": 28.0
+    },
+    {
+      "id": "301675",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base RP 2 mm",
+      "price": 28.0
+    },
+    {
+      "id": "301676",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base RP 4 mm",
+      "price": 28.0
+    },
+    {
+      "id": "301677",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 Base RP Anatomic 3 mm",
+      "price": 28.0
+    },
+    {
+      "id": "300925",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC NP \u00d8 4 x 3 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300926",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC NP \u00d8 4 x 5 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300927",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC NP \u00d8 4 x 7 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300928",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC RP \u00d8 4.5 x 3 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300929",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC RP \u00d8 4.5 x 5 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300930",
+      "description": "Healing Abutment Nobel Biocare N1\u2122 TCC RP \u00d8 4.5 x 7 mm",
+      "price": 91.0
+    },
+    {
+      "id": "300702",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X NP \u00d8 3.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300705",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X NP \u00d8 3.5 x 4 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300708",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X RP \u00d8 4.2 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300709",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X RP \u00d8 4.2 x 4 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300710",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X WP \u00d8 5.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300712",
+      "description": "Healing Abutment NobelPearl\u2122 Inter-X WP \u00d8 5.5 x 4 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29998",
+      "description": "Healing Abutment NobelReplace\u00ae 6.0 \u00d8 6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29999",
+      "description": "Healing Abutment NobelReplace\u00ae 6.0 \u00d8 6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33455",
+      "description": "Healing Abutment NobelReplace\u00ae 6.0 \u00d8 7 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33457",
+      "description": "Healing Abutment NobelReplace\u00ae 6.0 \u00d8 7 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29436",
+      "description": "Healing Abutment NobelReplace\u00ae NP \u00d8 3.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29437",
+      "description": "Healing Abutment NobelReplace\u00ae NP \u00d8 3.5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33449",
+      "description": "Healing Abutment NobelReplace\u00ae NP \u00d8 4.5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33450",
+      "description": "Healing Abutment NobelReplace\u00ae NP \u00d8 4.5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33535",
+      "description": "Healing Abutment NobelReplace\u00ae RP \u00d8 4.3 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33536",
+      "description": "Healing Abutment NobelReplace\u00ae RP \u00d8 4.3 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33451",
+      "description": "Healing Abutment NobelReplace\u00ae RP \u00d8 5.3 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33452",
+      "description": "Healing Abutment NobelReplace\u00ae RP \u00d8 5.3 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33453",
+      "description": "Healing Abutment NobelReplace\u00ae WP \u00d8 5 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "33454",
+      "description": "Healing Abutment NobelReplace\u00ae WP \u00d8 5 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29446",
+      "description": "Healing Abutment NobelReplace\u00ae WP \u00d8 6 x 3 mm",
+      "price": 84.0
+    },
+    {
+      "id": "29447",
+      "description": "Healing Abutment NobelReplace\u00ae WP \u00d8 6 x 5 mm",
+      "price": 84.0
+    },
+    {
+      "id": "300991",
+      "description": "IOS Healing Abutment Nobel Biocare N1\u2122 Base NP",
+      "price": 96.0
+    },
+    {
+      "id": "300992",
+      "description": "IOS Healing Abutment Nobel Biocare N1\u2122 Base RP",
+      "price": 96.0
+    },
+    {
+      "id": "32332",
+      "description": "Zygoma Healing Abutment \u00d8 4 x 3 mm Br\u00e5nemark System\u00ae",
+      "price": 87.0
+    },
+    {
+      "id": "32333",
+      "description": "Zygoma Healing Abutment \u00d8 4 x 5 mm Br\u00e5nemark System\u00ae",
+      "price": 84.0
+    }
+  ],
+  "Cover Screws": [
+    {
+      "id": "28986",
+      "description": "Cover Screw Br\u00e5nemark System\u00ae NP",
+      "price": 72.0
+    },
+    {
+      "id": "28987",
+      "description": "Cover Screw Br\u00e5nemark System\u00ae RP",
+      "price": 72.0
+    },
+    {
+      "id": "28988",
+      "description": "Cover Screw Br\u00e5nemark System\u00ae WP",
+      "price": 72.0
+    },
+    {
+      "id": "36775",
+      "description": "Cover Screw Conical Connection 3.0",
+      "price": 72.0
+    },
+    {
+      "id": "36649",
+      "description": "Cover Screw Conical Connection NP",
+      "price": 72.0
+    },
+    {
+      "id": "36650",
+      "description": "Cover Screw Conical Connection RP",
+      "price": 72.0
+    },
+    {
+      "id": "37812",
+      "description": "Cover Screw Conical Connection WP",
+      "price": 72.0
+    },
+    {
+      "id": "300879",
+      "description": "Cover Screw Nobel Biocare N1\u2122 TCC NP",
+      "price": 72.0
+    },
+    {
+      "id": "300880",
+      "description": "Cover Screw Nobel Biocare N1\u2122 TCC RP",
+      "price": 72.0
+    },
+    {
+      "id": "300698",
+      "description": "Cover Screw NobelPearl\u2122 Inter-X NP",
+      "price": 72.0
+    },
+    {
+      "id": "300699",
+      "description": "Cover Screw NobelPearl\u2122 Inter-X RP",
+      "price": 72.0
+    },
+    {
+      "id": "300701",
+      "description": "Cover Screw NobelPearl\u2122 Inter-X WP",
+      "price": 72.0
+    },
+    {
+      "id": "30087",
+      "description": "Cover Screw NobelReplace\u00ae 6.0",
+      "price": 72.0
+    },
+    {
+      "id": "29433",
+      "description": "Cover Screw NobelReplace\u00ae NP",
+      "price": 72.0
+    },
+    {
+      "id": "29434",
+      "description": "Cover Screw NobelReplace\u00ae RP",
+      "price": 72.0
+    },
+    {
+      "id": "29435",
+      "description": "Cover Screw NobelReplace\u00ae WP",
+      "price": 72.0
+    },
+    {
+      "id": "28989",
+      "description": "Zygoma Implant Cover Screw Br\u00e5nemark System\u00ae (Machined)",
+      "price": 77.0
+    },
+    {
+      "id": "32424",
+      "description": "Zygoma Implant Cover Screw Br\u00e5nemark System\u00ae (TiUnite\u00ae)",
+      "price": 72.0
+    },
+    {
+      "id": "DIB",
+      "description": "097-0 Cover Screw Driver Br\u00e5nemark System\u00ae Hexagon",
+      "price": 113.0
+    },
+    {
+      "id": "DIB 097-0",
+      "description": "Cover Screw Driver Bmk Syst Hexagon",
+      "price": 113.0
+    }
+  ],
+  "Instrumentation": [
+    {
+      "id": "301633",
+      "description": "(HOasnsdepoieCcaer eD\u2122riv ienrt eLrantacl ha nNdo beexltPeernaarll\u2122 ir rDigoactiLoonc)s\u00ae",
+      "price": 89.0
+    },
+    {
+      "id": "DIB",
+      "description": "097-0 Cover Screw Driver Br\u00e5nemark System\u00ae Hexagon",
+      "price": 113.0
+    },
+    {
+      "id": "DIA",
+      "description": "578-0 Zygoma Round Bur Br\u00e5nemark System\u00ae",
+      "price": 49.0
+    },
+    {
+      "id": "37509",
+      "description": "Abutment Release Pin Conical Connection 3.0",
+      "price": 97.0
+    },
+    {
+      "id": "37510",
+      "description": "Abutment Release Pin Conical Connection NP",
+      "price": 97.0
+    },
+    {
+      "id": "37511",
+      "description": "Abutment Release Pin Conical Connection RP/WP",
+      "price": 97.0
+    },
+    {
+      "id": "37881",
+      "description": "Abutment Retrieval Instrument Titanium Conical Connection RP/WP",
+      "price": 64.0
+    },
+    {
+      "id": "37512",
+      "description": "Abutment Retrieval Instrument Zirconia Conical Connection NP",
+      "price": 64.0
+    },
+    {
+      "id": "37882",
+      "description": "Abutment Retrieval Instrument Zirconia Conical Connection RP/WP",
+      "price": 64.0
+    },
+    {
+      "id": "87338",
+      "description": "Abutment Retrieval Kit",
+      "price": 547.0
+    },
+    {
+      "id": "36247",
+      "description": "Abutment Retrieval Tool Conical Connection NP Titanium",
+      "price": 64.0
+    },
+    {
+      "id": "301521",
+      "description": "Abutment Retrieval Tool Nobel Biocare N1\u2122 TCC NP Long",
+      "price": 64.0
+    },
+    {
+      "id": "301533",
+      "description": "Abutment Retrieval Tool Nobel Biocare N1\u2122 TCC NP Short",
+      "price": 64.0
+    },
+    {
+      "id": "301522",
+      "description": "Abutment Retrieval Tool Nobel Biocare N1\u2122 TCC RP Long",
+      "price": 64.0
+    },
+    {
+      "id": "301534",
+      "description": "Abutment Retrieval Tool Nobel Biocare N1\u2122 TCC RP Short",
+      "price": 64.0
+    },
+    {
+      "id": "37505",
+      "description": "Abutment Screw Remover 3.0",
+      "price": 88.0
+    },
+    {
+      "id": "37506",
+      "description": "Abutment Screw Remover NP",
+      "price": 88.0
+    },
+    {
+      "id": "37507",
+      "description": "Abutment Screw Remover RP/WP/6.0",
+      "price": 88.0
+    },
+    {
+      "id": "37504",
+      "description": "Abutment Screw Retrieval Instrument RP/WP/6.0",
+      "price": 134.0
+    },
+    {
+      "id": "301307",
+      "description": "Abutment Screw Retrieval Kit NobelPearl\u2122",
+      "price": 187.0
+    },
+    {
+      "id": "37502",
+      "description": "Abutment Screw Retrieval Reverse Drill RP/WP/6.0",
+      "price": 120.0
+    },
+    {
+      "id": "87308",
+      "description": "Abutment Screw Retrieval Set",
+      "price": 3067.0
+    },
+    {
+      "id": "32068",
+      "description": "All-on-4\u00ae Guide",
+      "price": 462.0
+    },
+    {
+      "id": "38853",
+      "description": "Apical Drill Temporary Snap Abutment",
+      "price": 119.0
+    },
+    {
+      "id": "33496",
+      "description": "Bone Mill Guide Br\u00e5nemark System\u00ae NP",
+      "price": 118.0
+    },
+    {
+      "id": "33497",
+      "description": "Bone Mill Guide Br\u00e5nemark System\u00ae RP",
+      "price": 118.0
+    },
+    {
+      "id": "33498",
+      "description": "Bone Mill Guide Br\u00e5nemark System\u00ae WP",
+      "price": 118.0
+    },
+    {
+      "id": "37862",
+      "description": "Bone Mill Guide Conical Connection 3.0",
+      "price": 118.0
+    },
+    {
+      "id": "37865",
+      "description": "Bone Mill Guide Conical Connection NP",
+      "price": 118.0
+    },
+    {
+      "id": "37868",
+      "description": "Bone Mill Guide Conical Connection RP",
+      "price": 118.0
+    },
+    {
+      "id": "37870",
+      "description": "Bone Mill Guide Conical Connection WP",
+      "price": 118.0
+    },
+    {
+      "id": "300911",
+      "description": "Bone Mill Guide Nobel Biocare N1\u2122 TCC NP \u00d8 4.0",
+      "price": 118.0
+    },
+    {
+      "id": "300915",
+      "description": "Bone Mill Guide Nobel Biocare N1\u2122 TCC NP \u00d8 5.2",
+      "price": 118.0
+    },
+    {
+      "id": "300916",
+      "description": "Bone Mill Guide Nobel Biocare N1\u2122 TCC RP \u00d8 5.2",
+      "price": 118.0
+    },
+    {
+      "id": "300909",
+      "description": "Bone Mill Nobel Biocare N1\u2122 TCC \u00d8 4.0",
+      "price": 359.0
+    },
+    {
+      "id": "300910",
+      "description": "Bone Mill Nobel Biocare N1\u2122 TCC \u00d8 5.2",
+      "price": 359.0
+    },
+    {
+      "id": "33392",
+      "description": "Bone Mill with Guide Br\u00e5nemark System\u00ae NP \u00d8 4.5 mm",
+      "price": 359.0
+    },
+    {
+      "id": "33393",
+      "description": "Bone Mill with Guide Br\u00e5nemark System\u00ae RP \u00d8 5.1 mm",
+      "price": 359.0
+    },
+    {
+      "id": "33495",
+      "description": "Bone Mill with Guide Br\u00e5nemark System\u00ae WP \u00d8 6.5 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37861",
+      "description": "Bone Mill with Guide Conical Connection 3.0 \u00d8 4.0 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37863",
+      "description": "Bone Mill with Guide Conical Connection NP \u00d8 4.4 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37864",
+      "description": "Bone Mill with Guide Conical Connection NP \u00d8 5.2 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37866",
+      "description": "Bone Mill with Guide Conical Connection RP \u00d8 5.2 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37867",
+      "description": "Bone Mill with Guide Conical Connection RP \u00d8 6.2 mm",
+      "price": 359.0
+    },
+    {
+      "id": "37869",
+      "description": "Bone Mill with Guide Conical Connection WP \u00d8 6.7 mm",
+      "price": 359.0
+    },
+    {
+      "id": "33505",
+      "description": "Bone Mill with Guide NobelReplace\u00ae 6.0 \u00d8 7 mm",
+      "price": 359.0
+    },
+    {
+      "id": "36830",
+      "description": "Bone Mill with Guide NobelReplace\u00ae NP \u00d8 4.6 mm",
+      "price": 359.0
+    },
+    {
+      "id": "36831",
+      "description": "Bone Mill with Guide NobelReplace\u00ae RP \u00d8 5.3 mm",
+      "price": 359.0
+    },
+    {
+      "id": "36832",
+      "description": "Bone Mill with Guide NobelReplace\u00ae WP \u00d8 6.5 mm",
+      "price": 359.0
+    },
+    {
+      "id": "1600606-001",
+      "description": "Cable for MX-i LED\u00ae Motor (OsseoCare\u2122)",
+      "price": 1120.0
+    },
+    {
+      "id": "NB02610500",
+      "description": "Cannula Internal Cooling (OsseoSet\u2122 200)",
+      "price": 40.0
+    },
+    {
+      "id": "33247",
+      "description": "Combined Open-end Wrench",
+      "price": 349.0
+    },
+    {
+      "id": "29081",
+      "description": "Connection to Handpiece",
+      "price": 266.0
+    },
+    {
+      "id": "33065",
+      "description": "Connection to Handpiece NobelReplace\u00ae",
+      "price": 266.0
+    },
+    {
+      "id": "38000",
+      "description": "Cortical Drill NobelParallel\u2122 Conical Connection 3.75 mm",
+      "price": 65.0
+    },
+    {
+      "id": "38001",
+      "description": "Cortical Drill NobelParallel\u2122 Conical Connection 4.3 mm",
+      "price": 65.0
+    },
+    {
+      "id": "38002",
+      "description": "Cortical Drill NobelParallel\u2122 Conical Connection 5.0 mm",
+      "price": 65.0
+    },
+    {
+      "id": "38003",
+      "description": "Cortical Drill NobelParallel\u2122 Conical Connection 5.5 mm",
+      "price": 65.0
+    },
+    {
+      "id": "300739",
+      "description": "Cortical Drill Tapered NobelPearl\u2122 NP",
+      "price": 210.0
+    },
+    {
+      "id": "32281",
+      "description": "Counterbore Br\u00e5nemark System\u00ae NP",
+      "price": 65.0
+    },
+    {
+      "id": "32283",
+      "description": "Counterbore Br\u00e5nemark System\u00ae RP",
+      "price": 65.0
+    },
+    {
+      "id": "32285",
+      "description": "Counterbore Br\u00e5nemark System\u00ae WP",
+      "price": 65.0
+    },
+    {
+      "id": "29970",
+      "description": "Dense Bone Drill Tapered 6.0 6 x 13 mm",
+      "price": 235.0
+    },
+    {
+      "id": "32250",
+      "description": "Dense Bone Drill Tapered 6.0 6 x 16 mm",
+      "price": 235.0
+    },
+    {
+      "id": "29377",
+      "description": "Dense Bone Drill Tapered NP 3.5 x 13 mm",
+      "price": 235.0
+    },
+    {
+      "id": "29378",
+      "description": "Dense Bone Drill Tapered NP 3.5 x 16 mm",
+      "price": 235.0
+    },
+    {
+      "id": "300738",
+      "description": "Dense Bone Drill Tapered NobelPearl\u2122 NP 3.5 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300745",
+      "description": "Dense Bone Drill Tapered NobelPearl\u2122 RP 4.2 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300750",
+      "description": "Dense Bone Drill Tapered NobelPearl\u2122 WP 5.5 mm",
+      "price": 112.0
+    },
+    {
+      "id": "29380",
+      "description": "Dense Bone Drill Tapered RP 4.3 x 13 mm",
+      "price": 235.0
+    },
+    {
+      "id": "29381",
+      "description": "Dense Bone Drill Tapered RP 4.3 x 16 mm",
+      "price": 235.0
+    },
+    {
+      "id": "29383",
+      "description": "Dense Bone Drill Tapered WP 5 x 13 mm",
+      "price": 235.0
+    },
+    {
+      "id": "29384",
+      "description": "Dense Bone Drill Tapered WP 5 x 16 mm",
+      "price": 235.0
+    },
+    {
+      "id": "37791",
+      "description": "Depth Probe 7-18 mm Z-shaped",
+      "price": 227.0
+    },
+    {
+      "id": "300924",
+      "description": "Depth Probe Nobel Biocare N1\u2122",
+      "price": 227.0
+    },
+    {
+      "id": "37692",
+      "description": "Depth Probe NobelSpeedy\u00ae 18-25 mm",
+      "price": 237.0
+    },
+    {
+      "id": "300918",
+      "description": "Direction Indicator Nobel Biocare N1\u2122",
+      "price": 54.0
+    },
+    {
+      "id": "32258",
+      "description": "Direction Indicator Tapered 6.0",
+      "price": 54.0
+    },
+    {
+      "id": "32255",
+      "description": "Direction Indicator Tapered NP",
+      "price": 54.0
+    },
+    {
+      "id": "32256",
+      "description": "Direction Indicator Tapered RP",
+      "price": 54.0
+    },
+    {
+      "id": "32257",
+      "description": "Direction Indicator Tapered WP",
+      "price": 54.0
+    },
+    {
+      "id": "32112",
+      "description": "Direction Indicator \u00d8 2 / \u00d8 2.4-2.8 mm",
+      "price": 54.0
+    },
+    {
+      "id": "300751",
+      "description": "Direction/Depth Indicator NobelPearl\u2122 Ta pered",
+      "price": 152.0
+    },
+    {
+      "id": "38917",
+      "description": "Drill Guide Multi-unit Abutment Plus",
+      "price": 134.0
+    },
+    {
+      "id": "35425",
+      "description": "Drill Kit 7-15 mm",
+      "price": 68.0
+    },
+    {
+      "id": "87303",
+      "description": "Drill Stop Kit",
+      "price": 1087.0
+    },
+    {
+      "id": "33062",
+      "description": "Drill Stop Kit Box",
+      "price": 765.0
+    },
+    {
+      "id": "300766",
+      "description": "Drill Stop Tapered NobelPearl\u2122 NP",
+      "price": 30.0
+    },
+    {
+      "id": "300767",
+      "description": "Drill Stop Tapered NobelPearl\u2122 RP",
+      "price": 30.0
+    },
+    {
+      "id": "300768",
+      "description": "Drill Stop Tapered NobelPearl\u2122 WP",
+      "price": 30.0
+    },
+    {
+      "id": "33063",
+      "description": "Drill Stop \u00d8 2",
+      "price": 46.0
+    },
+    {
+      "id": "33064",
+      "description": "Drill Stop \u00d8 2.8",
+      "price": 46.0
+    },
+    {
+      "id": "33075",
+      "description": "Drill Stop \u00d8 3",
+      "price": 46.0
+    },
+    {
+      "id": "33077",
+      "description": "Drill Stop \u00d8 3.2",
+      "price": 46.0
+    },
+    {
+      "id": "33078",
+      "description": "Drill Stop \u00d8 3.4",
+      "price": 46.0
+    },
+    {
+      "id": "33084",
+      "description": "Drill Stop \u00d8 3.6",
+      "price": 46.0
+    },
+    {
+      "id": "33080",
+      "description": "Drill Stop \u00d8 3.8",
+      "price": 46.0
+    },
+    {
+      "id": "33081",
+      "description": "Drill Stop \u00d8 4.2",
+      "price": 46.0
+    },
+    {
+      "id": "36117",
+      "description": "Drill Tapered 2 mm",
+      "price": 50.0
+    },
+    {
+      "id": "29967",
+      "description": "Drill Tapered 6.0 6 x 10 mm",
+      "price": 240.0
+    },
+    {
+      "id": "36116",
+      "description": "Drill Tapered 6.0 6 x 11.5 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29968",
+      "description": "Drill Tapered 6.0 6 x 13 mm",
+      "price": 240.0
+    },
+    {
+      "id": "32249",
+      "description": "Drill Tapered 6.0 6 x 16 mm",
+      "price": 240.0
+    },
+    {
+      "id": "32078",
+      "description": "Drill Tapered 6.0 6 x 8 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29367",
+      "description": "Drill Tapered NP 3.5 x 10 mm",
+      "price": 240.0
+    },
+    {
+      "id": "36113",
+      "description": "Drill Tapered NP 3.5 x 11.5 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29368",
+      "description": "Drill Tapered NP 3.5 x 13 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29369",
+      "description": "Drill Tapered NP 3.5 x 16 mm",
+      "price": 240.0
+    },
+    {
+      "id": "32075",
+      "description": "Drill Tapered NP 3.5 x 8 mm",
+      "price": 240.0
+    },
+    {
+      "id": "300734",
+      "description": "Drill Tapered NobelPearl\u2122 NP 3.5 x 10 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300735",
+      "description": "Drill Tapered NobelPearl\u2122 NP 3.5 x 12 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300736",
+      "description": "Drill Tapered NobelPearl\u2122 NP 3.5 x 14 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300733",
+      "description": "Drill Tapered NobelPearl\u2122 NP 3.5 x 8 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300741",
+      "description": "Drill Tapered NobelPearl\u2122 RP 4.2 x 10 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300742",
+      "description": "Drill Tapered NobelPearl\u2122 RP 4.2 x 12 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300743",
+      "description": "Drill Tapered NobelPearl\u2122 RP 4.2 x 14 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300740",
+      "description": "Drill Tapered NobelPearl\u2122 RP 4.2 x 8 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300747",
+      "description": "Drill Tapered NobelPearl\u2122 WP 5.5 x 10 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300748",
+      "description": "Drill Tapered NobelPearl\u2122 WP 5.5 x 12 mm",
+      "price": 112.0
+    },
+    {
+      "id": "300746",
+      "description": "Drill Tapered NobelPearl\u2122 WP 5.5 x 8 mm",
+      "price": 112.0
+    },
+    {
+      "id": "29370",
+      "description": "Drill Tapered RP 4.3 x 10 mm",
+      "price": 240.0
+    },
+    {
+      "id": "36114",
+      "description": "Drill Tapered RP 4.3 x 11.5 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29371",
+      "description": "Drill Tapered RP 4.3 x 13 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29372",
+      "description": "Drill Tapered RP 4.3 x 16 mm",
+      "price": 240.0
+    },
+    {
+      "id": "32076",
+      "description": "Drill Tapered RP 4.3 x 8 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29373",
+      "description": "Drill Tapered WP 5 x 10 mm",
+      "price": 240.0
+    },
+    {
+      "id": "36115",
+      "description": "Drill Tapered WP 5 x 11.5 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29374",
+      "description": "Drill Tapered WP 5 x 13 mm",
+      "price": 240.0
+    },
+    {
+      "id": "29375",
+      "description": "Drill Tapered WP 5 x 16 mm",
+      "price": 240.0
+    },
+    {
+      "id": "32077",
+      "description": "Drill Tapered WP 5 x 8 mm",
+      "price": 240.0
+    },
+    {
+      "id": "C13048",
+      "description": "Elos Accurate\u00ae Screwdriver Manual Long 0.9 Hex",
+      "price": 107.0
+    },
+    {
+      "id": "C18512",
+      "description": "Elos Accurate\u00ae Screwdriver Manual Mini 0.9 Hex",
+      "price": 107.0
+    },
+    {
+      "id": "C13485",
+      "description": "Elos Accurate\u00ae Screwdriver Manual Short 0.9 Hex",
+      "price": 107.0
+    },
+    {
+      "id": "1600631-001",
+      "description": "Foot Control (OsseoCare\u2122)",
+      "price": 744.0
+    },
+    {
+      "id": "NB30285000",
+      "description": "Foot Control Wired S-N2 (OsseoSet\u2122 300)",
+      "price": 764.0
+    },
+    {
+      "id": "NB30264000",
+      "description": "Foot Control Wireless S-NW (OsseoSet\u2122 300)",
+      "price": 1419.0
+    },
+    {
+      "id": "1303393-001",
+      "description": "Gallows for irrigation fluid (OsseoCare\u2122)",
+      "price": 86.0
+    },
+    {
+      "id": "35426",
+      "description": "Guide Drill",
+      "price": 33.0
+    },
+    {
+      "id": "31150",
+      "description": "Guide Pin Implant Level Br\u00e5nemark System\u00ae WP 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "36792",
+      "description": "Guide Pin Implant Level Conical Connection 3.0 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "37898",
+      "description": "Guide Pin Implant Level Conical Connection NP and External Hex NP 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "37899",
+      "description": "Guide Pin Implant Level Conical Connection RP/WP and External Hex RP 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "37900",
+      "description": "Guide Pin Implant Level Conical Connection RP/WP and External Hex RP 30 mm",
+      "price": 42.0
+    },
+    {
+      "id": "31151",
+      "description": "Guide Pin Implant Level NobelReplace\u00ae NP 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "31152",
+      "description": "Guide Pin Implant Level NobelReplace\u00ae RP/WP 20 mm",
+      "price": 42.0
+    },
+    {
+      "id": "31153",
+      "description": "Guide Pin Implant Level NobelReplace\u00ae RP/WP 30 mm",
+      "price": 42.0
+    },
+    {
+      "id": "31154",
+      "description": "Guide Pin Multi-unit 10 mm",
+      "price": 29.0
+    },
+    {
+      "id": "29102",
+      "description": "Guide Pin Multi-unit 10 mm 5/pkg",
+      "price": 105.0
+    },
+    {
+      "id": "31155",
+      "description": "Guide Pin Multi-unit 20 mm",
+      "price": 29.0
+    },
+    {
+      "id": "29103",
+      "description": "Guide Pin Multi-unit 20 mm 5/pkg",
+      "price": 105.0
+    },
+    {
+      "id": "31156",
+      "description": "Guide Pin Multi-unit Br\u00e5nemark System\u00ae WP 10 mm",
+      "price": 29.0
+    },
+    {
+      "id": "31157",
+      "description": "Guide Pin Multi-unit Br\u00e5nemark System\u00ae WP 20 mm",
+      "price": 29.0
+    },
+    {
+      "id": "30908",
+      "description": "Guided Anchor Pin Sleeve \u00d8 1.5 mm 3/pkg",
+      "price": 46.0
+    },
+    {
+      "id": "30909",
+      "description": "Guided Anchor Pin \u00d8 1.5 mm",
+      "price": 47.0
+    },
+    {
+      "id": "34761",
+      "description": "Guided Anchor Pin \u00d8 1.5 mm Short Shaft",
+      "price": 46.0
+    },
+    {
+      "id": "38061",
+      "description": "Guided Counterbore NobelParallel\u2122 Conical Connection 3.75",
+      "price": 77.0
+    },
+    {
+      "id": "38062",
+      "description": "Guided Counterbore NobelParallel\u2122 Conical Connection 4.3",
+      "price": 77.0
+    },
+    {
+      "id": "38063",
+      "description": "Guided Counterbore NobelParallel\u2122 Conical Connection 5.0",
+      "price": 77.0
+    },
+    {
+      "id": "38064",
+      "description": "Guided Counterbore NobelParallel\u2122 Conical Connection 5.5",
+      "price": 77.0
+    },
+    {
+      "id": "37167",
+      "description": "Guided Counterbore NobelReplace\u00ae 3.5",
+      "price": 77.0
+    },
+    {
+      "id": "37168",
+      "description": "Guided Counterbore NobelReplace\u00ae 4.3",
+      "price": 77.0
+    },
+    {
+      "id": "37169",
+      "description": "Guided Counterbore NobelReplace\u00ae 5.0",
+      "price": 77.0
+    },
+    {
+      "id": "37170",
+      "description": "Guided Counterbore NobelReplace\u00ae 6.0",
+      "price": 77.0
+    },
+    {
+      "id": "38071",
+      "description": "Guided Cylinder with Pin Conical Connection NP",
+      "price": 86.0
+    },
+    {
+      "id": "37172",
+      "description": "Guided Cylinder with Pin Conical Connection NP 3.5",
+      "price": 86.0
+    },
+    {
+      "id": "37173",
+      "description": "Guided Cylinder with Pin Conical Connection RP 4.3",
+      "price": 86.0
+    },
+    {
+      "id": "37174",
+      "description": "Guided Cylinder with Pin Conical Connection RP 5.0",
+      "price": 86.0
+    },
+    {
+      "id": "37950",
+      "description": "Guided Cylinder with Pin Conical Connection WP 5.5",
+      "price": 86.0
+    },
+    {
+      "id": "32768",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 Br\u00e5nemark System\u00ae NP",
+      "price": 86.0
+    },
+    {
+      "id": "32770",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 Br\u00e5nemark System\u00ae RP",
+      "price": 86.0
+    },
+    {
+      "id": "32774",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 Br\u00e5nemark System\u00ae WP",
+      "price": 86.0
+    },
+    {
+      "id": "32778",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 NobelReplace\u00ae 6.0",
+      "price": 86.0
+    },
+    {
+      "id": "32769",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 NobelReplace\u00ae NP",
+      "price": 86.0
+    },
+    {
+      "id": "32771",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 NobelReplace\u00ae RP",
+      "price": 86.0
+    },
+    {
+      "id": "32775",
+      "description": "Guided Cylinder with Pin Unigrip\u2122 NobelReplace\u00ae WP",
+      "price": 86.0
+    },
+    {
+      "id": "32853",
+      "description": "Guided Dense Bone Drill Tapered 6.0 6 x 13 mm",
+      "price": 365.0
+    },
+    {
+      "id": "32854",
+      "description": "Guided Dense Bone Drill Tapered 6.0 6 x 16 mm",
+      "price": 365.0
+    },
+    {
+      "id": "32844",
+      "description": "Guided Dense Bone Drill Tapered NP 3.5 x 13 mm",
+      "price": 348.0
+    },
+    {
+      "id": "32845",
+      "description": "Guided Dense Bone Drill Tapered NP 3.5 x 16 mm",
+      "price": 348.0
+    },
+    {
+      "id": "32847",
+      "description": "Guided Dense Bone Drill Tapered RP 4.3 x 13 mm",
+      "price": 348.0
+    },
+    {
+      "id": "32848",
+      "description": "Guided Dense Bone Drill Tapered RP 4.3 x 16 mm",
+      "price": 348.0
+    },
+    {
+      "id": "32850",
+      "description": "Guided Dense Bone Drill Tapered WP 5 x 13 mm",
+      "price": 348.0
+    },
+    {
+      "id": "32851",
+      "description": "Guided Dense Bone Drill Tapered WP 5 x 16 mm",
+      "price": 348.0
+    },
+    {
+      "id": "38179",
+      "description": "Guided Dense Bone Screw Tap NobelActive\u00ae NP 8.5-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38180",
+      "description": "Guided Dense Bone Screw Tap NobelActive\u00ae RP 4.3 8.5-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38181",
+      "description": "Guided Dense Bone Screw Tap NobelActive\u00ae RP 5.0 8.5-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38183",
+      "description": "Guided Dense Bone Screw Tap NobelActive\u00ae WP 5.5 10-15 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38182",
+      "description": "Guided Dense Bone Screw Tap NobelActive\u00ae WP 5.5 7-8.5 mm",
+      "price": 170.0
+    },
+    {
+      "id": "32816",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "38046",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 2.8 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32821",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 3 mm",
+      "price": 314.0
+    },
+    {
+      "id": "35885",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 3.6 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32824",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 3.8 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32825",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 4.2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "35886",
+      "description": "Guided Drill Guide 6.0/WP to \u00d8 4.6 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32826",
+      "description": "Guided Drill Guide 6.0/WP \u00d8 6 to \u00d8 5 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32814",
+      "description": "Guided Drill Guide NP to \u00d8 2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32817",
+      "description": "Guided Drill Guide NP to \u00d8 2.8 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32819",
+      "description": "Guided Drill Guide NP to \u00d8 3 mm",
+      "price": 314.0
+    },
+    {
+      "id": "35882",
+      "description": "Guided Drill Guide NP to \u00d8 3.2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32815",
+      "description": "Guided Drill Guide RP to \u00d8 2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32818",
+      "description": "Guided Drill Guide RP to \u00d8 2.8 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32820",
+      "description": "Guided Drill Guide RP to \u00d8 3 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32822",
+      "description": "Guided Drill Guide RP to \u00d8 3.2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "32823",
+      "description": "Guided Drill Guide RP to \u00d8 3.4 mm",
+      "price": 314.0
+    },
+    {
+      "id": "35883",
+      "description": "Guided Drill Guide RP to \u00d8 3.6 mm",
+      "price": 314.0
+    },
+    {
+      "id": "35884",
+      "description": "Guided Drill Guide RP to \u00d8 4.2 mm",
+      "price": 314.0
+    },
+    {
+      "id": "33019",
+      "description": "Guided Drill Guide Tapered 6.0/WP to NP",
+      "price": 314.0
+    },
+    {
+      "id": "33020",
+      "description": "Guided Drill Guide Tapered 6.0/WP to RP",
+      "price": 314.0
+    },
+    {
+      "id": "33018",
+      "description": "Guided Drill Guide Tapered RP to NP",
+      "price": 314.0
+    },
+    {
+      "id": "87304",
+      "description": "Guided Drill Stop Kit",
+      "price": 1031.0
+    },
+    {
+      "id": "33086",
+      "description": "Guided Drill Stop Kit Box",
+      "price": 709.0
+    },
+    {
+      "id": "32840",
+      "description": "Guided Drill Tapered 6.0 6 x (+)10 mm",
+      "price": 349.0
+    },
+    {
+      "id": "36122",
+      "description": "Guided Drill Tapered 6.0 6 x (+)11.5 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32841",
+      "description": "Guided Drill Tapered 6.0 6 x (+)13 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32842",
+      "description": "Guided Drill Tapered 6.0 6 x (+)16 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32839",
+      "description": "Guided Drill Tapered 6.0 6 x (+)8 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32828",
+      "description": "Guided Drill Tapered NP 3.5 x (+)10 mm",
+      "price": 349.0
+    },
+    {
+      "id": "36119",
+      "description": "Guided Drill Tapered NP 3.5 x (+)11.5 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32829",
+      "description": "Guided Drill Tapered NP 3.5 x (+)13 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32830",
+      "description": "Guided Drill Tapered NP 3.5 x (+)16 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32827",
+      "description": "Guided Drill Tapered NP 3.5 x (+)8 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32832",
+      "description": "Guided Drill Tapered RP 4.3 x (+)10 mm",
+      "price": 349.0
+    },
+    {
+      "id": "36120",
+      "description": "Guided Drill Tapered RP 4.3 x (+)11.5 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32833",
+      "description": "Guided Drill Tapered RP 4.3 x (+)13 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32834",
+      "description": "Guided Drill Tapered RP 4.3 x (+)16 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32831",
+      "description": "Guided Drill Tapered RP 4.3 x (+)8 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32836",
+      "description": "Guided Drill Tapered WP 5 x (+)10 mm",
+      "price": 349.0
+    },
+    {
+      "id": "36121",
+      "description": "Guided Drill Tapered WP 5 x (+)11.5 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32837",
+      "description": "Guided Drill Tapered WP 5 x (+)13 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32838",
+      "description": "Guided Drill Tapered WP 5 x (+)16 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32835",
+      "description": "Guided Drill Tapered WP 5 x (+)8 mm",
+      "price": 349.0
+    },
+    {
+      "id": "32863",
+      "description": "Guided Implant Mount Br\u00e5nemark System\u00ae NP",
+      "price": 166.0
+    },
+    {
+      "id": "32865",
+      "description": "Guided Implant Mount Br\u00e5nemark System\u00ae RP",
+      "price": 166.0
+    },
+    {
+      "id": "32868",
+      "description": "Guided Implant Mount Br\u00e5nemark System\u00ae WP",
+      "price": 166.0
+    },
+    {
+      "id": "35887",
+      "description": "Guided Implant Mount NobelActive\u00ae NP",
+      "price": 166.0
+    },
+    {
+      "id": "35888",
+      "description": "Guided Implant Mount NobelActive\u00ae RP 4.3",
+      "price": 166.0
+    },
+    {
+      "id": "35889",
+      "description": "Guided Implant Mount NobelActive\u00ae RP 5.0",
+      "price": 166.0
+    },
+    {
+      "id": "37948",
+      "description": "Guided Implant Mount NobelActive\u00ae WP 5.5",
+      "price": 166.0
+    },
+    {
+      "id": "38065",
+      "description": "Guided Implant Mount NobelParallel\u2122 Conical Connection NP",
+      "price": 166.0
+    },
+    {
+      "id": "38066",
+      "description": "Guided Implant Mount NobelParallel\u2122 Conical Connection RP 4.3",
+      "price": 166.0
+    },
+    {
+      "id": "38067",
+      "description": "Guided Implant Mount NobelParallel\u2122 Conical Connection RP 5.0",
+      "price": 166.0
+    },
+    {
+      "id": "38068",
+      "description": "Guided Implant Mount NobelParallel\u2122 Conical Connection WP 5.5",
+      "price": 166.0
+    },
+    {
+      "id": "32871",
+      "description": "Guided Implant Mount NobelReplace\u00ae 6.0",
+      "price": 166.0
+    },
+    {
+      "id": "37149",
+      "description": "Guided Implant Mount NobelReplace\u00ae Conical Connection NP 3.5",
+      "price": 166.0
+    },
+    {
+      "id": "37150",
+      "description": "Guided Implant Mount NobelReplace\u00ae Conical Connection RP 4.3",
+      "price": 166.0
+    },
+    {
+      "id": "37151",
+      "description": "Guided Implant Mount NobelReplace\u00ae Conical Connection RP 5.0",
+      "price": 166.0
+    },
+    {
+      "id": "32864",
+      "description": "Guided Implant Mount NobelReplace\u00ae NP",
+      "price": 166.0
+    },
+    {
+      "id": "32866",
+      "description": "Guided Implant Mount NobelReplace\u00ae RP",
+      "price": 166.0
+    },
+    {
+      "id": "32869",
+      "description": "Guided Implant Mount NobelReplace\u00ae WP",
+      "price": 166.0
+    },
+    {
+      "id": "301081",
+      "description": "Guided Pilot Drill Nobel Biocare N1\u2122 \u00d8 2.0 mm",
+      "price": 99.0
+    },
+    {
+      "id": "301402",
+      "description": "Guided Pilot Drill Nobel Biocare N1\u2122 \u00d8 2.0 x 8-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "300438",
+      "description": "Guided Pilot Drill Sleeve 1.5 mm",
+      "price": 35.0
+    },
+    {
+      "id": "300439",
+      "description": "Guided Pilot Drill Sleeve 1.5 mm 20/pkg",
+      "price": 651.0
+    },
+    {
+      "id": "300440",
+      "description": "Guided Pilot Drill Sleeve 2.0 mm",
+      "price": 35.0
+    },
+    {
+      "id": "300441",
+      "description": "Guided Pilot Drill Sleeve 2.0 mm 20/pkg",
+      "price": 651.0
+    },
+    {
+      "id": "37397",
+      "description": "Guided Pilot Twist Drill 1.5 mm (10+) 10-15 mm",
+      "price": 100.0
+    },
+    {
+      "id": "32879",
+      "description": "Guided Pin 28 mm Br\u00e5nemark System\u00ae NP",
+      "price": 49.0
+    },
+    {
+      "id": "32881",
+      "description": "Guided Pin 28 mm Br\u00e5nemark System\u00ae RP",
+      "price": 49.0
+    },
+    {
+      "id": "32884",
+      "description": "Guided Pin 28 mm Br\u00e5nemark System\u00ae WP",
+      "price": 49.0
+    },
+    {
+      "id": "32880",
+      "description": "Guided Pin 28 mm NobelReplace\u00ae NP",
+      "price": 49.0
+    },
+    {
+      "id": "32882",
+      "description": "Guided Pin 28 mm NobelReplace\u00ae RP",
+      "price": 49.0
+    },
+    {
+      "id": "32885",
+      "description": "Guided Pin 28 mm NobelReplace\u00ae WP/6.0",
+      "price": 49.0
+    },
+    {
+      "id": "87305",
+      "description": "Guided PureSet\u2122 Kit NobelActive\u00ae",
+      "price": 7533.0
+    },
+    {
+      "id": "87306",
+      "description": "Guided PureSet\u2122 Kit NobelParallel\u2122 CC",
+      "price": 6905.0
+    },
+    {
+      "id": "87307",
+      "description": "Guided PureSet\u2122 Kit NobelReplace\u00ae CC",
+      "price": 11543.0
+    },
+    {
+      "id": "PUR0600",
+      "description": "Guided PureSet\u2122 Tray NobelActive\u00ae",
+      "price": 1861.0
+    },
+    {
+      "id": "PUR0700",
+      "description": "Guided PureSet\u2122 Tray NobelParallel\u2122 CC",
+      "price": 1861.0
+    },
+    {
+      "id": "PUR0800",
+      "description": "Guided PureSet\u2122 Tray NobelReplace\u00ae CC",
+      "price": 1861.0
+    },
+    {
+      "id": "PUR0601",
+      "description": "Guided PureSet\u2122 Tray Plate NobelActive\u00ae",
+      "price": 307.0
+    },
+    {
+      "id": "PUR0701",
+      "description": "Guided PureSet\u2122 Tray Plate NobelParallel\u2122 CC",
+      "price": 307.0
+    },
+    {
+      "id": "PUR0801",
+      "description": "Guided PureSet\u2122 Tray Plate NobelReplace\u00ae CC",
+      "price": 307.0
+    },
+    {
+      "id": "32861",
+      "description": "Guided Screw Tap 6.0/WP \u00d8 6 7-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "32855",
+      "description": "Guided Screw Tap NP 10-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "35878",
+      "description": "Guided Screw Tap NobelActive\u00ae NP 8.5-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "35879",
+      "description": "Guided Screw Tap NobelActive\u00ae RP 4.3 8.5-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "35880",
+      "description": "Guided Screw Tap NobelActive\u00ae RP 5.0 8.5-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "37947",
+      "description": "Guided Screw Tap NobelActive\u00ae WP 5.5 10-15 mm",
+      "price": 170.0
+    },
+    {
+      "id": "37946",
+      "description": "Guided Screw Tap NobelActive\u00ae WP 5.5 7-8.5 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38048",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 3.75 11.5-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38049",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 3.75 15-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38047",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 3.75 7-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38051",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 4.3 11.5-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38052",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 4.3 15-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38050",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 4.3 7-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38054",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.0 11.5-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38055",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.0 15-18 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38053",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.0 7-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38057",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.5 11.5-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38058",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.5 11.5-15 mm",
+      "price": 170.0
+    },
+    {
+      "id": "38056",
+      "description": "Guided Screw Tap NobelParallel\u2122 Conical Connection 5.5 7-10 mm",
+      "price": 170.0
+    },
+    {
+      "id": "32857",
+      "description": "Guided Screw Tap RP \u00d8 3.75 7-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "33114",
+      "description": "Guided Screw Tap RP \u00d8 4 7-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "32862",
+      "description": "Guided Screw Tap Tapered 6.0",
+      "price": 349.0
+    },
+    {
+      "id": "37171",
+      "description": "Guided Screw Tap Tapered NP",
+      "price": 349.0
+    },
+    {
+      "id": "32858",
+      "description": "Guided Screw Tap Tapered RP",
+      "price": 349.0
+    },
+    {
+      "id": "32860",
+      "description": "Guided Screw Tap Tapered WP",
+      "price": 349.0
+    },
+    {
+      "id": "32859",
+      "description": "Guided Screw Tap WP \u00d8 5 7-13 mm",
+      "price": 170.0
+    },
+    {
+      "id": "32766",
+      "description": "Guided Sleeve 6.0/WP",
+      "price": 35.0
+    },
+    {
+      "id": "32754",
+      "description": "Guided Sleeve NP",
+      "price": 35.0
+    },
+    {
+      "id": "32765",
+      "description": "Guided Sleeve RP",
+      "price": 35.0
+    },
+    {
+      "id": "32Z2008",
+      "description": "Guided Soft Tissue Punch 6.0/WP 5/pkg",
+      "price": 119.0
+    },
+    {
+      "id": "32Z2006",
+      "description": "Guided Soft Tissue Punch NP 5/pkg",
+      "price": 119.0
+    },
+    {
+      "id": "32Z2007",
+      "description": "Guided Soft Tissue Punch RP 5/pkg",
+      "price": 119.0
+    },
+    {
+      "id": "37152",
+      "description": "Guided Start Drill",
+      "price": 31.0
+    },
+    {
+      "id": "32736",
+      "description": "Guided Start Drill/Counterbore Br\u00e5nemark System\u00ae NP",
+      "price": 77.0
+    },
+    {
+      "id": "32738",
+      "description": "Guided Start Drill/Counterbore Br\u00e5nemark System\u00ae RP",
+      "price": 77.0
+    },
+    {
+      "id": "32740",
+      "description": "Guided Start Drill/Counterbore Br\u00e5nemark System\u00ae WP \u00d8 5 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32742",
+      "description": "Guided Start Drill/Counterbore Br\u00e5nemark System\u00ae WP \u00d8 6 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32743",
+      "description": "Guided Start Drill/Counterbore NobelReplace\u00ae 6.0",
+      "price": 75.0
+    },
+    {
+      "id": "32737",
+      "description": "Guided Start Drill/Counterbore NobelReplace\u00ae NP",
+      "price": 75.0
+    },
+    {
+      "id": "32739",
+      "description": "Guided Start Drill/Counterbore NobelReplace\u00ae RP",
+      "price": 75.0
+    },
+    {
+      "id": "32741",
+      "description": "Guided Start Drill/Counterbore NobelReplace\u00ae WP",
+      "price": 75.0
+    },
+    {
+      "id": "33113",
+      "description": "Guided Start Drill/Counterbore former Br\u00e5nemark System\u00ae Mk III RP",
+      "price": 60.0
+    },
+    {
+      "id": "38069",
+      "description": "Guided Template Abutment Conical Connection NP",
+      "price": 151.0
+    },
+    {
+      "id": "37157",
+      "description": "Guided Template Abutment Conical Connection NP 3.5",
+      "price": 151.0
+    },
+    {
+      "id": "37158",
+      "description": "Guided Template Abutment Conical Connection RP 4.3",
+      "price": 151.0
+    },
+    {
+      "id": "37159",
+      "description": "Guided Template Abutment Conical Connection RP 5.0",
+      "price": 151.0
+    },
+    {
+      "id": "38070",
+      "description": "Guided Template Abutment Conical Connection WP 5.5",
+      "price": 151.0
+    },
+    {
+      "id": "32802",
+      "description": "Guided Template Abutment with Screw Br\u00e5nemark System\u00ae NP",
+      "price": 151.0
+    },
+    {
+      "id": "32804",
+      "description": "Guided Template Abutment with Screw Br\u00e5nemark System\u00ae RP",
+      "price": 151.0
+    },
+    {
+      "id": "32807",
+      "description": "Guided Template Abutment with Screw Br\u00e5nemark System\u00ae WP",
+      "price": 151.0
+    },
+    {
+      "id": "35890",
+      "description": "Guided Template Abutment with Screw NobelActive\u00ae NP",
+      "price": 151.0
+    },
+    {
+      "id": "35891",
+      "description": "Guided Template Abutment with Screw NobelActive\u00ae RP 4.3",
+      "price": 151.0
+    },
+    {
+      "id": "35892",
+      "description": "Guided Template Abutment with Screw NobelActive\u00ae RP 5.0",
+      "price": 151.0
+    },
+    {
+      "id": "37949",
+      "description": "Guided Template Abutment with Screw NobelActive\u00ae WP 5.5",
+      "price": 151.0
+    },
+    {
+      "id": "32811",
+      "description": "Guided Template Abutment with Screw NobelReplace\u00ae 6.0",
+      "price": 151.0
+    },
+    {
+      "id": "32803",
+      "description": "Guided Template Abutment with Screw NobelReplace\u00ae NP",
+      "price": 151.0
+    },
+    {
+      "id": "32805",
+      "description": "Guided Template Abutment with Screw NobelReplace\u00ae RP",
+      "price": 151.0
+    },
+    {
+      "id": "32808",
+      "description": "Guided Template Abutment with Screw NobelReplace\u00ae WP",
+      "price": 151.0
+    },
+    {
+      "id": "38059",
+      "description": "Guided Tissue Punch NP - sleeve (3.75)",
+      "price": 185.0
+    },
+    {
+      "id": "38060",
+      "description": "Guided Tissue Punch WP - sleeve (5.5)",
+      "price": 185.0
+    },
+    {
+      "id": "37155",
+      "description": "Guided Tissue Punch WP/6.0 - sleeve (5.0)",
+      "price": 185.0
+    },
+    {
+      "id": "37156",
+      "description": "Guided Tissue Punch WP/6.0 - sleeve (6.0)",
+      "price": 185.0
+    },
+    {
+      "id": "37153",
+      "description": "Guided Tissue Punch for NP - sleeve",
+      "price": 185.0
+    },
+    {
+      "id": "37154",
+      "description": "Guided Tissue Punch for RP - sleeve",
+      "price": 185.0
+    },
+    {
+      "id": "33107",
+      "description": "Guided Twist Drill 2 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32746",
+      "description": "Guided Twist Drill 2 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33108",
+      "description": "Guided Twist Drill 2.8 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32747",
+      "description": "Guided Twist Drill 2.8 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33109",
+      "description": "Guided Twist Drill 3 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32748",
+      "description": "Guided Twist Drill 3 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33115",
+      "description": "Guided Twist Drill 3.2 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32749",
+      "description": "Guided Twist Drill 3.2 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33117",
+      "description": "Guided Twist Drill 3.4 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32750",
+      "description": "Guided Twist Drill 3.4 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33118",
+      "description": "Guided Twist Drill 3.8 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32751",
+      "description": "Guided Twist Drill 3.8 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33119",
+      "description": "Guided Twist Drill 4.2 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32752",
+      "description": "Guided Twist Drill 4.2 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33120",
+      "description": "Guided Twist Drill 5 x (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "32753",
+      "description": "Guided Twist Drill 5 x (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "36123",
+      "description": "Guided Twist Drill Tapered 2 x (10+) 8-16 mm",
+      "price": 99.0
+    },
+    {
+      "id": "33066",
+      "description": "Guided Twist Drill \u00d8 1.5 mm x 20 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35839",
+      "description": "Guided Twist Step Drill 2.4/2.8 (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35844",
+      "description": "Guided Twist Step Drill 2.4/2.8 (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35840",
+      "description": "Guided Twist Step Drill 2.8/3.2 (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35875",
+      "description": "Guided Twist Step Drill 2.8/3.2 (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35841",
+      "description": "Guided Twist Step Drill 3.2/3.6 (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35876",
+      "description": "Guided Twist Step Drill 3.2/3.6 (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35842",
+      "description": "Guided Twist Step Drill 3.8/4.2 (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35877",
+      "description": "Guided Twist Step Drill 3.8/4.2 (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "35843",
+      "description": "Guided Twist Step Drill 4.2/4.6 (10+) 7-13 mm",
+      "price": 99.0
+    },
+    {
+      "id": "38045",
+      "description": "Guided Twist Step Drill 4.2/4.6 (10+) 7-18 mm",
+      "price": 99.0
+    },
+    {
+      "id": "37934",
+      "description": "Guided Twist Step Drill 4.2/5.0 (10+) 7-13",
+      "price": 99.0
+    },
+    {
+      "id": "37945",
+      "description": "Guided Twist Step Drill 4.2/5.0 (10+) 7-18",
+      "price": 99.0
+    },
+    {
+      "id": "32813",
+      "description": "Handle for Guided Drill Guide",
+      "price": 203.0
+    },
+    {
+      "id": "37480",
+      "description": "Handle for Implant Rescue Collar and Drill Guides",
+      "price": 128.0
+    },
+    {
+      "id": "29161",
+      "description": "Handle for Machine Instruments",
+      "price": 108.0
+    },
+    {
+      "id": "29122",
+      "description": "Handle for Protection Analogs",
+      "price": 132.0
+    },
+    {
+      "id": "1600873-001",
+      "description": "Handpiece Contra-Angle 20:1 L Micro Series (OsseoCare\u2122 external irrigation)",
+      "price": 3112.0
+    },
+    {
+      "id": "1600874-001",
+      "description": "Handpiece Contra-Angle 20:1 L Micro Series Kirschner-Meyer",
+      "price": 3660.0
+    },
+    {
+      "id": "NB30056000",
+      "description": "Handpiece S-11, Straight 1:1",
+      "price": 1769.0
+    },
+    {
+      "id": "NB30095000",
+      "description": "Handpiece Surgical Zygoma SZ-75, 20:1",
+      "price": 3128.0
+    },
+    {
+      "id": "1301575-001",
+      "description": "Handpiece/Motor Holder (OsseoCare\u2122)",
+      "price": 86.0
+    },
+    {
+      "id": "REF08008",
+      "description": "Hex Latch Driver Torque Wrench 0.050\" (1.25 mm)",
+      "price": 72.0
+    },
+    {
+      "id": "32F0128",
+      "description": "Hose Set for Machinery 80 mm 10/pkg (OsseoSet\u2122 200)",
+      "price": 120.0
+    },
+    {
+      "id": "29126",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae NP 26 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29127",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae NP 34 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29129",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae RP 21 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29130",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae RP 26 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29131",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae RP 34 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29134",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae WP 21 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29135",
+      "description": "Implant Driver Br\u00e5nemark System\u00ae WP 26 mm",
+      "price": 145.0
+    },
+    {
+      "id": "36773",
+      "description": "Implant Driver Conical Connection 3.0 28 mm",
+      "price": 117.0
+    },
+    {
+      "id": "36774",
+      "description": "Implant Driver Conical Connection 3.0 37 mm",
+      "price": 117.0
+    },
+    {
+      "id": "36718",
+      "description": "Implant Driver Conical Connection NP 28 mm",
+      "price": 117.0
+    },
+    {
+      "id": "36719",
+      "description": "Implant Driver Conical Connection NP 37 mm",
+      "price": 117.0
+    },
+    {
+      "id": "36720",
+      "description": "Implant Driver Conical Connection RP 28 mm",
+      "price": 117.0
+    },
+    {
+      "id": "36721",
+      "description": "Implant Driver Conical Connection RP 37 mm",
+      "price": 117.0
+    },
+    {
+      "id": "37859",
+      "description": "Implant Driver Conical Connection WP 28 mm",
+      "price": 117.0
+    },
+    {
+      "id": "37860",
+      "description": "Implant Driver Conical Connection WP 37 mm",
+      "price": 117.0
+    },
+    {
+      "id": "300906",
+      "description": "Implant Driver Nobel Biocare N1\u2122 TCC NP Long",
+      "price": 122.0
+    },
+    {
+      "id": "300905",
+      "description": "Implant Driver Nobel Biocare N1\u2122 TCC NP Short",
+      "price": 122.0
+    },
+    {
+      "id": "300908",
+      "description": "Implant Driver Nobel Biocare N1\u2122 TCC RP Long",
+      "price": 122.0
+    },
+    {
+      "id": "300907",
+      "description": "Implant Driver Nobel Biocare N1\u2122 TCC RP Short",
+      "price": 122.0
+    },
+    {
+      "id": "300688",
+      "description": "Implant Driver NobelPearl\u2122 Inter-X RP/WP 20 mm",
+      "price": 72.0
+    },
+    {
+      "id": "300689",
+      "description": "Implant Driver NobelPearl\u2122 Inter-X RP/WP 25 mm",
+      "price": 72.0
+    },
+    {
+      "id": "36131",
+      "description": "Implant Driver NobelReplace\u00ae 6.0 Long",
+      "price": 117.0
+    },
+    {
+      "id": "36130",
+      "description": "Implant Driver NobelReplace\u00ae 6.0 Short",
+      "price": 117.0
+    },
+    {
+      "id": "36125",
+      "description": "Implant Driver NobelReplace\u00ae NP Long",
+      "price": 117.0
+    },
+    {
+      "id": "36124",
+      "description": "Implant Driver NobelReplace\u00ae NP Short",
+      "price": 117.0
+    },
+    {
+      "id": "36127",
+      "description": "Implant Driver NobelReplace\u00ae RP Long",
+      "price": 117.0
+    },
+    {
+      "id": "36126",
+      "description": "Implant Driver NobelReplace\u00ae RP Short",
+      "price": 117.0
+    },
+    {
+      "id": "36129",
+      "description": "Implant Driver NobelReplace\u00ae WP Long",
+      "price": 117.0
+    },
+    {
+      "id": "36128",
+      "description": "Implant Driver NobelReplace\u00ae WP Short",
+      "price": 117.0
+    },
+    {
+      "id": "29128",
+      "description": "Implant Driver Wrench Adapter Br\u00e5nemark System\u00ae NP 21 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29132",
+      "description": "Implant Driver Wrench Adapter Br\u00e5nemark System\u00ae RP 12 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29133",
+      "description": "Implant Driver Wrench Adapter Br\u00e5nemark System\u00ae RP 21 mm",
+      "price": 145.0
+    },
+    {
+      "id": "29136",
+      "description": "Implant Driver Wrench Adapter Br\u00e5nemark System\u00ae WP 12 mm",
+      "price": 145.0
+    },
+    {
+      "id": "300352",
+      "description": "Implant Package Organizer",
+      "price": 95.0
+    },
+    {
+      "id": "37478",
+      "description": "Implant Rescue Collar Tri-Channel \u00d8 3.5",
+      "price": 46.0
+    },
+    {
+      "id": "37479",
+      "description": "Implant Rescue Collar Tri-Channel \u00d8 4.3",
+      "price": 46.0
+    },
+    {
+      "id": "301294",
+      "description": "Implant Retrieval Instrument Conical Connection 3.0 & TCC NP",
+      "price": 86.0
+    },
+    {
+      "id": "37474",
+      "description": "Implant Retrieval Instrument Conical Connection NP and External Hex WP 22 mm",
+      "price": 86.0
+    },
+    {
+      "id": "301295",
+      "description": "Implant Retrieval Instrument Conical Connection RP & Tri-Channel WP & TCC RP",
+      "price": 86.0
+    },
+    {
+      "id": "37927",
+      "description": "Implant Retrieval Instrument Conical Connection WP 22 mm",
+      "price": 86.0
+    },
+    {
+      "id": "37476",
+      "description": "Implant Retrieval Instrument External Hex and Tri-Channel 6.0 22 mm",
+      "price": 86.0
+    },
+    {
+      "id": "37471",
+      "description": "Implant Retrieval Instrument External Hex and Tri-Channel NP/RP 22 mm",
+      "price": 86.0
+    },
+    {
+      "id": "37472",
+      "description": "Implant Retrieval Instrument External Hex and Tri-Channel NP/RP 31 mm",
+      "price": 86.0
+    },
+    {
+      "id": "87309",
+      "description": "Implant Retrieval Set",
+      "price": 2474.0
+    },
+    {
+      "id": "301343",
+      "description": "Implant Retrieval Set Organizer",
+      "price": 80.0
+    },
+    {
+      "id": "29543",
+      "description": "Implant Sleeve Holder",
+      "price": 49.0
+    },
+    {
+      "id": "300966",
+      "description": "Insert Tool IOS Implant Replica Nobel Biocare N1\u2122 NP/RP",
+      "price": 52.0
+    },
+    {
+      "id": "1.014.1007",
+      "description": "Intraoral scanner Training (in person)",
+      "price": 1704.0
+    },
+    {
+      "id": "1303711-010",
+      "description": "Irrigation Clip (10/pkg) (OsseoCare\u2122)",
+      "price": 32.0
+    },
+    {
+      "id": "1500984-010",
+      "description": "Irrigation Line (10/pkg) (OsseoCare\u2122 external irrigation)",
+      "price": 124.0
+    },
+    {
+      "id": "1501635-010",
+      "description": "Irrigation Line Kirschner-Meyer (10/pkg) (OsseoCare\u2122 internal and external irrigation)",
+      "price": 161.0
+    },
+    {
+      "id": "2042",
+      "description": "Irrigation Needle",
+      "price": 35.0
+    },
+    {
+      "id": "1501621-010",
+      "description": "Irrigation System Kirschner-Meyer 20:1 L (10/pkg) (OsseoCare\u2122)",
+      "price": 501.0
+    },
+    {
+      "id": "NB00929300",
+      "description": "Irrigation Tube Elcomed 100 10/pkg",
+      "price": 105.0
+    },
+    {
+      "id": "NB04363600",
+      "description": "Irrigation Tubing Set 2.2m 6/pkg",
+      "price": 75.0
+    },
+    {
+      "id": "1.013.7540",
+      "description": "KaVo Contra-angle SURGmatic\u2122 S201 L Pro",
+      "price": 2298.0
+    },
+    {
+      "id": "1.013.7541",
+      "description": "KaVo Contra-angle SURGmatic\u2122 S201 XL Pro",
+      "price": 2298.0
+    },
+    {
+      "id": "1.008.3500",
+      "description": "KaVo EXPERTsurg\u2122 LUX",
+      "price": 6030.0
+    },
+    {
+      "id": "81076",
+      "description": "KaVo EXPERTsurg\u2122 LUX Set (JP/US)",
+      "price": 8328.0
+    },
+    {
+      "id": "1.009.1010",
+      "description": "KaVo Handpiece SURGmatic\u2122 S11 L, Straight 1:1",
+      "price": 2032.0
+    },
+    {
+      "id": "1.008.8000",
+      "description": "KaVo INTRA LUX Motor S600 LED",
+      "price": 2169.0
+    },
+    {
+      "id": "1.009.1200",
+      "description": "KaVo MASTERsurg\u2122 LUX Wireless",
+      "price": 7371.0
+    },
+    {
+      "id": "81074",
+      "description": "KaVo MASTERsurg\u2122 LUX Wireless Set (JP/US)",
+      "price": 9669.0
+    },
+    {
+      "id": "NB0.593.0361",
+      "description": "Kirschner-Meyer Irrigation Coupling Piece",
+      "price": 60.0
+    },
+    {
+      "id": "REF08390",
+      "description": "Locator\u00ae Abutment Driver (gold end only)",
+      "price": 62.0
+    },
+    {
+      "id": "REF08393",
+      "description": "Locator\u00ae Core Tool",
+      "price": 118.0
+    },
+    {
+      "id": "REF08913",
+      "description": "Locator\u00ae Latch Type Torque Wrench Driver 23 mm",
+      "price": 75.0
+    },
+    {
+      "id": "REF08914",
+      "description": "Locator\u00ae Latch Type Torque Wrench Driver 29 mm",
+      "price": 75.0
+    },
+    {
+      "id": "301311",
+      "description": "Manual Torque Wrench Adapter NobelPearl\u2122",
+      "price": 88.0
+    },
+    {
+      "id": "29167",
+      "description": "Manual Torque Wrench Adapter Prosthetic",
+      "price": 131.0
+    },
+    {
+      "id": "32111",
+      "description": "Manual Torque Wrench Adapter Surgical Br\u00e5nemark System\u00ae",
+      "price": 131.0
+    },
+    {
+      "id": "28840",
+      "description": "Manual Torque Wrench Adapter Surgical NobelReplace\u00ae",
+      "price": 131.0
+    },
+    {
+      "id": "301312",
+      "description": "Manual Torque Wrench NobelPearl\u2122",
+      "price": 355.0
+    },
+    {
+      "id": "29165",
+      "description": "Manual Torque Wrench Prosthetic",
+      "price": 777.0
+    },
+    {
+      "id": "301082",
+      "description": "Manual Torque Wrench Prosthetic Nobel Biocare N1\u2122",
+      "price": 777.0
+    },
+    {
+      "id": "32110",
+      "description": "Manual Torque Wrench Surgical Br\u00e5nemark System\u00ae",
+      "price": 777.0
+    },
+    {
+      "id": "301083",
+      "description": "Manual Torque Wrench Surgical Nobel Biocare N1\u2122",
+      "price": 777.0
+    },
+    {
+      "id": "34584",
+      "description": "Manual Torque Wrench Surgical NobelActive\u00ae",
+      "price": 777.0
+    },
+    {
+      "id": "28839",
+      "description": "Manual Torque Wrench Surgical NobelReplace\u00ae",
+      "price": 777.0
+    },
+    {
+      "id": "1.009.1700",
+      "description": "Motor Cable S600",
+      "price": 677.0
+    },
+    {
+      "id": "1600875-001",
+      "description": "Motor MX-i LED\u00ae (OsseoCare\u2122)",
+      "price": 2330.0
+    },
+    {
+      "id": "300444",
+      "description": "Mounting Tool Base Guided Pilot Sleeve 1.5/2.0 mm",
+      "price": 54.0
+    },
+    {
+      "id": "300442",
+      "description": "Mounting Tool Pin Guided Pilot Sleeve 1.5 mm",
+      "price": 54.0
+    },
+    {
+      "id": "300443",
+      "description": "Mounting Tool Pin Guided Pilot Sleeve 2.0 mm",
+      "price": 54.0
+    },
+    {
+      "id": "301702",
+      "description": "Nobel Biocare N1\u2122 Base Screw Removal Tool NP/RP",
+      "price": 64.0
+    },
+    {
+      "id": "35949",
+      "description": "NobelGuide\u00ae Calibration Kit",
+      "price": 839.0
+    },
+    {
+      "id": "301660",
+      "description": "NobelZygoma\u2122 0\u00b0 Implant Bone Mill Guide",
+      "price": 359.0
+    },
+    {
+      "id": "301658",
+      "description": "NobelZygoma\u2122 0\u00b0 Implant Bone Mill with Guide",
+      "price": 359.0
+    },
+    {
+      "id": "301584",
+      "description": "NobelZygoma\u2122 45\u00b0 Implant Bone Mill Guide",
+      "price": 118.0
+    },
+    {
+      "id": "301659",
+      "description": "NobelZygoma\u2122 45\u00b0 Implant Bone Mill with Guide",
+      "price": 359.0
+    },
+    {
+      "id": "301657",
+      "description": "NobelZygoma\u2122 Depth Indicator Angled",
+      "price": 370.0
+    },
+    {
+      "id": "301656",
+      "description": "NobelZygoma\u2122 Depth Indicator Straight",
+      "price": 370.0
+    },
+    {
+      "id": "301582",
+      "description": "NobelZygoma\u2122 Handle",
+      "price": 424.0
+    },
+    {
+      "id": "301583",
+      "description": "NobelZygoma\u2122 Handpiece Adapter",
+      "price": 266.0
+    },
+    {
+      "id": "301586",
+      "description": "NobelZygoma\u2122 Lateral Burr Coarse",
+      "price": 126.0
+    },
+    {
+      "id": "301694",
+      "description": "NobelZygoma\u2122 Lateral Burr Fine",
+      "price": 126.0
+    },
+    {
+      "id": "301604",
+      "description": "NobelZygoma\u2122 Pilot Drill 3.5 mm",
+      "price": 126.0
+    },
+    {
+      "id": "301605",
+      "description": "NobelZygoma\u2122 Pilot Drill 3.5 mm Short",
+      "price": 126.0
+    },
+    {
+      "id": "301585",
+      "description": "NobelZygoma\u2122 Precision Drill",
+      "price": 49.0
+    },
+    {
+      "id": "301601",
+      "description": "NobelZygoma\u2122 Round Burr",
+      "price": 49.0
+    },
+    {
+      "id": "301602",
+      "description": "NobelZygoma\u2122 Twist Drill 2.9 mm",
+      "price": 126.0
+    },
+    {
+      "id": "301603",
+      "description": "NobelZygoma\u2122 Twist Drill 2.9 mm Short",
+      "price": 126.0
+    },
+    {
+      "id": "301606",
+      "description": "NobelZygoma\u2122 Twist Drill 3.5 mm",
+      "price": 126.0
+    },
+    {
+      "id": "301607",
+      "description": "NobelZygoma\u2122 Twist Drill 3.5 mm Short",
+      "price": 126.0
+    },
+    {
+      "id": "XNVP009586",
+      "description": "Offset Tracker Arm - Left",
+      "price": 449.0
+    },
+    {
+      "id": "XNVP009587",
+      "description": "Offset Tracker Arm - Right",
+      "price": 449.0
+    },
+    {
+      "id": "32F1004",
+      "description": "Omnirrigator 5/pkg",
+      "price": 95.0
+    },
+    {
+      "id": "301077",
+      "description": "OsseoDirector\u2122 Nobel Biocare N1\u2122 \u00d8 1.8-2.4 x 8-14 mm",
+      "price": 69.0
+    },
+    {
+      "id": "301401",
+      "description": "OsseoDirector\u2122 Nobel Biocare N1\u2122 \u00d8 1.8-2.4 x 8-18 mm",
+      "price": 69.0
+    },
+    {
+      "id": "NB04720016",
+      "description": "OsseoSet\u2122 200 motor with cable",
+      "price": 2161.0
+    },
+    {
+      "id": "87290",
+      "description": "OsseoSet\u2122 300 1015, N2, 19LC, WS-75 (US)",
+      "price": 9073.0
+    },
+    {
+      "id": "87289",
+      "description": "OsseoSet\u2122 300 1015, NW, 19LC, WS-75 (US)",
+      "price": 9728.0
+    },
+    {
+      "id": "NB30289002",
+      "description": "OsseoSet\u2122 300 SI-1015, 120V (US)",
+      "price": 3505.0
+    },
+    {
+      "id": "300893",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 3.5 x 11 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300894",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 3.5 x 13 mm",
+      "price": 126.0
+    },
+    {
+      "id": "301178",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 3.5 x 15 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300892",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 3.5 x 9 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300897",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.0 x 11 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300898",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.0 x 13 mm",
+      "price": 126.0
+    },
+    {
+      "id": "301179",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.0 x 15 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300895",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.0 x 7 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300896",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.0 x 9 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300901",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.8 x 11 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300899",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.8 x 7 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300900",
+      "description": "OsseoShaper\u2122 2 Nobel Biocare N1\u2122 4.8 x 9 mm",
+      "price": 126.0
+    },
+    {
+      "id": "300923",
+      "description": "OsseoShaper\u2122 Extension Nobel Biocare N1\u2122",
+      "price": 71.0
+    },
+    {
+      "id": "36118",
+      "description": "Precision Drill",
+      "price": 69.0
+    },
+    {
+      "id": "302001",
+      "description": "Product Organizer",
+      "price": 104.0
+    },
+    {
+      "id": "302002",
+      "description": "Product Organizer Divider spare part 6/pkg",
+      "price": 21.0
+    },
+    {
+      "id": "300771",
+      "description": "Prosthetic Kit Inter-X Box NobelPearl\u2122",
+      "price": 166.0
+    },
+    {
+      "id": "300772",
+      "description": "Prosthetic Kit Inter-X NobelPearl\u2122",
+      "price": 803.0
+    },
+    {
+      "id": "87353",
+      "description": "Prosthetic PureSet\u2122",
+      "price": 2846.0
+    },
+    {
+      "id": "87301",
+      "description": "Prosthetic PureSet\u2122 Kit Basic",
+      "price": 2043.0
+    },
+    {
+      "id": "87302",
+      "description": "Prosthetic PureSet\u2122 Nobel Biocare N1\u2122",
+      "price": 1992.0
+    },
+    {
+      "id": "38855",
+      "description": "Protection Analog/Drill Guide Conical Connection NP 5/pk",
+      "price": 134.0
+    },
+    {
+      "id": "38856",
+      "description": "Protection Analog/Drill Guide Conical Connection RP 5/pk",
+      "price": 134.0
+    },
+    {
+      "id": "38857",
+      "description": "Protection Analog/Drill Guide Conical Connection WP 5/pk",
+      "price": 134.0
+    },
+    {
+      "id": "87298",
+      "description": "PureSet\u2122 Kit Br\u00e5nemark System\u00ae",
+      "price": 3231.0
+    },
+    {
+      "id": "87293",
+      "description": "PureSet\u2122 Kit Nobel Biocare N1\u2122",
+      "price": 2775.0
+    },
+    {
+      "id": "87294",
+      "description": "PureSet\u2122 Kit NobelActive\u00ae",
+      "price": 3884.0
+    },
+    {
+      "id": "87295",
+      "description": "PureSet\u2122 Kit NobelParallel\u2122 CC",
+      "price": 3344.0
+    },
+    {
+      "id": "87296",
+      "description": "PureSet\u2122 Kit NobelReplace\u00ae CC",
+      "price": 8813.0
+    },
+    {
+      "id": "87297",
+      "description": "PureSet\u2122 Kit NobelSpeedy\u00ae Groovy",
+      "price": 4101.0
+    },
+    {
+      "id": "88521",
+      "description": "PureSet\u2122 Kit NobelZygoma\u2122",
+      "price": 5785.0
+    },
+    {
+      "id": "108236",
+      "description": "PureSet\u2122 Kit NobelZygoma\u2122 TiUltra\u2122",
+      "price": 7434.0
+    },
+    {
+      "id": "87299",
+      "description": "PureSet\u2122 Kit Replace Select\u2122 TC",
+      "price": 2917.0
+    },
+    {
+      "id": "PUR0201",
+      "description": "PureSet\u2122 Plate NobelActive\u00ae/NobelParallel\u2122 CC",
+      "price": 322.0
+    },
+    {
+      "id": "PUR0301",
+      "description": "PureSet\u2122 Plate NobelReplace\u00ae CC",
+      "price": 322.0
+    },
+    {
+      "id": "PUR0901",
+      "description": "PureSet\u2122 Plate NobelSpeedy\u00ae/Br\u00e5nemark System\u00ae/Replace Select\u2122 TC",
+      "price": 308.0
+    },
+    {
+      "id": "PUR1001",
+      "description": "PureSet\u2122 Plate NobelZygoma\u2122",
+      "price": 202.0
+    },
+    {
+      "id": "PUR0501",
+      "description": "PureSet\u2122 Plate Prosthetic",
+      "price": 246.0
+    },
+    {
+      "id": "PUR0400",
+      "description": "PureSet\u2122 Tray Nobel Biocare N1\u2122",
+      "price": 771.0
+    },
+    {
+      "id": "PUR0200",
+      "description": "PureSet\u2122 Tray NobelActive\u00ae/NobelParallel\u2122 CC",
+      "price": 1247.0
+    },
+    {
+      "id": "PUR0300",
+      "description": "PureSet\u2122 Tray NobelReplace\u00ae CC",
+      "price": 1247.0
+    },
+    {
+      "id": "PUR0900",
+      "description": "PureSet\u2122 Tray NobelSpeedy\u00aeBranemark System\u00ae/Replace Select\u2122 TC",
+      "price": 1193.0
+    },
+    {
+      "id": "PUR1000",
+      "description": "PureSet\u2122 Tray NobelZygoma\u2122",
+      "price": 2183.0
+    },
+    {
+      "id": "PUR0500",
+      "description": "PureSet\u2122 Tray Prosthetic",
+      "price": 771.0
+    },
+    {
+      "id": "301074",
+      "description": "Radiographic Template Nobel Biocare N1\u2122",
+      "price": 43.0
+    },
+    {
+      "id": "37887",
+      "description": "Radiographic Template NobelActive\u00ae",
+      "price": 45.0
+    },
+    {
+      "id": "37792",
+      "description": "Radiographic Template NobelParallel\u2122 Conical Connection",
+      "price": 45.0
+    },
+    {
+      "id": "37320",
+      "description": "Radiographic Template NobelReplace\u00ae Tapered/Replace Select\u2122 Tapered",
+      "price": 45.0
+    },
+    {
+      "id": "33097",
+      "description": "Radiographic Template NobelSpeedy\u00ae Br\u00e5nemark System\u00ae",
+      "price": 45.0
+    },
+    {
+      "id": "37628",
+      "description": "Radiographic Template NobelSpeedy\u00ae Groovy",
+      "price": 45.0
+    },
+    {
+      "id": "71580",
+      "description": "Radiographic Template Replace Select\u2122 TC",
+      "price": 45.0
+    },
+    {
+      "id": "37485",
+      "description": "Rescue Drill Guide Conical Connection 3.0",
+      "price": 89.0
+    },
+    {
+      "id": "37486",
+      "description": "Rescue Drill Guide Conical Connection NP",
+      "price": 89.0
+    },
+    {
+      "id": "37487",
+      "description": "Rescue Drill Guide Conical Connection RP",
+      "price": 89.0
+    },
+    {
+      "id": "37933",
+      "description": "Rescue Drill Guide Conical Connection WP",
+      "price": 89.0
+    },
+    {
+      "id": "37482",
+      "description": "Rescue Drill Guide External Hex NP",
+      "price": 89.0
+    },
+    {
+      "id": "37483",
+      "description": "Rescue Drill Guide External Hex RP",
+      "price": 89.0
+    },
+    {
+      "id": "37484",
+      "description": "Rescue Drill Guide External Hex WP",
+      "price": 89.0
+    },
+    {
+      "id": "300919",
+      "description": "Rescue Drill Guide Nobel Biocare N1\u2122 TCC NP",
+      "price": 89.0
+    },
+    {
+      "id": "300920",
+      "description": "Rescue Drill Guide Nobel Biocare N1\u2122 TCC RP",
+      "price": 89.0
+    },
+    {
+      "id": "37491",
+      "description": "Rescue Drill Guide Tri-Channel 6.0",
+      "price": 89.0
+    },
+    {
+      "id": "37488",
+      "description": "Rescue Drill Guide Tri-Channel NP",
+      "price": 89.0
+    },
+    {
+      "id": "37489",
+      "description": "Rescue Drill Guide Tri-Channel RP",
+      "price": 89.0
+    },
+    {
+      "id": "37490",
+      "description": "Rescue Drill Guide Tri-Channel WP",
+      "price": 89.0
+    },
+    {
+      "id": "300763",
+      "description": "Rescue Driver NobelPearl\u2122 Inter-X RP/WP",
+      "price": 72.0
+    },
+    {
+      "id": "300731",
+      "description": "Round Bur NobelPearl\u2122 2 mm",
+      "price": 43.0
+    },
+    {
+      "id": "1301560-010",
+      "description": "Safety-fuse \u00d8 5 x 20 250V (10/pkg) (OsseoCare\u2122)",
+      "price": 70.0
+    },
+    {
+      "id": "301296",
+      "description": "Screw Retrieval Drill Conical Connection 3.0/NP & TCC NP/RP",
+      "price": 120.0
+    },
+    {
+      "id": "301297",
+      "description": "Screw Retrieval Instrument Conical Connection 3.0/NP & TCC NP/RP",
+      "price": 120.0
+    },
+    {
+      "id": "36816",
+      "description": "Screw Tap NobelActive\u00ae 3.0",
+      "price": 251.0
+    },
+    {
+      "id": "36236",
+      "description": "Screw Tap NobelActive\u00ae NP 3.5",
+      "price": 251.0
+    },
+    {
+      "id": "36237",
+      "description": "Screw Tap NobelActive\u00ae RP 4.3",
+      "price": 251.0
+    },
+    {
+      "id": "36238",
+      "description": "Screw Tap NobelActive\u00ae RP 5.0",
+      "price": 251.0
+    },
+    {
+      "id": "37872",
+      "description": "Screw Tap NobelActive\u00ae WP 5.5 11.5-15 mm",
+      "price": 251.0
+    },
+    {
+      "id": "37871",
+      "description": "Screw Tap NobelActive\u00ae WP 5.5 7-10 mm",
+      "price": 251.0
+    },
+    {
+      "id": "37990",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 3.75 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37991",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 3.75 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37992",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 4.3 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37993",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 4.3 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37994",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 5.0 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37995",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 5.0 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37996",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 5.5 7-10 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37997",
+      "description": "Screw Tap NobelParallel\u2122 Conical Connection 5.5 7-15 mm",
+      "price": 130.0
+    },
+    {
+      "id": "300737",
+      "description": "Screw Tap NobelPearl\u2122 Tapered NP 3.5 mm",
+      "price": 200.0
+    },
+    {
+      "id": "32294",
+      "description": "Screw Tap NobelReplace\u00ae 6.0/Br\u00e5nemark System\u00ae WP \u00d8 6 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "32295",
+      "description": "Screw Tap NobelReplace\u00ae 6.0/Br\u00e5nemark System\u00ae WP \u00d8 6 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "32290",
+      "description": "Screw Tap RP \u00d8 3.75 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "32291",
+      "description": "Screw Tap RP \u00d8 3.75 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "33072",
+      "description": "Screw Tap RP \u00d8 4 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "33073",
+      "description": "Screw Tap RP \u00d8 4 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37497",
+      "description": "Screw Tap Repair M1.4",
+      "price": 203.0
+    },
+    {
+      "id": "37498",
+      "description": "Screw Tap Repair M1.6",
+      "price": 203.0
+    },
+    {
+      "id": "37499",
+      "description": "Screw Tap Repair M1.8",
+      "price": 203.0
+    },
+    {
+      "id": "37517",
+      "description": "Screw Tap Repair M2.0",
+      "price": 203.0
+    },
+    {
+      "id": "37500",
+      "description": "Screw Tap Repair M2.5",
+      "price": 203.0
+    },
+    {
+      "id": "301151",
+      "description": "Screw Tap Repair Tool Nobel Biocare N1\u2122 TCC NP",
+      "price": 203.0
+    },
+    {
+      "id": "301152",
+      "description": "Screw Tap Repair Tool Nobel Biocare N1\u2122 TCC RP",
+      "price": 203.0
+    },
+    {
+      "id": "32092",
+      "description": "Screw Tap Tapered 6.0",
+      "price": 250.0
+    },
+    {
+      "id": "36717",
+      "description": "Screw Tap Tapered NP",
+      "price": 250.0
+    },
+    {
+      "id": "300744",
+      "description": "Screw Tap Tapered NobelPearl\u2122 RP 4.2 mm",
+      "price": 219.0
+    },
+    {
+      "id": "300749",
+      "description": "Screw Tap Tapered NobelPearl\u2122 WP 5.5 mm",
+      "price": 219.0
+    },
+    {
+      "id": "32090",
+      "description": "Screw Tap Tapered RP",
+      "price": 250.0
+    },
+    {
+      "id": "32091",
+      "description": "Screw Tap Tapered WP",
+      "price": 250.0
+    },
+    {
+      "id": "32292",
+      "description": "Screw Tap WP \u00d8 5 7-13 mm",
+      "price": 130.0
+    },
+    {
+      "id": "32293",
+      "description": "Screw Tap WP \u00d8 5 7-18 mm",
+      "price": 130.0
+    },
+    {
+      "id": "37627",
+      "description": "Screw Tap \u00d8 3.3 7-15 mm",
+      "price": 130.0
+    },
+    {
+      "id": "TRMDTC24H120",
+      "description": "Screwdriver Machine 1.20 mm Hex 24 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDTC35H120",
+      "description": "Screwdriver Machine 1.20 mm Hex 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDTC24H127",
+      "description": "Screwdriver Machine 1.27 mm Hex 24 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDTC35H127",
+      "description": "Screwdriver Machine 1.27 mm Hex 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29027",
+      "description": "Screwdriver Machine Ball Abutment 24 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29158",
+      "description": "Screwdriver Machine Multi-unit 21 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29159",
+      "description": "Screwdriver Machine Multi-unit Br\u00e5nemark System\u00ae WP 20 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDT24NG",
+      "description": "Screwdriver Machine Neo 24 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDT35NG",
+      "description": "Screwdriver Machine Neo 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "300903",
+      "description": "Screwdriver Machine Nobel Biocare N1\u2122 Base 28 mm",
+      "price": 97.0
+    },
+    {
+      "id": "300904",
+      "description": "Screwdriver Machine Nobel Biocare N1\u2122 Base 36 mm",
+      "price": 97.0
+    },
+    {
+      "id": "300852",
+      "description": "Screwdriver Machine Omnigrip\u2122 Mini 20 mm",
+      "price": 83.0
+    },
+    {
+      "id": "300853",
+      "description": "Screwdriver Machine Omnigrip\u2122 Mini 28 mm",
+      "price": 83.0
+    },
+    {
+      "id": "300854",
+      "description": "Screwdriver Machine Omnigrip\u2122 Mini 36 mm",
+      "price": 83.0
+    },
+    {
+      "id": "TRMDT24TC06",
+      "description": "Screwdriver Machine Torx 24 mm",
+      "price": 77.0
+    },
+    {
+      "id": "TRMDT35TC06",
+      "description": "Screwdriver Machine Torx 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29151",
+      "description": "Screwdriver Machine Unigrip\u2122 20 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29152",
+      "description": "Screwdriver Machine Unigrip\u2122 25 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29153",
+      "description": "Screwdriver Machine Unigrip\u2122 30 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29154",
+      "description": "Screwdriver Machine Unigrip\u2122 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "29026",
+      "description": "Screwdriver Manual Ball Abutment 22 mm",
+      "price": 113.0
+    },
+    {
+      "id": "29156",
+      "description": "Screwdriver Manual Multi-unit 25 mm",
+      "price": 113.0
+    },
+    {
+      "id": "29157",
+      "description": "Screwdriver Manual Multi-unit Br\u00e5nemark System\u00ae WP 25 mm",
+      "price": 113.0
+    },
+    {
+      "id": "301135",
+      "description": "Screwdriver Manual Nobel Biocare N1\u2122 Base 28 mm",
+      "price": 141.0
+    },
+    {
+      "id": "301136",
+      "description": "Screwdriver Manual Nobel Biocare N1\u2122 Base 36 mm",
+      "price": 141.0
+    },
+    {
+      "id": "300855",
+      "description": "Screwdriver Manual Omnigrip\u2122 Mini 20 mm",
+      "price": 108.0
+    },
+    {
+      "id": "300856",
+      "description": "Screwdriver Manual Omnigrip\u2122 Mini 36 mm",
+      "price": 108.0
+    },
+    {
+      "id": "29148",
+      "description": "Screwdriver Manual Unigrip\u2122 20 mm",
+      "price": 128.0
+    },
+    {
+      "id": "29149",
+      "description": "Screwdriver Manual Unigrip\u2122 28 mm",
+      "price": 128.0
+    },
+    {
+      "id": "29150",
+      "description": "Screwdriver Manual Unigrip\u2122 36 mm",
+      "price": 128.0
+    },
+    {
+      "id": "300661",
+      "description": "Screwdriver NobelPearl\u2122 RP/WP 19 mm",
+      "price": 67.0
+    },
+    {
+      "id": "300678",
+      "description": "Screwdriver NobelPearl\u2122 RP/WP 23 mm",
+      "price": 67.0
+    },
+    {
+      "id": "300681",
+      "description": "Screwdriver NobelPearl\u2122 RP/WP 28 mm",
+      "price": 67.0
+    },
+    {
+      "id": "37379",
+      "description": "Screwdriver Omnigrip\u2122 Machine 20 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37380",
+      "description": "Screwdriver Omnigrip\u2122 Machine 25 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37381",
+      "description": "Screwdriver Omnigrip\u2122 Machine 30 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37382",
+      "description": "Screwdriver Omnigrip\u2122 Machine 35 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37376",
+      "description": "Screwdriver Omnigrip\u2122 Manual 20 mm",
+      "price": 110.0
+    },
+    {
+      "id": "37377",
+      "description": "Screwdriver Omnigrip\u2122 Manual 28 mm",
+      "price": 110.0
+    },
+    {
+      "id": "37378",
+      "description": "Screwdriver Omnigrip\u2122 Manual 36 mm",
+      "price": 110.0
+    },
+    {
+      "id": "KI589B.204.",
+      "description": "Shank Extension",
+      "price": 70.0
+    },
+    {
+      "id": "32Z2000",
+      "description": "Soft Tissue Punch \u00d8 4.1 mm, 5/pkg",
+      "price": 141.0
+    },
+    {
+      "id": "32Z2002",
+      "description": "Soft Tissue Punch \u00d8 5.2 mm, 5/pkg",
+      "price": 141.0
+    },
+    {
+      "id": "32Z2004",
+      "description": "Soft Tissue Punch \u00d8 6.2 mm, 5/pkg",
+      "price": 141.0
+    },
+    {
+      "id": "1501746-010",
+      "description": "Sterile Protection Film (10/pkg) (OsseoCare\u2122)",
+      "price": 89.0
+    },
+    {
+      "id": "301266",
+      "description": "Surgery Kit Box NobelPearl\u2122",
+      "price": 785.0
+    },
+    {
+      "id": "301267",
+      "description": "Surgery Kit NobelPearl\u2122",
+      "price": 3845.0
+    },
+    {
+      "id": "32180",
+      "description": "Surgical Driver NobelReplace\u00ae",
+      "price": 306.0
+    },
+    {
+      "id": "28910",
+      "description": "Tissue Punch 3.0",
+      "price": 185.0
+    },
+    {
+      "id": "32672",
+      "description": "Tissue Punch 6.0",
+      "price": 185.0
+    },
+    {
+      "id": "29628",
+      "description": "Tissue Punch NP",
+      "price": 185.0
+    },
+    {
+      "id": "29629",
+      "description": "Tissue Punch RP",
+      "price": 185.0
+    },
+    {
+      "id": "29630",
+      "description": "Tissue Punch WP",
+      "price": 185.0
+    },
+    {
+      "id": "TRMTWADAP",
+      "description": "Torque Wrench Adapter from Latch to 4x4 Connection",
+      "price": 73.0
+    },
+    {
+      "id": "TRMDTSTCAC",
+      "description": "Torque Wrench Adapter from Latch to Straumann\u00ae Connection",
+      "price": 73.0
+    },
+    {
+      "id": "37477",
+      "description": "Trephine Drill 3.2/4.0 mm",
+      "price": 262.0
+    },
+    {
+      "id": "37928",
+      "description": "Trephine Drill 3.8/4.6 mm",
+      "price": 262.0
+    },
+    {
+      "id": "37929",
+      "description": "Trephine Drill 4.4/5.2 mm",
+      "price": 262.0
+    },
+    {
+      "id": "37930",
+      "description": "Trephine Drill 5.2/6.2 mm",
+      "price": 262.0
+    },
+    {
+      "id": "37931",
+      "description": "Trephine Drill 5.6/6.6 mm",
+      "price": 262.0
+    },
+    {
+      "id": "37932",
+      "description": "Trephine Drill 6.2/7.0 mm",
+      "price": 262.0
+    },
+    {
+      "id": "1.009.8757",
+      "description": "Tube Set Sterile S600 (10/pkg)",
+      "price": 108.0
+    },
+    {
+      "id": "31278",
+      "description": "Twist Drill 1.5 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32268",
+      "description": "Twist Drill 3 x 10-18 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32266",
+      "description": "Twist Drill 3 x 7-10 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32267",
+      "description": "Twist Drill 3 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32271",
+      "description": "Twist Drill 3.2 x 10-18 mm",
+      "price": 64.0
+    },
+    {
+      "id": "37616",
+      "description": "Twist Drill 3.2 x 18-25 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32269",
+      "description": "Twist Drill 3.2 x 7-10 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32270",
+      "description": "Twist Drill 3.2 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32274",
+      "description": "Twist Drill 3.4 x 10-18 mm",
+      "price": 64.0
+    },
+    {
+      "id": "37617",
+      "description": "Twist Drill 3.4 x 18-25 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32272",
+      "description": "Twist Drill 3.4 x 7-10 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32273",
+      "description": "Twist Drill 3.4 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32280",
+      "description": "Twist Drill 5 x 10-18 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32278",
+      "description": "Twist Drill 5 x 7-10 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32279",
+      "description": "Twist Drill 5 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "37766",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 2.9 mm",
+      "price": 124.0
+    },
+    {
+      "id": "37767",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 2.9 mm Short",
+      "price": 124.0
+    },
+    {
+      "id": "37768",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 3.5 mm",
+      "price": 124.0
+    },
+    {
+      "id": "37769",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 3.5 mm Short",
+      "price": 124.0
+    },
+    {
+      "id": "37770",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 4.0 mm",
+      "price": 124.0
+    },
+    {
+      "id": "37771",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 4.0 mm Short",
+      "price": 124.0
+    },
+    {
+      "id": "37772",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 4.4 mm",
+      "price": 124.0
+    },
+    {
+      "id": "37773",
+      "description": "Twist Drill NobelZygoma\u2122 0\u00b0 4.4 mm Short",
+      "price": 124.0
+    },
+    {
+      "id": "300732",
+      "description": "Twist Drill Tapered NobelPearl\u2122 2.3 mm",
+      "price": 112.0
+    },
+    {
+      "id": "32299",
+      "description": "Twist Drill with Tip 2 x 10-18 mm",
+      "price": 64.0
+    },
+    {
+      "id": "37614",
+      "description": "Twist Drill with Tip 2 x 18-25 mm",
+      "price": 64.0
+    },
+    {
+      "id": "37619",
+      "description": "Twist Drill with Tip 2 x 18-25 mm Long Shaft",
+      "price": 64.0
+    },
+    {
+      "id": "32296",
+      "description": "Twist Drill with Tip 2 x 7-10 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32297",
+      "description": "Twist Drill with Tip 2 x 7-15 mm",
+      "price": 64.0
+    },
+    {
+      "id": "32262",
+      "description": "Twist Step Drill 2.4/2.8 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37618",
+      "description": "Twist Step Drill 2.4/2.8 x 18-25 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37620",
+      "description": "Twist Step Drill 2.4/2.8 x 18-25 mm Long Shaft",
+      "price": 77.0
+    },
+    {
+      "id": "32260",
+      "description": "Twist Step Drill 2.4/2.8 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32261",
+      "description": "Twist Step Drill 2.4/2.8 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "34639",
+      "description": "Twist Step Drill 2.8/3.2 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37873",
+      "description": "Twist Step Drill 2.8/3.2 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "34638",
+      "description": "Twist Step Drill 2.8/3.2 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32265",
+      "description": "Twist Step Drill 3.2/3.6 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32263",
+      "description": "Twist Step Drill 3.2/3.6 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32264",
+      "description": "Twist Step Drill 3.2/3.6 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32277",
+      "description": "Twist Step Drill 3.8/4.2 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32275",
+      "description": "Twist Step Drill 3.8/4.2 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "32276",
+      "description": "Twist Step Drill 3.8/4.2 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "34583",
+      "description": "Twist Step Drill 4.2/4.6 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37874",
+      "description": "Twist Step Drill 4.2/4.6 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "34582",
+      "description": "Twist Step Drill 4.2/4.6 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37875",
+      "description": "Twist Step Drill 4.2/5.0 x 7-10 mm",
+      "price": 77.0
+    },
+    {
+      "id": "37876",
+      "description": "Twist Step Drill 4.2/5.0 x 7-15 mm",
+      "price": 77.0
+    },
+    {
+      "id": "301078",
+      "description": "Twist Step Drill \u00d8 2.5/3.4 x 10-14 mm",
+      "price": 77.0
+    },
+    {
+      "id": "301421",
+      "description": "Twist Step Drill \u00d8 2.5/3.4 x 10-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "301079",
+      "description": "Twist Step Drill \u00d8 3.3/3.8 x 8-14 mm",
+      "price": 77.0
+    },
+    {
+      "id": "301422",
+      "description": "Twist Step Drill \u00d8 3.3/3.8 x 8-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "301080",
+      "description": "Twist Step Drill \u00d8 4.2/4.4 x 8-18 mm",
+      "price": 77.0
+    },
+    {
+      "id": "NB10207554",
+      "description": "W&H Contra-angle WI-75 E/KM 20:1",
+      "price": 2416.0
+    },
+    {
+      "id": "NB30033001",
+      "description": "W&H Contra-angle WS-75 L, 20:1",
+      "price": 2289.0
+    },
+    {
+      "id": "NB30058001",
+      "description": "W&H Handpiece S-11 L, straight 1:1",
+      "price": 2025.0
+    },
+    {
+      "id": "NB30281000",
+      "description": "W&H Motor with Cable 1.8m EM-19 LC",
+      "price": 2440.0
+    },
+    {
+      "id": "37790",
+      "description": "Zygoma Depth Indicator Angled",
+      "price": 370.0
+    },
+    {
+      "id": "37789",
+      "description": "Zygoma Depth Indicator Straight",
+      "price": 370.0
+    },
+    {
+      "id": "37787",
+      "description": "Zygoma Drill Guard",
+      "price": 355.0
+    },
+    {
+      "id": "37788",
+      "description": "Zygoma Drill Guard Short",
+      "price": 355.0
+    },
+    {
+      "id": "37786",
+      "description": "Zygoma Handle",
+      "price": 424.0
+    },
+    {
+      "id": "32630",
+      "description": "Zygoma Pilot Drill 3.5 mm Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    },
+    {
+      "id": "32791",
+      "description": "Zygoma Pilot Drill 3.5 mm Short Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    },
+    {
+      "id": "32628",
+      "description": "Zygoma Twist Drill 2.9 mm Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    },
+    {
+      "id": "32629",
+      "description": "Zygoma Twist Drill 2.9 mm Short Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    },
+    {
+      "id": "32631",
+      "description": "Zygoma Twist Drill 3.5 mm Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    },
+    {
+      "id": "32632",
+      "description": "Zygoma Twist Drill 3.5 mm Short Br\u00e5nemark System\u00ae",
+      "price": 126.0
+    }
   ]
 }
