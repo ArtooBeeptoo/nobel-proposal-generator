@@ -328,20 +328,31 @@
         
         <div class="stack-section optional">
             <h4>Healing Abutments & Covers <span class="max-disc">Max 47%</span></h4>
-            <p class="section-note">Minimum 5 mix & match</p>
+            <p class="section-note">Organized by platform. Minimum 5 mix & match.</p>
             <div class="form-group" style="max-width: 200px;">
                 <label>Discount %</label>
                 <input type="number" class="discount-input" name="healing_discount" id="healingDisc" 
                        value="47" min="0" max="47" onchange="recalc()">
             </div>
-            {% for item in healing_abutments %}
-            <div class="item-row">
-                <div>{{ item.description }}</div>
-                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
-                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
-                       data-price="{{ item.price }}" data-category="healing"
-                       min="0" value="0" onchange="recalc()">
+            {% for platform, items in healing_by_platform.items() %}
+            {% if items %}
+            <div class="platform-section" style="margin: 12px 0;">
+                <div class="platform-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.arrow').textContent = this.nextElementSibling.style.display === 'none' ? '▶' : '▼';" style="cursor: pointer; font-weight: 600; color: #003087; padding: 6px 0; border-bottom: 1px solid #ddd;">
+                    <span class="arrow">▶</span> {{ platform }} ({{ items|length }})
+                </div>
+                <div class="platform-items" style="display: none;">
+                    {% for item in items %}
+                    <div class="item-row">
+                        <div>{{ item.description }}</div>
+                        <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                        <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                               data-price="{{ item.price }}" data-category="healing"
+                               min="0" value="0" onchange="recalc()">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
 
@@ -371,51 +382,72 @@
                 <input type="number" class="discount-input" name="instrumentation_discount" id="instrDisc" 
                        value="60" min="0" max="60" onchange="recalc()">
             </div>
-            {% for item in instrumentation %}
-            <div class="item-row">
-                <div>{{ item.description }}</div>
-                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
-                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
-                       data-price="{{ item.price }}" data-category="instrumentation"
-                       min="0" value="0" onchange="recalc()">
+            <div class="collapsible-section">
+                <div class="section-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.arrow').textContent = this.nextElementSibling.style.display === 'none' ? '▶' : '▼';" style="cursor: pointer; font-weight: 600; color: #666; padding: 6px 0;">
+                    <span class="arrow">▶</span> Show all instrumentation ({{ instrumentation|length }} items)
+                </div>
+                <div class="items-list" style="display: none;">
+                    {% for item in instrumentation %}
+                    <div class="item-row">
+                        <div>{{ item.description }}</div>
+                        <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                        <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                               data-price="{{ item.price }}" data-category="instrumentation"
+                               min="0" value="0" onchange="recalc()">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-            {% endfor %}
         </div>
 
         <div class="stack-section optional">
-            <h4>Drilling Units <span class="max-disc">Kavo 47% / W&H 39.99%</span></h4>
+            <h4>Motors & Drilling Units <span class="max-disc">Kavo 47% / W&H 39.99%</span></h4>
             <div class="form-group" style="max-width: 200px;">
                 <label>Discount %</label>
                 <input type="number" class="discount-input" name="drilling_discount" id="drillDisc" 
                        value="47" min="0" max="47" step="0.01" onchange="recalc()">
             </div>
-            {% for item in drilling_units %}
-            <div class="item-row">
-                <div>{{ item.description }}</div>
-                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
-                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
-                       data-price="{{ item.price }}" data-category="drilling"
-                       min="0" value="0" onchange="recalc()">
+            <div class="collapsible-section">
+                <div class="section-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.arrow').textContent = this.nextElementSibling.style.display === 'none' ? '▶' : '▼';" style="cursor: pointer; font-weight: 600; color: #666; padding: 6px 0;">
+                    <span class="arrow">▶</span> Show all motors & handpieces ({{ drilling_units|length }} items)
+                </div>
+                <div class="items-list" style="display: none;">
+                    {% for item in drilling_units %}
+                    <div class="item-row">
+                        <div>{{ item.description }}</div>
+                        <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                        <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                               data-price="{{ item.price }}" data-category="drilling"
+                               min="0" value="0" onchange="recalc()">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-            {% endfor %}
         </div>
 
         <div class="stack-section optional">
-            <h4>DTX / Software <span class="max-disc">Max 40%</span></h4>
+            <h4>DTX / Digital Solutions <span class="max-disc">Max 40%</span></h4>
             <div class="form-group" style="max-width: 200px;">
                 <label>Discount %</label>
                 <input type="number" class="discount-input" name="dtx_discount" id="dtxDisc" 
                        value="40" min="0" max="40" onchange="recalc()">
             </div>
-            {% for item in dtx_products %}
-            <div class="item-row">
-                <div>{{ item.description }}</div>
-                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
-                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
-                       data-price="{{ item.price }}" data-category="dtx"
-                       min="0" value="0" onchange="recalc()">
+            <div class="collapsible-section">
+                <div class="section-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.arrow').textContent = this.nextElementSibling.style.display === 'none' ? '▶' : '▼';" style="cursor: pointer; font-weight: 600; color: #666; padding: 6px 0;">
+                    <span class="arrow">▶</span> Show all digital solutions ({{ dtx_products|length }} items)
+                </div>
+                <div class="items-list" style="display: none;">
+                    {% for item in dtx_products %}
+                    <div class="item-row">
+                        <div>{{ item.description }}</div>
+                        <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                        <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                               data-price="{{ item.price }}" data-category="dtx"
+                               min="0" value="0" onchange="recalc()">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-            {% endfor %}
         </div>
     </div>
 

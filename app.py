@@ -1023,87 +1023,6 @@ def generate_promo(promo_id):
 # ══════════════════════════════════════════════════════════
 # NEW SURGICAL STARTS
 # ══════════════════════════════════════════════════════════
-
-@app.route('/new-starts')
-@login_required
-def new_starts():
-    products = get_products()
-    implant_categories = {}
-    for cat_name in ['NobelActive TiUltra Implants', 'NobelActive Implants', 'Nobel Biocare N1 TiUltra Implants',
-                     'NobelParallel CC TiUltra Implants', 'NobelParallel CC Implants',
-                     'NobelReplace CC TiUltra Implants', 'NobelReplace CC Implants', 'NobelReplace CC PMC Implants',
-                     'NobelPearl Ceramic Implants']:
-        if cat_name in products:
-            implant_categories[cat_name] = products[cat_name]
-    
-    return render_template('new_starts.html', implant_categories=implant_categories, kits=get_kits())
-
-
-@app.route('/new-starts/generate', methods=['POST'])
-@login_required
-def generate_new_start():
-    account_name = request.form.get('account_name', 'Customer')
-    rep_name = request.form.get('rep_name', '')
-    notes = request.form.get('notes', '')
-    output_format = request.form.get('output_format', 'docx')
-    discount_pct = min(float(request.form.get('discount_pct', 0)), 40)
-    kit_id = request.form.get('kit_id', '')
-    
-    products = get_products()
-    items = []
-    total_implants = 0
-    
-    # Collect implant selections
-    for key, value in request.form.items():
-        if key.startswith('impl_') and value and int(value) > 0:
-            item_id = key.replace('impl_', '')
-            qty = int(value)
-            prod, category = find_product(item_id)
-            if prod:
-                disc_price = prod['price'] * (1 - discount_pct / 100)
-                items.append({
-                    'description': prod['description'], 'id': item_id,
-                    'list_price': prod['price'], 'quantity': qty,
-                    'discount_pct': discount_pct, 'discounted_price': disc_price,
-                    'category': category
-                })
-                total_implants += qty
-    
-    if total_implants < 10:
-        flash('Minimum 10 implants required for New Surgical Start', 'error')
-        return redirect(url_for('new_starts'))
-    
-    # Add kit at no charge
-    kit_prod, kit_cat = find_product(kit_id)
-    if kit_prod:
-        items.append({
-            'description': f'{kit_prod["description"]} (at no charge)',
-            'id': kit_id, 'list_price': kit_prod['price'],
-            'quantity': 1, 'discount_pct': 100, 'discounted_price': 0,
-            'category': 'Kit (Free)'
-        })
-    
-    list_total = sum(i['list_price'] * i['quantity'] for i in items)
-    final_total = sum(i['discounted_price'] * i['quantity'] for i in items)
-    
-    data = {
-        'title': 'New Surgical Start',
-        'account_name': account_name, 'rep_name': rep_name,
-        'notes': notes or f'New Surgical Start — {total_implants} implants at {discount_pct}% off + PureSet kit at no charge. Promo code: 81238',
-        'date': datetime.now().strftime('%B %d, %Y'),
-        'items': items,
-        'list_total': list_total,
-        'discount_amount': list_total - final_total,
-        'final_total': final_total,
-        'deal_id': '81238'
-    }
-    
-    if output_format == 'pdf':
-        return generate_pdf(data)
-    return generate_docx(data)
-
-
-# ══════════════════════════════════════════════════════════
 # NEW CUSTOMER STACK 2026
 # ══════════════════════════════════════════════════════════
 
@@ -1131,43 +1050,54 @@ def new_customer_stack():
     # Kits
     kits = get_kits()
     
-    # Regenerative - membranes
-    regen_membranes = []
-    if 'Regenerative - Membranes' in products:
-        regen_membranes = [p for p in products['Regenerative - Membranes'] if 'xenoprotect' in p['description'].lower() or 'collagen' in p['description'].lower()][:10]
+    # Regenerative - membranes (ALL)
+    regen_membranes = products.get('Regenerative - Membranes', [])
     
-    # Regenerative - bone
-    regen_bone = []
-    if 'Regenerative - Grafting' in products:
-        regen_bone = [p for p in products['Regenerative - Grafting'] if any(x in p['description'].lower() for x in ['0.25', '0.5', '1.0', 'xenogain', 'allogain'])][:10]
+    # Regenerative - bone (ALL)
+    regen_bone = products.get('Regenerative - Grafting', [])
     
-    # Healing abutments
-    healing_abutments = []
+    # Healing abutments by platform (same as standard proposals)
+    healing_by_platform = {
+        'NobelActive': [],
+        'NobelParallel': [],
+        'NobelReplace': [],
+        'N1': [],
+        'Multi-Unit': [],
+        'Cover Screws': []
+    }
     for cat in ['Healing Abutments', 'Cover Screws']:
         if cat in products:
-            healing_abutments.extend(products[cat][:5])
+            for p in products[cat]:
+                desc_lower = p['description'].lower()
+                if 'cover screw' in desc_lower or cat == 'Cover Screws':
+                    healing_by_platform['Cover Screws'].append(p)
+                elif 'multi-unit' in desc_lower or 'mu ' in desc_lower:
+                    healing_by_platform['Multi-Unit'].append(p)
+                elif 'nobelactive' in desc_lower or 'na ' in desc_lower:
+                    healing_by_platform['NobelActive'].append(p)
+                elif 'nobelparallel' in desc_lower or 'np cc' in desc_lower:
+                    healing_by_platform['NobelParallel'].append(p)
+                elif 'nobelreplace' in desc_lower or 'nr cc' in desc_lower or 'rp ' in desc_lower:
+                    healing_by_platform['NobelReplace'].append(p)
+                elif 'n1' in desc_lower:
+                    healing_by_platform['N1'].append(p)
+                else:
+                    healing_by_platform['NobelActive'].append(p)
     
-    # Prosthetics
+    # Prosthetics (ALL esthetic and multi-unit abutments)
     prosthetics = []
-    for cat in ['Esthetic Abutments', 'Multi-Unit Abutments']:
+    for cat in ['Esthetic Abutments', 'Multi-Unit Abutments', 'Locator Abutments', 'GoldAdapt Abutments']:
         if cat in products:
-            prosthetics.extend(products[cat][:5])
+            prosthetics.extend(products[cat])
     
-    # Instrumentation
-    instrumentation = []
-    if 'Instrumentation' in products:
-        instrumentation = products['Instrumentation'][:10]
+    # Instrumentation (ALL)
+    instrumentation = products.get('Instrumentation', [])
     
-    # Drilling units
-    drilling_units = []
-    for cat in ['Motors & Handpieces', 'Capital Equipment']:
-        if cat in products:
-            drilling_units.extend([p for p in products[cat] if any(x in p['description'].lower() for x in ['kavo', 'w&h', 'osseoset', 'expertsurg', 'mastersurg'])][:5])
+    # Motors / Drilling units (ALL from Motors & Handpieces)
+    drilling_units = products.get('Motors & Handpieces', [])
     
-    # DTX
-    dtx_products = []
-    if 'Digital Solutions' in products:
-        dtx_products = [p for p in products['Digital Solutions'] if 'clinician' in p['description'].lower()][:3]
+    # DTX / Digital Solutions (ALL)
+    dtx_products = products.get('Digital Solutions', [])
     
     return render_template('new_customer_stack.html',
         tiultra_implants=tiultra_implants,
@@ -1176,7 +1106,7 @@ def new_customer_stack():
         kits=kits,
         regen_membranes=regen_membranes,
         regen_bone=regen_bone,
-        healing_abutments=healing_abutments,
+        healing_by_platform=healing_by_platform,
         prosthetics=prosthetics,
         instrumentation=instrumentation,
         drilling_units=drilling_units,
