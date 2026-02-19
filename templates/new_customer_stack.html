@@ -35,15 +35,15 @@
 }
 .item-row {
     display: grid;
-    grid-template-columns: 1fr 90px 80px 80px;
-    gap: 10px;
+    grid-template-columns: minmax(200px, 500px) 90px 80px;
+    gap: 12px;
     align-items: center;
     font-size: 13px;
     padding: 6px 0;
     border-bottom: 1px solid #eee;
 }
 .item-row:last-child { border-bottom: none; }
-.item-row .price { color: #003087; font-weight: 600; text-align: right; }
+.item-row .price { color: #003087; font-weight: 600; text-align: left; }
 .kit-option {
     background: white;
     padding: 10px 14px;
