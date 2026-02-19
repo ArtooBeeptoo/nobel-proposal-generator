@@ -226,13 +226,44 @@ def index():
     products = get_products()
     categories = list(products.keys())
     discount_groups = list(DISCOUNT_GROUPS.keys()) + ['Other']
+    
+    # Healing abutments by platform
+    healing_by_platform = {
+        'NobelActive': [],
+        'NobelParallel': [],
+        'NobelReplace': [],
+        'N1': [],
+        'Multi-Unit': [],
+        'Cover Screws': []
+    }
+    for cat in ['Healing Abutments', 'Cover Screws']:
+        if cat in products:
+            for p in products[cat]:
+                desc_lower = p['description'].lower()
+                if 'cover screw' in desc_lower or cat == 'Cover Screws':
+                    healing_by_platform['Cover Screws'].append(p)
+                elif 'multi-unit' in desc_lower or 'mu ' in desc_lower:
+                    healing_by_platform['Multi-Unit'].append(p)
+                elif 'nobelactive' in desc_lower or 'na ' in desc_lower:
+                    healing_by_platform['NobelActive'].append(p)
+                elif 'nobelparallel' in desc_lower or 'np cc' in desc_lower:
+                    healing_by_platform['NobelParallel'].append(p)
+                elif 'nobelreplace' in desc_lower or 'nr cc' in desc_lower or 'rp ' in desc_lower:
+                    healing_by_platform['NobelReplace'].append(p)
+                elif 'n1' in desc_lower:
+                    healing_by_platform['N1'].append(p)
+                else:
+                    # Default to NobelActive if can't determine
+                    healing_by_platform['NobelActive'].append(p)
+    
     return render_template('index.html', categories=categories, products=products,
                          discount_groups=discount_groups, get_discount_group=get_discount_group,
                          bone_mills=get_bone_mills(), addon_tools=get_addon_tools(),
                          all_kits=ALL_KITS, motors=MOTORS, addon_sets=ADDON_SETS,
                          drill_stop_retrieval=DRILL_STOP_RETRIEVAL,
                          surgical_kits=SURGICAL_KITS, guided_kits=GUIDED_KITS,
-                         zygomatic_kits=ZYGOMATIC_KITS, prosthetic_kits=PROSTHETIC_KITS)
+                         zygomatic_kits=ZYGOMATIC_KITS, prosthetic_kits=PROSTHETIC_KITS,
+                         healing_by_platform=healing_by_platform)
 
 @app.route('/generate', methods=['POST'])
 @login_required

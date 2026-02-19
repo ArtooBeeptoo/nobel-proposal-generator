@@ -437,6 +437,35 @@
         {% endfor %}
     </div>
     
+    <!-- ═══ HEALING ABUTMENTS ═══ -->
+    <div class="card">
+        <h2>Healing Abutments & Cover Screws</h2>
+        <p style="color:#666;margin:-8px 0 12px;font-size:13px;">Organized by implant platform. Uses "Healing" discount from above.</p>
+        
+        {% for platform, items in healing_by_platform.items() %}
+        {% if items %}
+        <div class="category-section" data-category="healing-{{ platform }}">
+            <div class="category-title" onclick="toggleCategory(this)">
+                <span>{{ platform }} ({{ items|length }})</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="products-list" style="display:none;">
+                {% for item in items %}
+                <div class="product-row">
+                    <div>
+                        <div class="product-desc">{{ item.description }}</div>
+                        <div class="product-id">{{ item.id }}</div>
+                    </div>
+                    <div class="product-price">${{ "{:,.0f}".format(item.price) }}</div>
+                    <input type="number" class="qty-input" name="qty_{{ item.id }}" min="0" value="0" onchange="updateCount()">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
     <!-- ═══ ALL OTHER PRODUCTS ═══ -->
     <div class="card">
         <h2>All Products <span class="selected-count" id="selectedCount">0 selected</span></h2>
@@ -506,10 +535,10 @@
 <script>
 function applyPreset(preset) {
     const presets = {
-        'standard': { Implants: 30, Abutments: 25, Kits: 20, Grafting: 20, Membranes: 20, Sutures: 15, '3Shape': 10, SprintRay: 10, DEXIS: 10, 'X_Guide': 10, iCAM: 10, DTX: 10, Other: 15 },
-        'aggressive': { Implants: 40, Abutments: 35, Kits: 30, Grafting: 30, Membranes: 30, Sutures: 25, '3Shape': 15, SprintRay: 15, DEXIS: 15, 'X_Guide': 15, iCAM: 15, DTX: 15, Other: 25 },
-        'light': { Implants: 20, Abutments: 15, Kits: 10, Grafting: 10, Membranes: 10, Sutures: 10, '3Shape': 5, SprintRay: 5, DEXIS: 5, 'X_Guide': 5, iCAM: 5, DTX: 5, Other: 10 },
-        'clear': { Implants: 0, Abutments: 0, Kits: 0, Grafting: 0, Membranes: 0, Sutures: 0, '3Shape': 0, SprintRay: 0, DEXIS: 0, 'X_Guide': 0, iCAM: 0, DTX: 0, Other: 0 }
+        'standard': { Implants: 30, Abutments: 25, Healing: 25, Kits: 20, Grafting: 20, Membranes: 20, Sutures: 15, '3Shape': 10, SprintRay: 10, DEXIS: 10, 'X_Guide': 10, iCAM: 10, DTX: 10, Other: 15 },
+        'aggressive': { Implants: 40, Abutments: 35, Healing: 35, Kits: 30, Grafting: 30, Membranes: 30, Sutures: 25, '3Shape': 15, SprintRay: 15, DEXIS: 15, 'X_Guide': 15, iCAM: 15, DTX: 15, Other: 25 },
+        'light': { Implants: 20, Abutments: 15, Healing: 15, Kits: 10, Grafting: 10, Membranes: 10, Sutures: 10, '3Shape': 5, SprintRay: 5, DEXIS: 5, 'X_Guide': 5, iCAM: 5, DTX: 5, Other: 10 },
+        'clear': { Implants: 0, Abutments: 0, Healing: 0, Kits: 0, Grafting: 0, Membranes: 0, Sutures: 0, '3Shape': 0, SprintRay: 0, DEXIS: 0, 'X_Guide': 0, iCAM: 0, DTX: 0, Other: 0 }
     };
     const values = presets[preset];
     if (!values) return;
