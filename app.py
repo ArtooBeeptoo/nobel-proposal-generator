@@ -1072,6 +1072,247 @@ def generate_new_start():
 
 
 # ══════════════════════════════════════════════════════════
+# NEW CUSTOMER STACK 2026
+# ══════════════════════════════════════════════════════════
+
+@app.route('/new-customer-stack')
+@login_required
+def new_customer_stack():
+    """New Customer Stack 2026 - Full stackable offer builder."""
+    products = get_products()
+    
+    # TiUltra implants
+    tiultra_implants = []
+    for cat in ['NobelActive TiUltra Implants', 'NobelParallel CC TiUltra Implants', 'NobelReplace CC TiUltra Implants']:
+        if cat in products:
+            tiultra_implants.extend(products[cat])
+    
+    # TiUnite implants
+    tiunite_implants = []
+    for cat in ['NobelActive Implants', 'NobelParallel CC Implants', 'NobelReplace CC Implants']:
+        if cat in products:
+            tiunite_implants.extend(products[cat])
+    
+    # NobelPearl
+    pearl_products = products.get('NobelPearl Ceramic Implants', [])
+    
+    # Kits
+    kits = get_kits()
+    
+    # Regenerative - membranes
+    regen_membranes = []
+    if 'Regenerative - Membranes' in products:
+        regen_membranes = [p for p in products['Regenerative - Membranes'] if 'xenoprotect' in p['description'].lower() or 'collagen' in p['description'].lower()][:10]
+    
+    # Regenerative - bone
+    regen_bone = []
+    if 'Regenerative - Grafting' in products:
+        regen_bone = [p for p in products['Regenerative - Grafting'] if any(x in p['description'].lower() for x in ['0.25', '0.5', '1.0', 'xenogain', 'allogain'])][:10]
+    
+    # Healing abutments
+    healing_abutments = []
+    for cat in ['Healing Abutments', 'Cover Screws']:
+        if cat in products:
+            healing_abutments.extend(products[cat][:5])
+    
+    # Prosthetics
+    prosthetics = []
+    for cat in ['Esthetic Abutments', 'Multi-Unit Abutments']:
+        if cat in products:
+            prosthetics.extend(products[cat][:5])
+    
+    # Instrumentation
+    instrumentation = []
+    if 'Instrumentation' in products:
+        instrumentation = products['Instrumentation'][:10]
+    
+    # Drilling units
+    drilling_units = []
+    for cat in ['Motors & Handpieces', 'Capital Equipment']:
+        if cat in products:
+            drilling_units.extend([p for p in products[cat] if any(x in p['description'].lower() for x in ['kavo', 'w&h', 'osseoset', 'expertsurg', 'mastersurg'])][:5])
+    
+    # DTX
+    dtx_products = []
+    if 'Digital Solutions' in products:
+        dtx_products = [p for p in products['Digital Solutions'] if 'clinician' in p['description'].lower()][:3]
+    
+    return render_template('new_customer_stack.html',
+        tiultra_implants=tiultra_implants,
+        tiunite_implants=tiunite_implants,
+        pearl_products=pearl_products,
+        kits=kits,
+        regen_membranes=regen_membranes,
+        regen_bone=regen_bone,
+        healing_abutments=healing_abutments,
+        prosthetics=prosthetics,
+        instrumentation=instrumentation,
+        drilling_units=drilling_units,
+        dtx_products=dtx_products
+    )
+
+
+@app.route('/new-customer-stack/generate', methods=['POST'])
+@login_required
+def generate_new_customer_stack():
+    """Generate New Customer Stack proposal."""
+    ORDER_RULES = {
+        '1': {'min_implants': 10, 'max_disc': 40, 'needs_regen': True, 'promo': '81238', 'title': 'New Customer Stack - Order 1'},
+        '2': {'min_implants': 8, 'max_disc': 37, 'needs_regen': False, 'promo': '85089', 'title': 'New Customer Stack - Order 2'},
+        '3': {'min_implants': 8, 'max_disc': 24, 'needs_regen': False, 'promo': '85090', 'title': 'New Customer Stack - Order 3'},
+    }
+    
+    order_type = request.form.get('order_type', '1')
+    rules = ORDER_RULES.get(order_type, ORDER_RULES['1'])
+    
+    account_name = request.form.get('account_name', 'Customer')
+    account_number = request.form.get('account_number', '')
+    rep_name = request.form.get('rep_name', 'Joe Casey')
+    notes = request.form.get('notes', '')
+    output_format = request.form.get('output_format', 'docx')
+    
+    products = get_products()
+    items = []
+    total_implants = 0
+    list_total = 0
+    discounted_total = 0
+    
+    # Process implants
+    tiultra_disc = min(float(request.form.get('tiultra_discount', 0)), rules['max_disc'])
+    tiunite_disc = min(float(request.form.get('tiunite_discount', 0)), rules['max_disc'])
+    pearl_disc = min(float(request.form.get('pearl_discount', 0)), 25)
+    
+    for key, value in request.form.items():
+        if key.startswith('impl_') and value and int(value) > 0:
+            item_id = key.replace('impl_', '')
+            qty = int(value)
+            prod, category = find_product(item_id)
+            if prod:
+                # Determine discount based on type
+                if 'tiultra' in category.lower():
+                    disc = tiultra_disc
+                else:
+                    disc = tiunite_disc
+                
+                disc_price = prod['price'] * (1 - disc / 100)
+                items.append({
+                    'description': prod['description'], 'id': item_id,
+                    'list_price': prod['price'], 'quantity': qty,
+                    'discount_pct': disc, 'discounted_price': disc_price,
+                    'category': 'Implants'
+                })
+                total_implants += qty
+                list_total += prod['price'] * qty
+                discounted_total += disc_price * qty
+    
+    # Process NobelPearl
+    for key, value in request.form.items():
+        if key.startswith('pearl_') and value and int(value) > 0:
+            item_id = key.replace('pearl_', '')
+            qty = int(value)
+            prod, category = find_product(item_id)
+            if prod:
+                disc_price = prod['price'] * (1 - pearl_disc / 100)
+                items.append({
+                    'description': f'{prod["description"]} (NobelPearl)', 'id': item_id,
+                    'list_price': prod['price'], 'quantity': qty,
+                    'discount_pct': pearl_disc, 'discounted_price': disc_price,
+                    'category': 'NobelPearl'
+                })
+                total_implants += qty
+                list_total += prod['price'] * qty
+                discounted_total += disc_price * qty
+    
+    # Process kit
+    kit_id = request.form.get('kit_id', '')
+    kit_disc = min(float(request.form.get('kit_discount', 100)), 100)
+    kit_prod, kit_cat = find_product(kit_id)
+    if kit_prod:
+        disc_price = kit_prod['price'] * (1 - kit_disc / 100)
+        items.append({
+            'description': f'{kit_prod["description"]} ({kit_disc:.0f}% off)',
+            'id': kit_id, 'list_price': kit_prod['price'],
+            'quantity': 1, 'discount_pct': kit_disc, 'discounted_price': disc_price,
+            'category': 'Surgical Kit'
+        })
+        list_total += kit_prod['price']
+        discounted_total += disc_price
+    
+    # Process regenerative
+    regen_disc = min(float(request.form.get('regen_mandatory_discount', 60)), 60)
+    for key, value in request.form.items():
+        if key.startswith('regen_') and value and int(value) > 0:
+            item_id = key.replace('regen_', '')
+            qty = int(value)
+            prod, category = find_product(item_id)
+            if prod:
+                disc_price = prod['price'] * (1 - regen_disc / 100)
+                items.append({
+                    'description': prod['description'], 'id': item_id,
+                    'list_price': prod['price'], 'quantity': qty,
+                    'discount_pct': regen_disc, 'discounted_price': disc_price,
+                    'category': 'Regenerative'
+                })
+                list_total += prod['price'] * qty
+                discounted_total += disc_price * qty
+    
+    # Process add-ons
+    discount_map = {
+        'healing': min(float(request.form.get('healing_discount', 47)), 47),
+        'prosthetics': min(float(request.form.get('prosthetics_discount', 47)), 47),
+        'instrumentation': min(float(request.form.get('instrumentation_discount', 60)), 60),
+        'drilling': min(float(request.form.get('drilling_discount', 47)), 47),
+        'dtx': min(float(request.form.get('dtx_discount', 40)), 40),
+    }
+    
+    for key, value in request.form.items():
+        if key.startswith('addon_') and value and int(value) > 0:
+            item_id = key.replace('addon_', '')
+            qty = int(value)
+            prod, category = find_product(item_id)
+            if prod:
+                # Try to determine category from form data
+                disc = 30  # default
+                for cat_key, cat_disc in discount_map.items():
+                    if cat_key in category.lower():
+                        disc = cat_disc
+                        break
+                
+                disc_price = prod['price'] * (1 - disc / 100)
+                items.append({
+                    'description': prod['description'], 'id': item_id,
+                    'list_price': prod['price'], 'quantity': qty,
+                    'discount_pct': disc, 'discounted_price': disc_price,
+                    'category': 'Add-on'
+                })
+                list_total += prod['price'] * qty
+                discounted_total += disc_price * qty
+    
+    # Validation
+    if total_implants < rules['min_implants']:
+        flash(f'Minimum {rules["min_implants"]} implants required for Order {order_type}', 'error')
+        return redirect(url_for('new_customer_stack'))
+    
+    data = {
+        'title': rules['title'],
+        'account_name': account_name,
+        'account_number': account_number,
+        'rep_name': rep_name,
+        'notes': notes or f'{rules["title"]} — {total_implants} implants. Promo code: {rules["promo"]}',
+        'date': datetime.now().strftime('%B %d, %Y'),
+        'items': items,
+        'list_total': list_total,
+        'discount_amount': list_total - discounted_total,
+        'final_total': discounted_total,
+        'deal_id': rules['promo']
+    }
+    
+    if output_format == 'pdf':
+        return generate_pdf(data)
+    return generate_docx(data)
+
+
+# ══════════════════════════════════════════════════════════
 # DOCUMENT GENERATION
 # ══════════════════════════════════════════════════════════
 

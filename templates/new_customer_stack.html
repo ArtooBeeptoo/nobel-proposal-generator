@@ -1,0 +1,623 @@
+{% extends "base.html" %}
+{% block title %}New Customer Stack 2026 - Nobel Biocare{% endblock %}
+
+{% block extra_style %}
+.stack-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid #003087;
+}
+.stack-section.mandatory { border-left-color: #c00; }
+.stack-section.optional { border-left-color: #00A3E0; }
+.stack-section h4 {
+    color: #003087;
+    margin: 0 0 6px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stack-section h4 .max-disc {
+    background: #003087;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.stack-section.mandatory h4 .max-disc { background: #c00; }
+.stack-section p.section-note {
+    color: #666;
+    font-size: 12px;
+    margin: 0 0 12px;
+}
+.item-row {
+    display: grid;
+    grid-template-columns: 1fr 90px 80px 80px;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+.item-row:last-child { border-bottom: none; }
+.item-row .price { color: #003087; font-weight: 600; text-align: right; }
+.kit-option {
+    background: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.kit-option:hover { background: #e8f0fe; border-color: #003087; }
+.kit-option input { width: 18px; height: 18px; }
+.calc-summary {
+    background: #f0f7ff;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+}
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 13px;
+}
+.calc-row.subtotal { font-weight: 600; border-top: 1px solid #ccc; margin-top: 6px; padding-top: 6px; }
+.calc-row.total {
+    border-top: 2px solid #003087;
+    margin-top: 8px;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #003087;
+}
+.calc-row.savings { color: #1a7a1a; font-weight: 600; }
+.info-box {
+    background: #e8f4fd;
+    border-left: 4px solid #00A3E0;
+    padding: 14px 18px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #003087;
+}
+.info-box.mandatory {
+    background: #fff0f0;
+    border-left-color: #c00;
+}
+.order-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+}
+.order-tab {
+    padding: 12px 24px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+.order-tab.active {
+    background: #003087;
+    color: white;
+}
+.order-tab:first-child { border-radius: 6px 0 0 6px; }
+.order-tab:last-child { border-radius: 0 6px 6px 0; }
+.discount-input {
+    width: 70px;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.two-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+@media (max-width: 900px) {
+    .two-col { grid-template-columns: 1fr; }
+    .calc-summary { position: static; }
+}
+{% endblock %}
+
+{% block content %}
+<div class="card" style="border-left: 4px solid #00A3E0;">
+    <h2 style="border-bottom: none; margin-bottom: 4px;">New Customer Stack 2026</h2>
+    <p style="color: #555; font-size: 14px; margin: 0;">Build a complete starter package with stackable discounts</p>
+</div>
+
+<div class="order-tabs">
+    <button class="order-tab active" onclick="setOrder(1)">Order 1 — #81238</button>
+    <button class="order-tab" onclick="setOrder(2)">Order 2 — #85089</button>
+    <button class="order-tab" onclick="setOrder(3)">Order 3 — #85090</button>
+</div>
+
+<div id="order1Info" class="info-box">
+    <strong>Order 1 Rules (Promo #81238):</strong><br>
+    • Account with ≤10 implants in prior year<br>
+    • <span style="color: #c00; font-weight: 600;">MANDATORY:</span> Minimum 10 implants + 1 surgical kit + 1 membrane + 1 bone particulate (≤1cc)<br>
+    • Implants up to 40% off • Kit up to 100% off • Stack add-ons as needed<br>
+    • <em>"Use as much discount as necessary, but as little as possible"</em>
+</div>
+
+<div id="order2Info" class="info-box" style="display: none;">
+    <strong>Order 2 Rules (Promo #85089):</strong><br>
+    • Within 6 months of Order 1<br>
+    • Minimum 8 implants<br>
+    • Up to 37% on implants and components (motors NOT included)
+</div>
+
+<div id="order3Info" class="info-box" style="display: none;">
+    <strong>Order 3 Rules (Promo #85090):</strong><br>
+    • Within 6 months of Order 2<br>
+    • Minimum 8 implants<br>
+    • Up to 24% on implants and components (motors NOT included)
+</div>
+
+<form method="POST" action="{{ url_for('generate_new_customer_stack') }}" id="stackForm">
+<input type="hidden" name="order_type" id="orderType" value="1">
+
+<div class="two-col">
+<div class="left-col">
+    
+    <div class="card">
+        <h2>Account Details</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <label>Account Name *</label>
+                <input type="text" name="account_name" required placeholder="e.g., Smith Dental">
+            </div>
+            <div class="form-group">
+                <label>Account Number</label>
+                <input type="text" name="account_number" placeholder="SAP #">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Territory Manager</label>
+            <input type="text" name="rep_name" value="Joe Casey">
+        </div>
+    </div>
+
+    <!-- MANDATORY: IMPLANTS -->
+    <div class="card">
+        <h2 style="color: #c00;">📌 MANDATORY: CC Implants</h2>
+        
+        <div class="stack-section mandatory">
+            <h4>TiUltra Implants — $615/ea list <span class="max-disc">Max 40%</span></h4>
+            <p class="section-note">Minimum 10 implants total (TiUltra or TiUnite mix)</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="tiultra_discount" id="tiultraDisc" 
+                       value="40" min="0" max="40" onchange="recalc()">
+            </div>
+            {% for impl in tiultra_implants %}
+            <div class="item-row">
+                <div>{{ impl.description }} <span style="color: #888; font-size: 11px;">({{ impl.id }})</span></div>
+                <div class="price">${{ "{:,.0f}".format(impl.price) }}</div>
+                <input type="number" class="qty-input impl-qty" name="impl_{{ impl.id }}" 
+                       data-price="{{ impl.price }}" data-type="tiultra"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="stack-section mandatory">
+            <h4>TiUnite Implants — $590/ea list <span class="max-disc">Max 40%</span></h4>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="tiunite_discount" id="tiuniteDisc" 
+                       value="40" min="0" max="40" onchange="recalc()">
+            </div>
+            {% for impl in tiunite_implants %}
+            <div class="item-row">
+                <div>{{ impl.description }} <span style="color: #888; font-size: 11px;">({{ impl.id }})</span></div>
+                <div class="price">${{ "{:,.0f}".format(impl.price) }}</div>
+                <input type="number" class="qty-input impl-qty" name="impl_{{ impl.id }}" 
+                       data-price="{{ impl.price }}" data-type="tiunite"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div id="implantTotal" style="font-weight: 600; color: #003087; font-size: 15px; padding: 12px; background: #f8f9fa; border-radius: 6px;">
+            Total implants: 0 <span style="color: #c00;">(minimum 10 required)</span>
+        </div>
+    </div>
+
+    <!-- MANDATORY: SURGICAL KIT -->
+    <div class="card">
+        <h2 style="color: #c00;">📌 MANDATORY: Surgical Kit</h2>
+        <div class="stack-section mandatory">
+            <h4>PureSet Kits <span class="max-disc">Up to 100% Off</span></h4>
+            <p class="section-note">Select one kit — can be discounted up to 100%</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="kit_discount" id="kitDisc" 
+                       value="100" min="0" max="100" onchange="recalc()">
+            </div>
+            {% for kit in kits %}
+            <label class="kit-option">
+                <input type="radio" name="kit_id" value="{{ kit.id }}" data-price="{{ kit.price }}" 
+                       {% if loop.first %}checked{% endif %} onchange="recalc()">
+                <div>
+                    <div style="font-weight: 600; font-size: 13px;">{{ kit.description }}</div>
+                    <div style="color: #666; font-size: 11px;">{{ kit.id }} — List: ${{ "{:,.0f}".format(kit.price) }}</div>
+                </div>
+            </label>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- MANDATORY: REGENERATIVE -->
+    <div class="card">
+        <h2 style="color: #c00;">📌 MANDATORY: Regenerative (1 membrane + 1 bone)</h2>
+        <div class="stack-section mandatory">
+            <h4>creos Materials <span class="max-disc">Up to 60% (mandatory), 49% (add-on)</span></h4>
+            <p class="section-note">Minimum: 1 membrane + 1 bone particulate ≤1cc at up to 60% off</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount % (mandatory items)</label>
+                <input type="number" class="discount-input" name="regen_mandatory_discount" id="regenMandDisc" 
+                       value="60" min="0" max="60" onchange="recalc()">
+            </div>
+            
+            <h5 style="margin: 16px 0 8px; color: #003087;">Membranes</h5>
+            {% for item in regen_membranes %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input regen-mandatory" name="regen_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-type="membrane"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+            
+            <h5 style="margin: 16px 0 8px; color: #003087;">Bone Particulate (≤1cc for mandatory)</h5>
+            {% for item in regen_bone %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input regen-mandatory" name="regen_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-type="bone"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div id="regenTotal" style="font-weight: 600; color: #003087; font-size: 14px; padding: 12px; background: #f8f9fa; border-radius: 6px;">
+            Membranes: 0 | Bone: 0 <span style="color: #c00;">(need 1 each)</span>
+        </div>
+    </div>
+
+    <!-- OPTIONAL: NobelPearl -->
+    <div class="card">
+        <h2>💎 NobelPearl (Optional)</h2>
+        <div class="stack-section optional">
+            <h4>NobelPearl Ceramic <span class="max-disc">Max 25%</span></h4>
+            <p class="section-note">Counts toward 10 implant minimum but at different discount tier</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="pearl_discount" id="pearlDisc" 
+                       value="25" min="0" max="25" onchange="recalc()">
+            </div>
+            {% for item in pearl_products %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input pearl-qty" name="pearl_{{ item.id }}" 
+                       data-price="{{ item.price }}"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- STACKABLE ADD-ONS -->
+    <div class="card">
+        <h2>🔧 Stackable Add-Ons</h2>
+        
+        <div class="stack-section optional">
+            <h4>Healing Abutments & Covers <span class="max-disc">Max 47%</span></h4>
+            <p class="section-note">Minimum 5 mix & match</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="healing_discount" id="healingDisc" 
+                       value="47" min="0" max="47" onchange="recalc()">
+            </div>
+            {% for item in healing_abutments %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-category="healing"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="stack-section optional">
+            <h4>Prosthetics <span class="max-disc">Max 47%</span></h4>
+            <p class="section-note">Minimum 5 mix & match</p>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="prosthetics_discount" id="prosthDisc" 
+                       value="47" min="0" max="47" onchange="recalc()">
+            </div>
+            {% for item in prosthetics %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-category="prosthetics"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="stack-section optional">
+            <h4>Instrumentation <span class="max-disc">Max 60%</span></h4>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="instrumentation_discount" id="instrDisc" 
+                       value="60" min="0" max="60" onchange="recalc()">
+            </div>
+            {% for item in instrumentation %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-category="instrumentation"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="stack-section optional">
+            <h4>Drilling Units <span class="max-disc">Kavo 47% / W&H 39.99%</span></h4>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="drilling_discount" id="drillDisc" 
+                       value="47" min="0" max="47" step="0.01" onchange="recalc()">
+            </div>
+            {% for item in drilling_units %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-category="drilling"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="stack-section optional">
+            <h4>DTX / Software <span class="max-disc">Max 40%</span></h4>
+            <div class="form-group" style="max-width: 200px;">
+                <label>Discount %</label>
+                <input type="number" class="discount-input" name="dtx_discount" id="dtxDisc" 
+                       value="40" min="0" max="40" onchange="recalc()">
+            </div>
+            {% for item in dtx_products %}
+            <div class="item-row">
+                <div>{{ item.description }}</div>
+                <div class="price">${{ "{:,.0f}".format(item.price) }}</div>
+                <input type="number" class="qty-input addon-qty" name="addon_{{ item.id }}" 
+                       data-price="{{ item.price }}" data-category="dtx"
+                       min="0" value="0" onchange="recalc()">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Notes</h2>
+        <textarea name="notes" rows="3" placeholder="Special terms, course registrations, etc."></textarea>
+    </div>
+
+</div>
+
+<div class="right-col">
+    <div class="calc-summary">
+        <h3 style="margin: 0 0 16px; color: #003087;">Order Summary</h3>
+        <div id="calcContent">
+            <div class="calc-row">Configure items to see pricing...</div>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <h4 style="margin: 0 0 10px; font-size: 14px;">Output Format</h4>
+            <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px;">
+                    <input type="radio" name="output_format" value="docx" checked> 📄 Word
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px;">
+                    <input type="radio" name="output_format" value="pdf"> 📕 PDF
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn" disabled>
+                Generate Proposal
+            </button>
+            <p id="validationMsg" style="color: #c00; font-size: 12px; margin-top: 8px;"></p>
+        </div>
+    </div>
+</div>
+
+</div>
+</form>
+
+<script>
+let currentOrder = 1;
+const ORDER_RULES = {
+    1: { minImplants: 10, maxImplantDisc: 40, needsRegen: true, promoCode: '81238' },
+    2: { minImplants: 8, maxImplantDisc: 37, needsRegen: false, promoCode: '85089' },
+    3: { minImplants: 8, maxImplantDisc: 24, needsRegen: false, promoCode: '85090' }
+};
+
+function setOrder(orderNum) {
+    currentOrder = orderNum;
+    document.getElementById('orderType').value = orderNum;
+    
+    document.querySelectorAll('.order-tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i + 1 === orderNum);
+    });
+    
+    document.getElementById('order1Info').style.display = orderNum === 1 ? 'block' : 'none';
+    document.getElementById('order2Info').style.display = orderNum === 2 ? 'block' : 'none';
+    document.getElementById('order3Info').style.display = orderNum === 3 ? 'block' : 'none';
+    
+    // Update max discounts
+    const rules = ORDER_RULES[orderNum];
+    document.getElementById('tiultraDisc').max = rules.maxImplantDisc;
+    document.getElementById('tiultraDisc').value = Math.min(document.getElementById('tiultraDisc').value, rules.maxImplantDisc);
+    document.getElementById('tiuniteDisc').max = rules.maxImplantDisc;
+    document.getElementById('tiuniteDisc').value = Math.min(document.getElementById('tiuniteDisc').value, rules.maxImplantDisc);
+    
+    recalc();
+}
+
+function recalc() {
+    const rules = ORDER_RULES[currentOrder];
+    let totalImplants = 0;
+    let totalMembranes = 0;
+    let totalBone = 0;
+    let listTotal = 0;
+    let discountedTotal = 0;
+    let summaryHTML = '';
+    
+    // CC Implants
+    const tiultraDisc = Math.min(parseFloat(document.getElementById('tiultraDisc').value) || 0, rules.maxImplantDisc);
+    const tiuniteDisc = Math.min(parseFloat(document.getElementById('tiuniteDisc').value) || 0, rules.maxImplantDisc);
+    
+    let implantList = 0, implantDisc = 0;
+    document.querySelectorAll('.impl-qty').forEach(input => {
+        const qty = parseInt(input.value) || 0;
+        if (qty > 0) {
+            const price = parseFloat(input.dataset.price);
+            const disc = input.dataset.type === 'tiultra' ? tiultraDisc : tiuniteDisc;
+            totalImplants += qty;
+            implantList += price * qty;
+            implantDisc += price * qty * (1 - disc / 100);
+        }
+    });
+    
+    // Pearl implants (count toward total but different discount)
+    const pearlDisc = Math.min(parseFloat(document.getElementById('pearlDisc').value) || 0, 25);
+    let pearlList = 0, pearlDiscounted = 0, pearlQty = 0;
+    document.querySelectorAll('.pearl-qty').forEach(input => {
+        const qty = parseInt(input.value) || 0;
+        if (qty > 0) {
+            const price = parseFloat(input.dataset.price);
+            pearlQty += qty;
+            totalImplants += qty;  // Counts toward minimum
+            pearlList += price * qty;
+            pearlDiscounted += price * qty * (1 - pearlDisc / 100);
+        }
+    });
+    
+    listTotal += implantList + pearlList;
+    discountedTotal += implantDisc + pearlDiscounted;
+    
+    if (implantList > 0) {
+        summaryHTML += `<div class="calc-row"><span>CC Implants (${totalImplants - pearlQty}x)</span><span>$${implantDisc.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    }
+    if (pearlList > 0) {
+        summaryHTML += `<div class="calc-row"><span>NobelPearl (${pearlQty}x @ ${pearlDisc}%)</span><span>$${pearlDiscounted.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    }
+    
+    // Kit
+    const kitRadio = document.querySelector('input[name="kit_id"]:checked');
+    const kitPrice = kitRadio ? parseFloat(kitRadio.dataset.price) : 0;
+    const kitDisc = Math.min(parseFloat(document.getElementById('kitDisc').value) || 0, 100);
+    const kitDiscounted = kitPrice * (1 - kitDisc / 100);
+    listTotal += kitPrice;
+    discountedTotal += kitDiscounted;
+    summaryHTML += `<div class="calc-row"><span>Surgical Kit (${kitDisc}% off)</span><span>$${kitDiscounted.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    
+    // Regenerative
+    const regenDisc = Math.min(parseFloat(document.getElementById('regenMandDisc').value) || 0, 60);
+    let regenList = 0, regenDiscounted = 0;
+    document.querySelectorAll('.regen-mandatory').forEach(input => {
+        const qty = parseInt(input.value) || 0;
+        if (qty > 0) {
+            const price = parseFloat(input.dataset.price);
+            if (input.dataset.type === 'membrane') totalMembranes += qty;
+            if (input.dataset.type === 'bone') totalBone += qty;
+            regenList += price * qty;
+            regenDiscounted += price * qty * (1 - regenDisc / 100);
+        }
+    });
+    listTotal += regenList;
+    discountedTotal += regenDiscounted;
+    if (regenList > 0) {
+        summaryHTML += `<div class="calc-row"><span>Regenerative (${regenDisc}% off)</span><span>$${regenDiscounted.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    }
+    
+    // Add-ons
+    let addonList = 0, addonDiscounted = 0;
+    document.querySelectorAll('.addon-qty').forEach(input => {
+        const qty = parseInt(input.value) || 0;
+        if (qty > 0) {
+            const price = parseFloat(input.dataset.price);
+            const category = input.dataset.category;
+            let disc = 0;
+            if (category === 'healing') disc = parseFloat(document.getElementById('healingDisc').value) || 0;
+            else if (category === 'prosthetics') disc = parseFloat(document.getElementById('prosthDisc').value) || 0;
+            else if (category === 'instrumentation') disc = parseFloat(document.getElementById('instrDisc').value) || 0;
+            else if (category === 'drilling') disc = parseFloat(document.getElementById('drillDisc').value) || 0;
+            else if (category === 'dtx') disc = parseFloat(document.getElementById('dtxDisc').value) || 0;
+            
+            addonList += price * qty;
+            addonDiscounted += price * qty * (1 - disc / 100);
+        }
+    });
+    listTotal += addonList;
+    discountedTotal += addonDiscounted;
+    if (addonList > 0) {
+        summaryHTML += `<div class="calc-row"><span>Add-ons</span><span>$${addonDiscounted.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    }
+    
+    // Totals
+    const savings = listTotal - discountedTotal;
+    const savingsPct = listTotal > 0 ? (savings / listTotal * 100).toFixed(1) : 0;
+    
+    summaryHTML += `<div class="calc-row subtotal"><span>List Total</span><span>$${listTotal.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    summaryHTML += `<div class="calc-row total"><span>Sale Price</span><span>$${discountedTotal.toLocaleString('en-US', {maximumFractionDigits: 0})}</span></div>`;
+    summaryHTML += `<div class="calc-row savings"><span>Savings</span><span>$${savings.toLocaleString('en-US', {maximumFractionDigits: 0})} (${savingsPct}%)</span></div>`;
+    summaryHTML += `<div class="calc-row" style="margin-top: 12px; font-size: 12px; color: #666;"><span>Promo Code</span><span>${rules.promoCode}</span></div>`;
+    
+    document.getElementById('calcContent').innerHTML = summaryHTML || '<div class="calc-row">Configure items...</div>';
+    
+    // Update counters
+    document.getElementById('implantTotal').innerHTML = `Total implants: <strong>${totalImplants}</strong>` + 
+        (totalImplants < rules.minImplants ? ` <span style="color: #c00;">(minimum ${rules.minImplants} required)</span>` : ' ✓');
+    
+    document.getElementById('regenTotal').innerHTML = `Membranes: <strong>${totalMembranes}</strong> | Bone: <strong>${totalBone}</strong>` +
+        (rules.needsRegen && (totalMembranes < 1 || totalBone < 1) ? ' <span style="color: #c00;">(need 1 each)</span>' : ' ✓');
+    
+    // Validation
+    let valid = totalImplants >= rules.minImplants;
+    let validationMsg = '';
+    if (totalImplants < rules.minImplants) {
+        validationMsg = `Need ${rules.minImplants - totalImplants} more implants`;
+    }
+    if (currentOrder === 1 && rules.needsRegen) {
+        if (totalMembranes < 1) { valid = false; validationMsg += (validationMsg ? ', ' : '') + '1 membrane'; }
+        if (totalBone < 1) { valid = false; validationMsg += (validationMsg ? ', ' : '') + '1 bone particulate'; }
+    }
+    
+    document.getElementById('submitBtn').disabled = !valid;
+    document.getElementById('validationMsg').textContent = valid ? '' : 'Missing: ' + validationMsg;
+}
+
+document.addEventListener('DOMContentLoaded', recalc);
+</script>
+{% endblock %}

@@ -207,7 +207,8 @@
         <div class="nav-inner">
             <a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' or request.endpoint == 'generate' %}active{% endif %}">Standard Proposals</a>
             <a href="{{ url_for('promotions') }}" class="{% if request.endpoint in ['promotions', 'promo_detail', 'generate_promo'] %}active{% endif %}">Promotions</a>
-            <a href="{{ url_for('new_starts') }}" class="{% if request.endpoint in ['new_starts', 'generate_new_start'] %}active{% endif %}">New Surgical Starts</a>
+            <a href="{{ url_for('new_customer_stack') }}" class="{% if request.endpoint in ['new_customer_stack', 'generate_new_customer_stack'] %}active{% endif %}" style="background: linear-gradient(90deg, #003087, #00A3E0); color: white;">⭐ New Customer Stack 2026</a>
+            <a href="{{ url_for('new_starts') }}" class="{% if request.endpoint in ['new_starts', 'generate_new_start'] %}active{% endif %}">Legacy New Starts</a>
         </div>
     </nav>
     
