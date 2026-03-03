@@ -1,0 +1,533 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category_info.name }} - Nobel Biocare Proposal{% endblock %}
+
+{% set current_category = current_category %}
+
+{% block content %}
+<div class="page-header">
+    <h1>{{ category_info.icon }} {{ category_info.name }}</h1>
+    <p><span id="visibleCount">{{ products|length }}</span> product{{ 's' if products|length != 1 else '' }} shown</p>
+</div>
+
+<!-- Filters -->
+<div class="filters-bar">
+    {% if filters %}
+    <div class="filter-group">
+        <label>{{ 'Implant Type:' if filter_type != 'system' else 'System:' }}</label>
+        <select id="platformFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            {% for value, label in filters %}
+            <option value="{{ value }}">{{ label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+    
+    {% set show_implant_filters = current_category in ['implants', 'healing_abutments', 'cover_screws', 'stock_abutments', 'temp_abutments', 'impression_taking', 'screws', 'procera_lab', 'replicas'] %}
+    
+    {% if show_implant_filters %}
+    <!-- Surface filter (TiUltra/TiUnite) - only for implants -->
+    {% if current_category == 'implants' %}
+    <div class="filter-group" id="surfaceFilterGroup">
+        <label>Surface:</label>
+        <select id="surfaceFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="tiultra">TiUltra</option>
+            <option value="tiunite">TiUnite</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Platform filter (NP, RP, WP) -->
+    <div class="filter-group" id="diameterFilterGroup">
+        <label>Platform:</label>
+        <select id="diameterFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="3.0">3.0</option>
+            <option value="np">NP (3.5)</option>
+            <option value="rp">RP (4.3/5.0)</option>
+            <option value="wp">WP (5.5)</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Multi-Unit Abutments: Platform, Angulation, Finish filters -->
+    {% if current_category == 'multiunit_abutments' %}
+    <div class="filter-group">
+        <label>Platform:</label>
+        <select id="muaPlatformFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="np">NP</option>
+            <option value="rp">RP</option>
+            <option value="wp">WP</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>Angulation:</label>
+        <select id="angulationFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="straight">Straight (0°)</option>
+            <option value="17">17°</option>
+            <option value="30">30°</option>
+            <option value="45">45°</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>Finish:</label>
+        <select id="finishFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="xeal">Xeal</option>
+            <option value="standard">Standard (Machined)</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Locator Abutments: R-Tx / Legacy filter -->
+    {% if current_category == 'locator_abutments' %}
+    <div class="filter-group">
+        <label>Type:</label>
+        <select id="locatorTypeFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="rtx">R-Tx</option>
+            <option value="legacy">Legacy</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Impression Taking: Tray Type and Position Locator filters -->
+    {% if current_category == 'impression_taking' %}
+    <div class="filter-group">
+        <label>Tray Type:</label>
+        <select id="trayTypeFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="open">Open Tray</option>
+            <option value="closed">Closed Tray</option>
+            <option value="position">Position Locator</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Tooling: Drill Type filter -->
+    {% if current_category == 'tooling' %}
+    <div class="filter-group">
+        <label>Drill Type:</label>
+        <select id="drillTypeFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="twist">Twist Drill</option>
+            <option value="tapered">Tapered Drill</option>
+            <option value="guided_twist">Guided Twist Drill</option>
+            <option value="guided_tapered">Guided Tapered Drill</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Sutures: Type filter -->
+    {% if current_category == 'sutures' %}
+    <div class="filter-group">
+        <label>Type:</label>
+        <select id="sutureTypeFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="xgut">X-Gut</option>
+            <option value="ptfe">PTFE (Cytoplast)</option>
+            <option value="glycolon">Glycolon</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <!-- Regeneratives: Type filter -->
+    {% if current_category == 'regeneratives' %}
+    <div class="filter-group">
+        <label>Type:</label>
+        <select id="regenTypeFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="membrane">Membrane</option>
+            <option value="block">Block</option>
+            <option value="bowl">Bowl</option>
+            <option value="zcore">Zcore</option>
+            <option value="novabone">NovaBone</option>
+            <option value="encore">Encore</option>
+        </select>
+    </div>
+    {% endif %}
+    
+    <div class="filter-group">
+        <label>Search:</label>
+        <input type="text" id="searchFilter" placeholder="Search products..." oninput="applyFilters()">
+    </div>
+</div>
+
+<!-- Global Category Discount -->
+<div class="category-discount-bar">
+    <label for="categoryDiscount">Apply discount to all {{ category_info.name }}:</label>
+    <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <input type="number" id="categoryDiscount" step="0.01" min="0" max="100" value="0" placeholder="0.00">
+        <span>%</span>
+    </div>
+    <button class="btn btn-accent" onclick="applyCategoryDiscount('{{ current_category }}', document.getElementById('categoryDiscount').value)">
+        Apply to All
+    </button>
+</div>
+
+{% if products %}
+<div class="products-grid" id="productsGrid">
+    {% for product in products %}
+    <div class="product-card" 
+         data-id="{{ product.id }}"
+         data-description="{{ product.description }}"
+         data-price="{{ product.price }}"
+         data-category="{{ current_category }}"
+         data-platform="{{ product.platform|default('') }}"
+         data-brand="{{ product.brand|default('') }}"
+         {% if category_info.get('hover') %}
+         onmouseenter="showComponents('{{ product.id }}')"
+         onmouseleave="hideComponents()"
+         {% endif %}>
+        <div class="product-header">
+            <span class="product-id">#{{ product.id }}</span>
+            <span class="product-price">${{ "%.2f"|format(product.price) }}</span>
+        </div>
+        <div class="product-description">{{ product.description }}</div>
+        {% if product.platform %}
+        <div class="product-platform-badge">{{ product.platform|upper }}</div>
+        {% endif %}
+        <div class="product-controls">
+            <div class="input-group">
+                <label>Qty</label>
+                <input type="number" class="qty-input" value="1" min="1" step="1">
+            </div>
+            <div class="input-group">
+                <label>Disc%</label>
+                <input type="number" class="discount-input" value="0" min="0" max="100" step="0.01">
+            </div>
+            <button class="btn btn-sm btn-primary" onclick="addProduct(this)">+ Add</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div style="background: white; padding: 2rem; border-radius: 8px; text-align: center; color: #666;">
+    <p>No products in this category yet.</p>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.product-platform-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+    background: #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Platform mapping: filter value -> array of matching platform values
+const PLATFORM_MAP = {
+    'cc': ['cc', 'nobel_active', 'nobel_parallel', 'nobel_replace'],  // Conical Connection systems
+    's_series': ['s_series'],
+    'tcc': ['tcc', 'n1'],  // Trioval CC / N1
+    'ext_hex': ['ext_hex', 'external_hex', 'branemark'],
+    'tri_channel': ['tri_channel', 'tri-channel'],
+    'nobel_pearl': ['nobel_pearl', 'nobelpearl'],
+    'zygomatic': ['zygomatic', 'zygoma'],
+    // System filters (for tooling)
+    'nobel_active': ['nobel_active'],
+    'nobel_parallel': ['nobel_parallel'],
+    'nobel_replace': ['nobel_replace'],
+    'retrieval': ['retrieval'],
+};
+
+function platformMatches(productPlatform, filterValue) {
+    if (!filterValue) return true;
+    const validPlatforms = PLATFORM_MAP[filterValue] || [filterValue];
+    return validPlatforms.includes(productPlatform);
+}
+
+function surfaceMatches(description, surfaceFilter) {
+    if (!surfaceFilter) return true;
+    const desc = description.toLowerCase();
+    if (surfaceFilter === 'tiultra') return desc.includes('tiultra');
+    if (surfaceFilter === 'tiunite') {
+        // TiUnite: either explicitly labeled OR CC implants without TiUltra
+        // CC systems (Active, Parallel, Replace) without TiUltra are TiUnite
+        const isCC = desc.includes('nobelactive') || desc.includes('nobelparallel') || 
+                     desc.includes('nobel active') || desc.includes('nobel parallel') ||
+                     desc.includes('replace select') || desc.includes('nobelreplace');
+        const hasTiUltra = desc.includes('tiultra');
+        const hasTiUnite = desc.includes('tiunite');
+        return hasTiUnite || (isCC && !hasTiUltra);
+    }
+    return true;
+}
+
+function diameterMatches(description, diameterFilter) {
+    if (!diameterFilter) return true;
+    const desc = description.toLowerCase();
+    
+    // 3.0 diameter (exactly "3.0 x")
+    if (diameterFilter === '3.0') {
+        return desc.includes('3.0 x') || desc.includes('3.0x');
+    }
+    // NP = 3.5 diameter
+    if (diameterFilter === 'np') {
+        return desc.includes(' np ') || desc.includes(' np\u00a0') || 
+               desc.includes('3.5 x') || desc.includes('3.5x') ||
+               desc.match(/\bnp\b/i);
+    }
+    // RP = 4.3 and 5.0 diameter (also covers 3.75 and 4.0 for legacy)
+    if (diameterFilter === 'rp') {
+        return desc.includes(' rp ') || desc.includes(' rp\u00a0') ||
+               desc.includes('4.3 x') || desc.includes('4.3x') ||
+               desc.includes('5.0 x') || desc.includes('5.0x') ||
+               desc.includes('4.0 x') || desc.includes('4.0x') ||
+               desc.includes('3.75 x') || desc.includes('3.75x') ||
+               desc.match(/\brp\b/i);
+    }
+    // WP = 5.5 diameter (also 5.0 for some systems)
+    if (diameterFilter === 'wp') {
+        return desc.includes(' wp ') || desc.includes(' wp\u00a0') ||
+               desc.includes('5.5 x') || desc.includes('5.5x') ||
+               desc.match(/\bwp\b/i);
+    }
+    return true;
+}
+
+function finishMatches(description, finishFilter) {
+    if (!finishFilter) return true;
+    const desc = description.toLowerCase();
+    if (finishFilter === 'xeal') return desc.includes('xeal');
+    if (finishFilter === 'standard') return !desc.includes('xeal');
+    return true;
+}
+
+function angulationMatches(description, angulationFilter) {
+    if (!angulationFilter) return true;
+    const desc = description.toLowerCase();
+    if (angulationFilter === 'straight') {
+        // Straight = no angle designation (17, 30, 45)
+        return !desc.includes('17°') && !desc.includes('17 ') && 
+               !desc.includes('30°') && !desc.includes('30 ') && 
+               !desc.includes('45°') && !desc.includes('45 ');
+    }
+    if (angulationFilter === '17') return desc.includes('17°') || desc.includes('17 ');
+    if (angulationFilter === '30') return desc.includes('30°') || desc.includes('30 ');
+    if (angulationFilter === '45') return desc.includes('45°') || desc.includes('45 ');
+    return true;
+}
+
+function muaPlatformMatches(description, platformFilter) {
+    if (!platformFilter) return true;
+    const desc = description.toLowerCase();
+    if (platformFilter === 'np') return desc.match(/\bnp\b/i);
+    if (platformFilter === 'rp') return desc.match(/\brp\b/i);
+    if (platformFilter === 'wp') return desc.match(/\bwp\b/i);
+    return true;
+}
+
+function locatorTypeMatches(description, locatorTypeFilter) {
+    if (!locatorTypeFilter) return true;
+    const desc = description.toLowerCase();
+    if (locatorTypeFilter === 'rtx') return desc.includes('r-tx') || desc.includes('rtx');
+    if (locatorTypeFilter === 'legacy') return !desc.includes('r-tx') && !desc.includes('rtx');
+    return true;
+}
+
+function trayTypeMatches(description, trayTypeFilter) {
+    if (!trayTypeFilter) return true;
+    const desc = description.toLowerCase();
+    if (trayTypeFilter === 'open') return desc.includes('open tray');
+    if (trayTypeFilter === 'closed') return desc.includes('closed tray');
+    if (trayTypeFilter === 'position') return desc.includes('position locator');
+    return true;
+}
+
+function drillTypeMatches(description, drillTypeFilter) {
+    if (!drillTypeFilter) return true;
+    const desc = description.toLowerCase();
+    if (drillTypeFilter === 'guided_twist') return desc.includes('guided') && desc.includes('twist');
+    if (drillTypeFilter === 'guided_tapered') return desc.includes('guided') && desc.includes('tapered');
+    if (drillTypeFilter === 'twist') return desc.includes('twist') && !desc.includes('guided');
+    if (drillTypeFilter === 'tapered') return desc.includes('tapered') && !desc.includes('guided');
+    return true;
+}
+
+function sutureTypeMatches(description, sutureTypeFilter) {
+    if (!sutureTypeFilter) return true;
+    const desc = description.toLowerCase();
+    if (sutureTypeFilter === 'xgut') return desc.includes('x-gut') || desc.includes('xgut');
+    if (sutureTypeFilter === 'ptfe') return desc.includes('ptfe') || desc.includes('cytoplast');
+    if (sutureTypeFilter === 'glycolon') return desc.includes('glycolon') || desc.includes('resorba');
+    return true;
+}
+
+function regenTypeMatches(description, regenTypeFilter) {
+    if (!regenTypeFilter) return true;
+    const desc = description.toLowerCase();
+    if (regenTypeFilter === 'membrane') return desc.includes('membrane');
+    if (regenTypeFilter === 'block') return desc.includes('block');
+    if (regenTypeFilter === 'bowl') return desc.includes('bowl');
+    if (regenTypeFilter === 'zcore') return desc.includes('zcore');
+    if (regenTypeFilter === 'novabone') return desc.includes('novabone');
+    if (regenTypeFilter === 'encore') return desc.includes('encore');
+    return true;
+}
+
+function applyFilters() {
+    const searchTerm = (document.getElementById('searchFilter')?.value || '').toLowerCase();
+    const platformFilter = document.getElementById('platformFilter')?.value || '';
+    const surfaceFilter = document.getElementById('surfaceFilter')?.value || '';
+    const diameterFilter = document.getElementById('diameterFilter')?.value || '';
+    const finishFilter = document.getElementById('finishFilter')?.value || '';
+    const locatorTypeFilter = document.getElementById('locatorTypeFilter')?.value || '';
+    const trayTypeFilter = document.getElementById('trayTypeFilter')?.value || '';
+    const angulationFilter = document.getElementById('angulationFilter')?.value || '';
+    const muaPlatformFilter = document.getElementById('muaPlatformFilter')?.value || '';
+    const drillTypeFilter = document.getElementById('drillTypeFilter')?.value || '';
+    const sutureTypeFilter = document.getElementById('sutureTypeFilter')?.value || '';
+    const regenTypeFilter = document.getElementById('regenTypeFilter')?.value || '';
+    
+    const cards = document.querySelectorAll('.product-card');
+    let visibleCount = 0;
+    
+    cards.forEach(card => {
+        const description = card.dataset.description;
+        const descLower = description.toLowerCase();
+        const platform = card.dataset.platform || '';
+        
+        let show = true;
+        
+        // Search filter
+        if (searchTerm && !descLower.includes(searchTerm)) {
+            show = false;
+        }
+        
+        // Platform/system filter - use mapping OR brand filter
+        if (platformFilter && show) {
+            const brand = card.dataset.brand || '';
+            // Check brand first (for scanners)
+            if (brand && (platformFilter === 'DEXIS' || platformFilter === 'TRIOS')) {
+                if (brand !== platformFilter) {
+                    show = false;
+                }
+            } else if (!platformMatches(platform, platformFilter)) {
+                show = false;
+            }
+        }
+        
+        // Surface filter (TiUltra/TiUnite) - only for CC systems
+        if (surfaceFilter && show) {
+            if (!surfaceMatches(description, surfaceFilter)) {
+                show = false;
+            }
+        }
+        
+        // Diameter filter (3.0, NP, RP, WP) - only for CC systems
+        if (diameterFilter && show) {
+            if (!diameterMatches(description, diameterFilter)) {
+                show = false;
+            }
+        }
+        
+        // Finish filter (Xeal/Standard) - for multi-unit abutments
+        if (finishFilter && show) {
+            if (!finishMatches(description, finishFilter)) {
+                show = false;
+            }
+        }
+        
+        // Locator type filter (R-Tx/Legacy) - for locator abutments
+        if (locatorTypeFilter && show) {
+            if (!locatorTypeMatches(description, locatorTypeFilter)) {
+                show = false;
+            }
+        }
+        
+        // Tray type filter (Open/Closed/Position Locator) - for impression taking
+        if (trayTypeFilter && show) {
+            if (!trayTypeMatches(description, trayTypeFilter)) {
+                show = false;
+            }
+        }
+        
+        // Angulation filter (Straight/17/30/45) - for multi-unit abutments
+        if (angulationFilter && show) {
+            if (!angulationMatches(description, angulationFilter)) {
+                show = false;
+            }
+        }
+        
+        // MUA Platform filter (NP/RP/WP) - for multi-unit abutments
+        if (muaPlatformFilter && show) {
+            if (!muaPlatformMatches(description, muaPlatformFilter)) {
+                show = false;
+            }
+        }
+        
+        // Drill type filter - for tooling
+        if (drillTypeFilter && show) {
+            if (!drillTypeMatches(description, drillTypeFilter)) {
+                show = false;
+            }
+        }
+        
+        // Suture type filter - for sutures
+        if (sutureTypeFilter && show) {
+            if (!sutureTypeMatches(description, sutureTypeFilter)) {
+                show = false;
+            }
+        }
+        
+        // Regen type filter - for regeneratives
+        if (regenTypeFilter && show) {
+            if (!regenTypeMatches(description, regenTypeFilter)) {
+                show = false;
+            }
+        }
+        
+        card.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+    });
+    
+    document.getElementById('visibleCount').textContent = visibleCount;
+}
+
+{% if category_info.get('hover') %}
+function showComponents(itemId) {
+    fetch(`/api/components/${itemId}`)
+        .then(r => r.json())
+        .then(components => {
+            if (components && components.length) {
+                const tooltip = document.getElementById('componentTooltip');
+                let html = '<div class="tooltip-title">Included Components:</div><ul>';
+                components.forEach(c => {
+                    html += `<li>${c.description} ${c.price ? '($' + c.price.toFixed(2) + ')' : ''}</li>`;
+                });
+                html += '</ul>';
+                tooltip.innerHTML = html;
+                tooltip.style.display = 'block';
+                document.addEventListener('mousemove', positionTooltip);
+            }
+        });
+}
+
+function positionTooltip(e) {
+    const tooltip = document.getElementById('componentTooltip');
+    tooltip.style.left = (e.pageX + 15) + 'px';
+    tooltip.style.top = (e.pageY + 15) + 'px';
+}
+
+function hideComponents() {
+    const tooltip = document.getElementById('componentTooltip');
+    tooltip.style.display = 'none';
+    document.removeEventListener('mousemove', positionTooltip);
+}
+{% endif %}
+</script>
+{% endblock %}

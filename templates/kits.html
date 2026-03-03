@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Surgical Kits - Nobel Biocare Proposal{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>🧰 Surgical Kits</h1>
+    <p>Complete kit packages with component breakdowns. Hover or click to see what's included.</p>
+</div>
+
+{% if kits %}
+    {% for kit_type, kit_list in kits.items() %}
+    <div style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">{{ kit_type }}</h2>
+        
+        {% for kit in kit_list %}
+        <div class="kit-card" data-id="{{ kit.id }}">
+            <div class="kit-header">
+                <div>
+                    <span class="kit-name">{{ kit.name }}</span>
+                    <span style="font-size: 0.8rem; opacity: 0.8; margin-left: 0.5rem;">#{{ kit.id }}</span>
+                </div>
+                <span class="kit-price">${{ "%.2f"|format(kit.price) }}</span>
+            </div>
+            <div class="kit-body">
+                {% if kit.notes %}
+                <div style="font-size: 0.85rem; color: #666; margin-bottom: 1rem;">
+                    <strong>Note:</strong> {{ kit.notes }}
+                </div>
+                {% endif %}
+                
+                <div class="kit-controls">
+                    <div class="input-group">
+                        <label>Qty</label>
+                        <input type="number" class="qty-input" value="1" min="1" step="1" style="width: 60px;">
+                    </div>
+                    <div class="input-group">
+                        <label>Disc%</label>
+                        <input type="number" class="discount-input" value="0" min="0" max="100" step="0.01" style="width: 70px;">
+                    </div>
+                    <button class="btn btn-sm btn-primary" onclick="addKit('{{ kit.id }}', '{{ kit.name }}', {{ kit.price }})">+ Add to Quote</button>
+                    <button class="btn btn-sm btn-secondary" onclick="toggleKitComponents(this)">Show Components</button>
+                </div>
+                
+                {% if kit.components %}
+                <div class="kit-components">
+                    <div style="font-weight: 500; margin-bottom: 0.5rem;">Included Components:</div>
+                    {% for component in kit.components %}
+                    <div class="kit-component">
+                        <span>
+                            <span class="kit-component-id">#{{ component.id }}</span>
+                            {{ component.description }}
+                        </span>
+                        {% if component.price %}
+                        <span>${{ "%.2f"|format(component.price) }}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+{% else %}
+<div style="background: white; padding: 2rem; border-radius: 8px; text-align: center; color: #666;">
+    <p>Kit data not loaded yet.</p>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Kit breakdowns will be populated from the PureSet Kit Breakdown spreadsheet.</p>
+</div>
+{% endif %}
+
+<div style="margin-top: 2rem; background: #FED880; padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.5rem;">📋 How to Order Kits</h3>
+    <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
+        <li>Kits are ordered as complete units using the BOM number</li>
+        <li>Individual components can be ordered separately if needed</li>
+        <li>Check "Not Included" notes for add-ons that may be required</li>
+        <li>Contact your rep for special pricing on kit bundles</li>
+    </ul>
+</div>
+{% endblock %}

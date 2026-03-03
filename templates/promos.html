@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Playbook Promos - Nobel Biocare Proposal{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>🎁 Playbook Promos</h1>
+    <p>2026 promotional bundles with pre-configured quantities and discounts.</p>
+</div>
+
+{% if promos %}
+    {% for promo in promos %}
+    <div class="promo-card">
+        <div class="promo-name">{{ promo.name }}</div>
+        {% if promo.description %}
+        <div class="promo-description">{{ promo.description }}</div>
+        {% endif %}
+        
+        {% if promo.items %}
+        <div class="promo-items">
+            <div style="font-weight: 500; margin-bottom: 0.75rem;">Included Items:</div>
+            <table style="width: 100%; font-size: 0.85rem;">
+                <thead>
+                    <tr style="text-align: left; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <th style="padding: 0.25rem 0;">Item</th>
+                        <th style="padding: 0.25rem 0;">Qty</th>
+                        <th style="padding: 0.25rem 0;">List Price</th>
+                        <th style="padding: 0.25rem 0;">Discount</th>
+                        <th style="padding: 0.25rem 0;">Net</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in promo.items %}
+                    <tr>
+                        <td style="padding: 0.25rem 0;">{{ item.description }}</td>
+                        <td style="padding: 0.25rem 0;">{{ item.quantity }}</td>
+                        <td style="padding: 0.25rem 0;">${{ "%.2f"|format(item.price) }}</td>
+                        <td style="padding: 0.25rem 0;">{{ item.discount }}%</td>
+                        <td style="padding: 0.25rem 0;">${{ "%.2f"|format(item.price * (1 - item.discount/100) * item.quantity) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+            {% if promo.total_value %}
+            <span style="font-weight: 600;">Promo Value: ${{ "%.2f"|format(promo.total_value) }}</span>
+            {% endif %}
+            <button class="btn btn-primary" onclick="addPromoToQuote('{{ promo.id }}')">Add Promo to Quote</button>
+        </div>
+    </div>
+    {% endfor %}
+{% else %}
+<div style="background: white; padding: 2rem; border-radius: 8px; text-align: center; color: #666;">
+    <p>Promo data not loaded yet.</p>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Promotional bundles will be populated from the 2026 Playbook Promos.</p>
+</div>
+{% endif %}
+
+<div style="margin-top: 2rem; background: #f0f0f0; padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.5rem;">📝 Promo Guidelines</h3>
+    <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
+        <li>Promos include pre-set quantities and discounts</li>
+        <li>Implant bundles allow size/type selection</li>
+        <li>CBCT rebates are written back to customer (not a price discount)</li>
+        <li>Digital engagement promos require equipment selection</li>
+        <li>Contact your manager for approval on custom promo configurations</li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function addPromoToQuote(promoId) {
+    // Fetch promo details and add all items
+    fetch(`/api/promo/${promoId}`)
+        .then(r => r.json())
+        .then(promo => {
+            if (promo.items) {
+                promo.items.forEach(item => {
+                    addToQuote(
+                        item.id,
+                        item.description,
+                        item.price,
+                        item.quantity,
+                        item.discount,
+                        'promos'
+                    );
+                });
+                showToast(`Added ${promo.name} to quote`);
+            }
+        })
+        .catch(err => {
+            showToast('Error adding promo', 'error');
+        });
+}
+</script>
+{% endblock %}

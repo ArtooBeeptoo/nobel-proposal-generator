@@ -1,0 +1,145 @@
+{
+  "Surgical Kits": [
+    {
+      "id": "87294",
+      "name": "NobelActive® PureSet™",
+      "price": 6119,
+      "notes": "Fully loaded kit",
+      "components": []
+    },
+    {
+      "id": "87295",
+      "name": "NobelParallel™ PureSet™",
+      "price": 4789,
+      "notes": "Fully loaded kit",
+      "components": []
+    },
+    {
+      "id": "87296",
+      "name": "NobelReplace® PureSet™",
+      "price": 8813,
+      "notes": "Fully loaded kit",
+      "components": []
+    },
+    {
+      "id": "87469",
+      "name": "Combo PureSet™",
+      "price": 7721,
+      "notes": "NobelActive/NobelParallel CC combination",
+      "components": []
+    },
+    {
+      "id": "87293",
+      "name": "N1® PureSet™",
+      "price": 7127,
+      "notes": "Fully loaded kit",
+      "components": []
+    },
+    {
+      "id": "301267",
+      "name": "NobelPearl Tapered Surgery Kit",
+      "price": 3845,
+      "notes": null,
+      "components": []
+    }
+  ],
+  "Guided Surgery Kits": [
+    {
+      "id": "87305",
+      "name": "NobelActive® Guided PureSet™",
+      "price": 13770,
+      "notes": "Fully loaded guided kit",
+      "components": []
+    },
+    {
+      "id": "87306",
+      "name": "NobelParallel™ Guided PureSet™",
+      "price": 13010,
+      "notes": "Fully loaded guided kit",
+      "components": []
+    },
+    {
+      "id": "87307",
+      "name": "NobelReplace® CC Guided PureSet™",
+      "price": 16681,
+      "notes": "Fully loaded guided kit",
+      "components": []
+    }
+  ],
+  "Zygomatic Kits": [
+    {
+      "id": "108236",
+      "name": "NobelZygoma PureSet™ (TiUltra)",
+      "price": 7434,
+      "notes": "Includes all tooling for 45° and 0° configs",
+      "components": []
+    },
+    {
+      "id": "UPGRADE",
+      "name": "NobelZygoma TiUltra Tooling Upgrade",
+      "price": 3254,
+      "notes": "For customers upgrading existing Zygoma kit",
+      "components": []
+    },
+    {
+      "id": "88521",
+      "name": "NobelZygoma PureSet™ (TiUnite)",
+      "price": 6590,
+      "notes": null,
+      "components": []
+    }
+  ],
+  "Prosthetic Kits": [
+    {
+      "id": "87301",
+      "name": "Prosthetic PureSet™ Basic",
+      "price": 2043,
+      "notes": "Tooling for CC and legacy systems",
+      "components": []
+    },
+    {
+      "id": "87302",
+      "name": "Prosthetic PureSet™ N1",
+      "price": 1992,
+      "notes": "Tooling for any N1 case",
+      "components": []
+    },
+    {
+      "id": "87353",
+      "name": "Prosthetic PureSet™ (Full)",
+      "price": 2846,
+      "notes": "Tooling for all Nobel systems",
+      "components": []
+    }
+  ],
+  "Motors": [
+    {
+      "id": "OSSET300W",
+      "name": "OsseoSet 300 Wireless",
+      "price": 9728,
+      "notes": null,
+      "components": []
+    },
+    {
+      "id": "OSSET300",
+      "name": "OsseoSet 300 Wired",
+      "price": 9073,
+      "notes": null,
+      "components": []
+    },
+    {
+      "id": "MSLUXW",
+      "name": "MASTERsurg LUX Wireless",
+      "price": 9669,
+      "notes": null,
+      "components": []
+    },
+    {
+      "id": "EXSLUX",
+      "name": "EXPERTsurg LUX",
+      "price": 8328,
+      "notes": null,
+      "components": []
+    }
+  ]
+}

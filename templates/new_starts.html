@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block title %}New Starts Guide - Nobel Biocare Proposal{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>🚀 New Starts Guide</h1>
+    <p>Guidelines and recommendations for new customer surgical starts.</p>
+</div>
+
+<div style="display: grid; gap: 1.5rem;">
+    
+    <!-- Minimum Requirements -->
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            ✅ Minimum Requirements for New Starts
+        </h2>
+        <ul style="margin-left: 1.5rem; line-height: 1.8;">
+            <li><strong>Surgical Kit</strong> - Appropriate PureSet™ kit for implant system</li>
+            <li><strong>Prosthetic Kit</strong> - Basic, N1, or Full depending on scope</li>
+            <li><strong>Implants</strong> - Initial inventory (minimum 10-20 units recommended)</li>
+            <li><strong>Healing Abutments</strong> - Assortment of sizes</li>
+            <li><strong>Cover Screws</strong> - Matching platform sizes</li>
+            <li><strong>Regeneratives</strong> - If doing grafting procedures</li>
+        </ul>
+    </div>
+    
+    <!-- Recommended Bundles -->
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            📦 Recommended New Start Bundles
+        </h2>
+        
+        <div style="display: grid; gap: 1rem; margin-top: 1rem;">
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 4px; border-left: 4px solid #FED880;">
+                <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Basic Surgical Start</h3>
+                <p style="font-size: 0.9rem; color: #666;">For general practitioners starting with implants</p>
+                <ul style="font-size: 0.85rem; margin-top: 0.5rem; margin-left: 1rem;">
+                    <li>NobelActive® or NobelParallel™ CC PureSet™</li>
+                    <li>Prosthetic PureSet™ Basic</li>
+                    <li>20 implants (assorted sizes)</li>
+                    <li>Healing abutment assortment</li>
+                </ul>
+            </div>
+            
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 4px; border-left: 4px solid #FED880;">
+                <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Advanced Surgical Start</h3>
+                <p style="font-size: 0.9rem; color: #666;">For experienced practitioners or specialists</p>
+                <ul style="font-size: 0.85rem; margin-top: 0.5rem; margin-left: 1rem;">
+                    <li>NobelActive/NobelParallel CC Combo PureSet™</li>
+                    <li>Prosthetic PureSet™ Full</li>
+                    <li>40 implants (full range)</li>
+                    <li>Guided surgery option available</li>
+                </ul>
+            </div>
+            
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 4px; border-left: 4px solid #FED880;">
+                <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Digital Workflow Start</h3>
+                <p style="font-size: 0.9rem; color: #666;">Full digital integration</p>
+                <ul style="font-size: 0.85rem; margin-top: 0.5rem; margin-left: 1rem;">
+                    <li>Surgical kit + Guided surgery kit</li>
+                    <li>TRIOS scanner or DEXIS iOS</li>
+                    <li>X-Guide navigation (optional)</li>
+                    <li>SprintRay printer (optional)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Discounting Guidelines -->
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            💰 Discounting Guidelines
+        </h2>
+        <table class="data-table" style="font-size: 0.9rem;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Standard Range</th>
+                    <th>Max (Manager Approval)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Implants</td>
+                    <td>10-20%</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>Surgical Kits</td>
+                    <td>15-25%</td>
+                    <td>35%</td>
+                </tr>
+                <tr>
+                    <td>Healing/Cover Screws</td>
+                    <td>10-15%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Regeneratives</td>
+                    <td>10-15%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Capital Equipment</td>
+                    <td>Varies</td>
+                    <td>See Playbook</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
+            * Discounts above standard range require manager approval<br>
+            * Competitive conversions may qualify for enhanced discounts
+        </p>
+    </div>
+    
+    <!-- Promotion Eligibility -->
+    <div style="background: #FED880; border-radius: 8px; padding: 1.5rem;">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem;">🎁 Check Promo Eligibility</h2>
+        <p style="margin-bottom: 1rem;">Before finalizing a new start, check if the customer qualifies for current promotions:</p>
+        <a href="{{ url_for('promos') }}" class="btn btn-primary">View Current Playbook Promos →</a>
+    </div>
+    
+    <!-- Process Checklist -->
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            📋 New Start Checklist
+        </h2>
+        <div style="display: grid; gap: 0.5rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Customer credit application complete
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Appropriate kit selected
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Implant inventory needs assessed
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Prosthetic needs identified
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Promo eligibility checked
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Pricing approved (if above standard)
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Training/education plan discussed
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox"> Follow-up support scheduled
+            </label>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

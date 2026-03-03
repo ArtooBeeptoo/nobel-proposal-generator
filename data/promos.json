@@ -1,0 +1,345 @@
+[
+  {
+    "id": "implant-kit-25",
+    "name": "25 Implants + Freehand or Guided Kit",
+    "deal_id": "24579",
+    "description": "Buy 25 implants at standard discount (max 40%), receive kit free. Includes Unigrip Plus tooling.",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (25 units)",
+        "price": 615,
+        "quantity": 25,
+        "discount": 40
+      },
+      {
+        "id": "KIT-FREE",
+        "description": "Freehand or Guided Kit (FREE)",
+        "price": 0,
+        "quantity": 1,
+        "discount": 100
+      }
+    ],
+    "total_sale": 9225,
+    "savings": 14423,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "implant-motor-25",
+    "name": "25 Implants + Motor Bundle",
+    "deal_id": "24425",
+    "description": "Buy 25 implants at standard discount (max 40%), receive OsseoSet motor free.",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (25 units)",
+        "price": 615,
+        "quantity": 25,
+        "discount": 40
+      },
+      {
+        "id": "MOTOR-FREE",
+        "description": "OsseoSet Motor (FREE)",
+        "price": 0,
+        "quantity": 1,
+        "discount": 100
+      }
+    ],
+    "total_sale": 9225,
+    "savings": 19920,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "new-customer-stack",
+    "name": "New Customer Stack",
+    "deal_id": "STACK",
+    "description": "Minimum 10 implants + kit for new customers. Updated rules for 2026.",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (10+ units)",
+        "price": 615,
+        "quantity": 10,
+        "discount": 45
+      },
+      {
+        "id": "KIT",
+        "description": "Freehand or Guided Kit",
+        "price": 5000,
+        "quantity": 1,
+        "discount": 50
+      }
+    ],
+    "total_sale": 5882,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "new-grad-bundle",
+    "name": "New Grad Bundle",
+    "deal_id": "NEWGRAD",
+    "description": "10 implants + Freehand Kit & Motor OR 15 implants + Guided Kit & Motor for new graduates.",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (10 units)",
+        "price": 615,
+        "quantity": 10,
+        "discount": 45
+      },
+      {
+        "id": "KIT-MOTOR",
+        "description": "Freehand Kit + OsseoSet Motor",
+        "price": 0,
+        "quantity": 1,
+        "discount": 100
+      }
+    ],
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "dexis-imprevo-60",
+    "name": "DEXIS Imprevo Bundle",
+    "deal_id": "IMPREVO",
+    "description": "60 implants + Imprevo scanner for $10,000 + Laptop 50% off",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (60 units)",
+        "price": 615,
+        "quantity": 60,
+        "discount": 40
+      },
+      {
+        "id": "5945148",
+        "description": "DEXIS Imprevo I/O 3D Scanner",
+        "price": 10000,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 32140,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "dexis-3800-55",
+    "name": "DEXIS 3800 Bundle",
+    "deal_id": "3800",
+    "description": "55 implants + 3800W scanner for $6,000 + Laptop 50% off",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (55 units)",
+        "price": 615,
+        "quantity": 55,
+        "discount": 40
+      },
+      {
+        "id": "5943063",
+        "description": "IS 3800W Scanner",
+        "price": 6000,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 26295,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "trios-6-70",
+    "name": "TRIOS 6 Bundle",
+    "deal_id": "TRIOS6",
+    "description": "70 implants + TRIOS 6 for $21,500 + Laptop 50% off",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (70 units)",
+        "price": 615,
+        "quantity": 70,
+        "discount": 40
+      },
+      {
+        "id": "3SHL1P-2",
+        "description": "TRIOS 6 Scanner",
+        "price": 21500,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 47330,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "trios-5-70",
+    "name": "TRIOS 5 Bundle",
+    "deal_id": "TRIOS5",
+    "description": "70 implants + TRIOS 5 for $18,500 + Laptop 50% off",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (70 units)",
+        "price": 615,
+        "quantity": 70,
+        "discount": 40
+      },
+      {
+        "id": "3SHL1P-1",
+        "description": "TRIOS 5 Scanner",
+        "price": 18500,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 44330,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "sprintray-pro2-40",
+    "name": "SprintRay Pro 2 Bundle",
+    "deal_id": "PRO2",
+    "description": "40 implants + SprintRay Pro 2 for $7,000 + NanoCure for $2,400",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (40 units)",
+        "price": 615,
+        "quantity": 40,
+        "discount": 40
+      },
+      {
+        "id": "SPRPRO2",
+        "description": "SprintRay Pro 2",
+        "price": 7000,
+        "quantity": 1,
+        "discount": 0
+      },
+      {
+        "id": "NANOCURE",
+        "description": "NanoCure",
+        "price": 2400,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 24160,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "sprintray-midas-40",
+    "name": "SprintRay MIDAS Bundle",
+    "deal_id": "MIDAS",
+    "description": "40 implants + MIDAS for $7,000 + NanoCure for $2,400",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (40 units)",
+        "price": 615,
+        "quantity": 40,
+        "discount": 40
+      },
+      {
+        "id": "SPRSRI-0102047",
+        "description": "SprintRay Midas 3D Printer",
+        "price": 7000,
+        "quantity": 1,
+        "discount": 0
+      },
+      {
+        "id": "NANOCURE",
+        "description": "NanoCure",
+        "price": 2400,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 24160,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "xguide-allin",
+    "name": "X-Guide All-in Bundle",
+    "deal_id": "24621",
+    "description": "X-Guide NXT $25,000 + FastMap $10,000 + IconiX free + 60 implants. Q1 only!",
+    "items": [
+      {
+        "id": "MIX",
+        "description": "NobelActive TiUltra Implants (60 units)",
+        "price": 615,
+        "quantity": 60,
+        "discount": 40
+      },
+      {
+        "id": "XGUIDE-NXT",
+        "description": "X-Guide NXT",
+        "price": 25000,
+        "quantity": 1,
+        "discount": 0
+      },
+      {
+        "id": "FASTMAP",
+        "description": "FastMap",
+        "price": 10000,
+        "quantity": 1,
+        "discount": 0
+      },
+      {
+        "id": "ICONIX",
+        "description": "IconiX Software (FREE)",
+        "price": 0,
+        "quantity": 1,
+        "discount": 100
+      }
+    ],
+    "total_sale": 57140,
+    "savings": 40159,
+    "expires": "2026-03-27"
+  },
+  {
+    "id": "regen-newstart",
+    "name": "New Start Regen Bundle",
+    "deal_id": "REGEN",
+    "description": "Bone, membrane and plugs for $397 for new regen customers",
+    "items": [
+      {
+        "id": "REGEN-MIX",
+        "description": "creos xenogain bone + syntoprotect membrane + plugs",
+        "price": 397,
+        "quantity": 1,
+        "discount": 0
+      }
+    ],
+    "total_sale": 397,
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "tooling-refresh",
+    "name": "Tooling Refresh Offer",
+    "deal_id": "TOOLING",
+    "description": "40% off tooling for existing customers refreshing their kits",
+    "items": [
+      {
+        "id": "TOOLING-MIX",
+        "description": "Tooling components",
+        "price": 1000,
+        "quantity": 1,
+        "discount": 40
+      }
+    ],
+    "expires": "2026-12-31"
+  },
+  {
+    "id": "prosthetic-kit-65",
+    "name": "Prosthetic Kit & Torque Wrench",
+    "deal_id": "PROSTH",
+    "description": "65% off prosthetic kits and torque wrenches",
+    "items": [
+      {
+        "id": "PROSTH-KIT",
+        "description": "Prosthetic Kit",
+        "price": 2000,
+        "quantity": 1,
+        "discount": 65
+      }
+    ],
+    "expires": "2026-12-31"
+  }
+]
