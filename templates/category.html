@@ -176,7 +176,7 @@
          data-id="{{ product.id }}"
          data-description="{{ product.description }}"
          data-price="{{ product.price }}"
-         data-category="{{ current_category }}"
+         data-category="{{ product.category|default(current_category) }}"
          data-platform="{{ product.platform|default('') }}"
          data-brand="{{ product.brand|default('') }}"
          {% if category_info.get('hover') %}

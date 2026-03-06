@@ -31,8 +31,18 @@ STATIC_DIR = os.path.dirname(os.path.abspath(__file__)) + '/static/images'
 LOGO_PATH = STATIC_DIR + '/nobel-logo.png'
 PRODUCT_COLLAGE_PATH = STATIC_DIR + '/image10.jpeg'
 
+def normalize_category_key(category):
+    """Normalize category values so mapping works for inconsistent input."""
+    if category is None:
+        return ''
+    if isinstance(category, str):
+        return category.strip().lower().replace(' ', '_').replace('-', '_')
+    return str(category).strip().lower().replace(' ', '_').replace('-', '_')
+
+
 def get_category_display(category):
-    """Map internal category names to display names"""
+    """Map internal category names to display names."""
+    category_key = normalize_category_key(category)
     mapping = {
         'implants': 'Implants',
         'healing_abutments': 'Prosthetics',
@@ -51,6 +61,7 @@ def get_category_display(category):
         'surgical_kits': 'Tooling',
         'tooling': 'Tooling',
         'motors': 'Tooling',
+        'scanners': 'Digital equipment',
         'dexis': 'Digital equipment',
         'trios': 'Digital equipment',
         'sprintray': 'Digital equipment',
@@ -58,7 +69,21 @@ def get_category_display(category):
         'xguide': 'Digital equipment',
         'dtx_studio': 'Digital equipment',
     }
-    return mapping.get(category, 'Other')
+    return mapping.get(category_key, 'Other')
+
+def get_display_category_order(display_cats):
+    """Return display categories in preferred order, then any extras."""
+    preferred_order = [
+        'Implants',
+        'Prosthetics',
+        'Regenerative solutions',
+        'Tooling',
+        'Digital equipment',
+        'Training and education',
+    ]
+    ordered = [cat for cat in preferred_order if cat in display_cats]
+    extras = sorted(cat for cat in display_cats if cat not in preferred_order)
+    return ordered + extras
 
 def calculate_totals(items):
     """Calculate list price, net price, and savings"""
@@ -75,15 +100,43 @@ def calculate_totals(items):
     return total_list, total_net, total_list - total_net
 
 def group_items_by_display_category(items):
-    """Group items by display category"""
+    """Group every item by display category with resilient fallback behavior."""
     display_cats = {}
-    
+
     for item in items:
-        cat = item.get('category', 'Other')
-        display = get_category_display(cat)
-        if display not in display_cats:
-            display_cats[display] = []
-        display_cats[display].append(item)
+        # Always include the input row, even if shape/category is unexpected.
+        if isinstance(item, dict):
+            normalized_item = item
+        else:
+            normalized_item = {
+                'id': '',
+                'description': str(item),
+                'quantity': 1,
+                'price': 0,
+                'discount': 0,
+                'category': 'Other',
+            }
+
+        raw_category = (
+            normalized_item.get('category')
+            or normalized_item.get('category_name')
+            or normalized_item.get('type')
+            or 'Other'
+        )
+
+        display = get_category_display(raw_category)
+        category_key = normalize_category_key(raw_category)
+
+        if display == 'Other':
+            # Scanner/imaging accessory categories should still roll up under digital.
+            digital_hints = (
+                'scanner', 'digital', 'imprevo', 'dexis', 'trios',
+                'xguide', 'dtx', 'upc', 'battery', 'accessor',
+            )
+            if any(hint in category_key for hint in digital_hints):
+                display = 'Digital equipment'
+
+        display_cats.setdefault(display, []).append(normalized_item)
     
     return display_cats
 
@@ -184,38 +237,36 @@ def generate_pdf(items, customer_name='', valid_through='', rep_name='', rep_tit
         Paragraph('<b>Net</b>', item_style),
     ])
     
-    display_order = ['Implants', 'Prosthetics', 'Regenerative solutions', 
-                     'Tooling', 'Digital equipment', 'Training and education']
+    display_order = get_display_category_order(display_cats)
     
     for display_cat in display_order:
-        if display_cat in display_cats:
-            cat_items = display_cats[display_cat]
-            # Category header row
-            cat_header = f'<font color="#E31837">►</font> <b>{display_cat}</b>'
-            table_data.append([
-                Paragraph(cat_header, item_style),
-                '', '', '', ''
-            ])
+        cat_items = display_cats.get(display_cat, [])
+        # Category header row
+        cat_header = f'<font color="#E31837">►</font> <b>{display_cat}</b>'
+        table_data.append([
+            Paragraph(cat_header, item_style),
+            '', '', '', ''
+        ])
+        
+        # Individual items
+        for item in cat_items:
+            ref_num = item.get('id', '')
+            desc = item.get('description', 'Item')[:35]  # Truncate long descriptions
+            qty = item.get('quantity', 1)
+            price = item.get('price', 0)
+            discount = item.get('discount', 0)
+            net_unit = price * (1 - discount / 100)
+            net_extended = net_unit * qty
             
-            # Individual items
-            for item in cat_items:
-                ref_num = item.get('id', '')
-                desc = item.get('description', 'Item')[:35]  # Truncate long descriptions
-                qty = item.get('quantity', 1)
-                price = item.get('price', 0)
-                discount = item.get('discount', 0)
-                net_unit = price * (1 - discount / 100)
-                net_extended = net_unit * qty
-                
-                ref_font_size = max(6, item_font_size - 1)
-                item_text = f"<font size='{ref_font_size}'>#{ref_num}</font><br/>{desc}"
-                table_data.append([
-                    Paragraph(item_text, item_style),
-                    str(qty),
-                    f'${price:,.2f}',
-                    f'{discount:.0f}%' if discount > 0 else '-',
-                    f'${net_extended:,.2f}'
-                ])
+            ref_font_size = max(6, item_font_size - 1)
+            item_text = f"<font size='{ref_font_size}'>#{ref_num}</font><br/>{desc}"
+            table_data.append([
+                Paragraph(item_text, item_style),
+                str(qty),
+                f'${price:,.2f}',
+                f'{discount:.0f}%' if discount > 0 else '-',
+                f'${net_extended:,.2f}'
+            ])
     
     if len(table_data) > 1:  # More than just header
         pricing_table = Table(table_data, colWidths=[2.8*inch, 0.4*inch, 0.7*inch, 0.4*inch, 0.7*inch], hAlign='LEFT')
@@ -236,10 +287,9 @@ def generate_pdf(items, customer_name='', valid_through='', rep_name='', rep_tit
         # Add background for category rows
         row_idx = 1
         for display_cat in display_order:
-            if display_cat in display_cats:
-                table_style.append(('BACKGROUND', (0, row_idx), (-1, row_idx), colors.Color(0.98, 0.96, 0.94)))
-                table_style.append(('SPAN', (0, row_idx), (-1, row_idx)))
-                row_idx += 1 + len(display_cats[display_cat])
+            table_style.append(('BACKGROUND', (0, row_idx), (-1, row_idx), colors.Color(0.98, 0.96, 0.94)))
+            table_style.append(('SPAN', (0, row_idx), (-1, row_idx)))
+            row_idx += 1 + len(display_cats.get(display_cat, []))
         
         pricing_table.setStyle(TableStyle(table_style))
     else:
@@ -387,8 +437,7 @@ def generate_docx(items, customer_name='', valid_through='', rep_name='', rep_ti
     display_cats = group_items_by_display_category(items)
     
     # Pricing table with item details
-    display_order = ['Implants', 'Prosthetics', 'Regenerative solutions', 
-                     'Tooling', 'Digital equipment', 'Training and education']
+    display_order = get_display_category_order(display_cats)
     
     # Create table with 5 columns: Item, Qty, List, Disc, Net
     table = doc.add_table(rows=1, cols=5)
@@ -403,57 +452,56 @@ def generate_docx(items, customer_name='', valid_through='', rep_name='', rep_ti
             header_row.cells[i].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
     
     for display_cat in display_order:
-        if display_cat in display_cats:
-            cat_items = display_cats[display_cat]
+        cat_items = display_cats.get(display_cat, [])
+        
+        # Category header row
+        cat_row = table.add_row()
+        cell0 = cat_row.cells[0]
+        run = cell0.paragraphs[0].add_run("► ")
+        run.font.color.rgb = NOBEL_RED_RGB
+        run.bold = True
+        run2 = cell0.paragraphs[0].add_run(display_cat)
+        run2.bold = True
+        # Shade the category row
+        for cell in cat_row.cells:
+            shading = cell._element.get_or_add_tcPr()
+            shading_elm = OxmlElement('w:shd')
+            shading_elm.set(qn('w:fill'), 'FAF5F0')
+            shading.append(shading_elm)
+        
+        # Individual items
+        for item in cat_items:
+            item_row = table.add_row()
+            ref_num = item.get('id', '')
+            desc = item.get('description', 'Item')[:40]
+            qty = item.get('quantity', 1)
+            price = item.get('price', 0)
+            discount = item.get('discount', 0)
+            net_unit = price * (1 - discount / 100)
+            net_extended = net_unit * qty
             
-            # Category header row
-            cat_row = table.add_row()
-            cell0 = cat_row.cells[0]
-            run = cell0.paragraphs[0].add_run("► ")
-            run.font.color.rgb = NOBEL_RED_RGB
-            run.bold = True
-            run2 = cell0.paragraphs[0].add_run(display_cat)
-            run2.bold = True
-            # Shade the category row
-            for cell in cat_row.cells:
-                shading = cell._element.get_or_add_tcPr()
-                shading_elm = OxmlElement('w:shd')
-                shading_elm.set(qn('w:fill'), 'FAF5F0')
-                shading.append(shading_elm)
+            # Item cell with ref# and description
+            item_cell = item_row.cells[0]
+            ref_run = item_cell.paragraphs[0].add_run(f"#{ref_num}\n")
+            ref_run.font.size = Pt(8)
+            ref_run.font.color.rgb = RGBColor(100, 100, 100)
+            item_cell.paragraphs[0].add_run(desc)
             
-            # Individual items
-            for item in cat_items:
-                item_row = table.add_row()
-                ref_num = item.get('id', '')
-                desc = item.get('description', 'Item')[:40]
-                qty = item.get('quantity', 1)
-                price = item.get('price', 0)
-                discount = item.get('discount', 0)
-                net_unit = price * (1 - discount / 100)
-                net_extended = net_unit * qty
-                
-                # Item cell with ref# and description
-                item_cell = item_row.cells[0]
-                ref_run = item_cell.paragraphs[0].add_run(f"#{ref_num}\n")
-                ref_run.font.size = Pt(8)
-                ref_run.font.color.rgb = RGBColor(100, 100, 100)
-                item_cell.paragraphs[0].add_run(desc)
-                
-                # Qty
-                item_row.cells[1].text = str(qty)
-                item_row.cells[1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                
-                # List price
-                item_row.cells[2].text = f"${price:,.2f}"
-                item_row.cells[2].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                
-                # Discount
-                item_row.cells[3].text = f"{discount:.0f}%" if discount > 0 else "-"
-                item_row.cells[3].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                
-                # Net extended
-                item_row.cells[4].text = f"${net_extended:,.2f}"
-                item_row.cells[4].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            # Qty
+            item_row.cells[1].text = str(qty)
+            item_row.cells[1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            
+            # List price
+            item_row.cells[2].text = f"${price:,.2f}"
+            item_row.cells[2].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            
+            # Discount
+            item_row.cells[3].text = f"{discount:.0f}%" if discount > 0 else "-"
+            item_row.cells[3].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            
+            # Net extended
+            item_row.cells[4].text = f"${net_extended:,.2f}"
+            item_row.cells[4].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
     
     doc.add_paragraph()  # Spacer
     
