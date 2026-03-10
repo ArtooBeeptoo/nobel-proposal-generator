@@ -201,6 +201,27 @@ def new_starts():
     return render_template('new_starts.html',
                          categories=CATEGORIES)
 
+@app.route('/exchange')
+@login_required
+def exchange():
+    products = get_products()
+    ref_lookup = {}
+    if isinstance(products, dict):
+        for cat_products in products.values():
+            if not isinstance(cat_products, list):
+                continue
+            for product in cat_products:
+                if not isinstance(product, dict):
+                    continue
+                ref = str(product.get('id', '')).strip()
+                description = str(product.get('description', '')).strip()
+                if ref and description and ref not in ref_lookup:
+                    ref_lookup[ref] = description
+
+    return render_template('exchange.html',
+                         categories=CATEGORIES,
+                         ref_lookup=ref_lookup)
+
 # ── API Routes ──
 @app.route('/api/products/<cat_id>')
 @login_required

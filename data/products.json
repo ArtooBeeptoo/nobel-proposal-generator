@@ -15332,7 +15332,7 @@
     },
     {
       "id": "8.000.2432",
-      "description": "DEXIS IS Training, virtual, 1 hour ",
+      "description": "DEXIS IS Training, virtual, 1 hour",
       "price": 150.0,
       "platform": null,
       "category": "dexis",
@@ -15340,7 +15340,7 @@
     },
     {
       "id": "8.000.2433",
-      "description": "DEXIS IS Training, in-person, 4 hours ",
+      "description": "DEXIS IS Training, in-person, 4 hours",
       "price": 1000.0,
       "platform": null,
       "category": "dexis",
@@ -16335,7 +16335,7 @@
   ],
   "sprintray": [
     {
-      "id": "SPRSRI-0102047 ",
+      "id": "SPRSRI-0102047",
       "description": "SprintRay Midas 3D Printer",
       "price": 10995.0,
       "platform": null,
@@ -16350,28 +16350,28 @@
     },
     {
       "id": "SPRSRI-0102015",
-      "description": "SprintRay Pro 95 S ",
+      "description": "SprintRay Pro 95 S",
       "price": 9495.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0102016",
-      "description": "SprintRay Pro 55 S ",
+      "description": "SprintRay Pro 55 S",
       "price": 9495.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0102001",
-      "description": "SprintRay Pro 95 ",
+      "description": "SprintRay Pro 95",
       "price": 6750.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0102002",
-      "description": "SprintRay Pro 55 ",
+      "description": "SprintRay Pro 55",
       "price": 6750.0,
       "platform": null,
       "category": "sprintray"
@@ -16406,63 +16406,63 @@
     },
     {
       "id": "SPRSRI-0503069",
-      "description": "SprintRay Pro 2 Duo Kit Platform & Tank Bundle\n\n",
+      "description": "SprintRay Pro 2 Duo Kit Platform & Tank Bundle",
       "price": 2350.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0503070",
-      "description": "SprintRay Pro 2 Duo Kit Build Platform\n\n",
+      "description": "SprintRay Pro 2 Duo Kit Build Platform",
       "price": 1100.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0503071",
-      "description": "SprintRay Pro 2 Duo Kit Resin Tank\n\n",
+      "description": "SprintRay Pro 2 Duo Kit Resin Tank",
       "price": 200.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0503072\n\n",
-      "description": "SprintRay Pro 2 Duo Kit Smart Adapter\n\n",
+      "id": "SPRSRI-0503072",
+      "description": "SprintRay Pro 2 Duo Kit Smart Adapter",
       "price": 850.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0503062",
-      "description": "SprintRay Pro 55/55S Full Size Resin Tank V5\n\n",
+      "description": "SprintRay Pro 55/55S Full Size Resin Tank V5",
       "price": 319.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0503063",
-      "description": "SprintRay Pro 95/95S Full Size Resin Tank V5\n\n",
+      "description": "SprintRay Pro 95/95S Full Size Resin Tank V5",
       "price": 319.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0503064\n\n",
+      "id": "SPRSRI-0503064",
       "description": "SprintRay Pro 55/55S Full Size Resin Tank with Optical Polish V2",
       "price": 324.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0503065\n\n",
-      "description": "SprintRay Pro 95/95S Full Size Resin Tank with Optical Polish V2\n\n",
+      "id": "SPRSRI-0503065",
+      "description": "SprintRay Pro 95/95S Full Size Resin Tank with Optical Polish V2",
       "price": 324.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0503067",
-      "description": "SprintRay Pro S Arch Kit Resin Tank with Optical Polish V2\n\n",
+      "description": "SprintRay Pro S Arch Kit Resin Tank with Optical Polish V2",
       "price": 509.0,
       "platform": null,
       "category": "sprintray"
@@ -16476,14 +16476,14 @@
     },
     {
       "id": "SPRSRI-0309046",
-      "description": "SprintRay Pro 2 Resin Tank Lid\n\n",
+      "description": "SprintRay Pro 2 Resin Tank Lid",
       "price": 21.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0309211",
-      "description": "SprintRay Pro 2 Arch Kit Lid\n\n",
+      "description": "SprintRay Pro 2 Arch Kit Lid",
       "price": 21.0,
       "platform": null,
       "category": "sprintray"
@@ -16511,7 +16511,7 @@
     },
     {
       "id": "SPRSRI-0503034",
-      "description": "SprintRay Pro 2 Standard Resin Tank ",
+      "description": "SprintRay Pro 2 Standard Resin Tank",
       "price": 320.0,
       "platform": null,
       "category": "sprintray"
@@ -16525,7 +16525,7 @@
     },
     {
       "id": "SPRSRI-0309001",
-      "description": "SprintRay Pro 2 Optical Panel ",
+      "description": "SprintRay Pro 2 Optical Panel",
       "price": 744.0,
       "platform": null,
       "category": "sprintray"
@@ -16595,34 +16595,34 @@
     },
     {
       "id": "SPRSRI-0204023",
-      "description": "SprintRay Digital Temp - Single-unit Capsule (A1) 3-Pack\n\n\n\n",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (A1) 3-Pack",
       "price": 59.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0204024",
-      "description": "SprintRay Digital Temp - Single-unit Capsule (A2) 3-Pack\n\n",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (A2) 3-Pack",
       "price": 59.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0204026",
-      "description": "SprintRay Digital Temp - Single-unit Capsule (Bleach) 3-Pack\n\n",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (Bleach) 3-Pack",
       "price": 59.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204027\n\n",
-      "description": "SprintRay Digital Temp - Single-unit Capsule (B1) 3-Pack\n\n",
+      "id": "SPRSRI-0204027",
+      "description": "SprintRay Digital Temp - Single-unit Capsule (B1) 3-Pack",
       "price": 59.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204030\n\n",
+      "id": "SPRSRI-0204030",
       "description": "SprintRay Crown HT - Single-unit Capsule (A1) 3-Pack",
       "price": 71.0,
       "platform": null,
@@ -16630,14 +16630,14 @@
     },
     {
       "id": "SPRSRI-0204031",
-      "description": "SprintRay Crown HT - Single-unit Capsule (A2) 3-Pack\n\n",
+      "description": "SprintRay Crown HT - Single-unit Capsule (A2) 3-Pack",
       "price": 71.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204033\n\n",
-      "description": "SprintRay Crown HT - Single-unit Capsule (B1) 3-Pack\n\n",
+      "id": "SPRSRI-0204033",
+      "description": "SprintRay Crown HT - Single-unit Capsule (B1) 3-Pack",
       "price": 71.0,
       "platform": null,
       "category": "sprintray"
@@ -16650,15 +16650,15 @@
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204053\n\n",
+      "id": "SPRSRI-0204053",
       "description": "SprintRay OnX Tough 2 - A1 - Capsule 3-Pack",
       "price": 70.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204056\n\n",
-      "description": "SprintRay OnX Tough 2 - Bleach - Capsule 3-Pack\n\n",
+      "id": "SPRSRI-0204056",
+      "description": "SprintRay OnX Tough 2 - Bleach - Capsule 3-Pack",
       "price": 70.0,
       "platform": null,
       "category": "sprintray"
@@ -16686,27 +16686,27 @@
     },
     {
       "id": "SPSRI-0204013",
-      "description": "SprintRay Ceramic Crown - BL - Single-unit Capsule 3-Pack\n",
+      "description": "SprintRay Ceramic Crown - BL - Single-unit Capsule 3-Pack",
       "price": 67.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204016\n\n",
-      "description": "SprintRay Digital Temp - A1 - 250g\n\n",
+      "id": "SPRSRI-0204016",
+      "description": "SprintRay Digital Temp - A1 - 250g",
       "price": 283.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0204017",
-      "description": "SprintRay Digital Temp - A2 - 250g\n\n",
+      "description": "SprintRay Digital Temp - A2 - 250g",
       "price": 283.0,
       "platform": null,
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-0204019\n\n",
+      "id": "SPRSRI-0204019",
       "description": "SprintRay Digital Temp - B1 - 250g",
       "price": 283.0,
       "platform": null,
@@ -16714,7 +16714,7 @@
     },
     {
       "id": "SPRSRI-0204020",
-      "description": "SprintRay Digital Temp - Bleach - 250g\n\n",
+      "description": "SprintRay Digital Temp - Bleach - 250g",
       "price": 283.0,
       "platform": null,
       "category": "sprintray"
@@ -16896,14 +16896,14 @@
     },
     {
       "id": "SPRSRI-0202123",
-      "description": "SprintRay OnX Tough 2 - A1 ",
+      "description": "SprintRay OnX Tough 2 - A1",
       "price": 749.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202124",
-      "description": "SprintRay OnX Tough 2 - A2 ",
+      "description": "SprintRay OnX Tough 2 - A2",
       "price": 749.0,
       "platform": null,
       "category": "sprintray"
@@ -16917,42 +16917,42 @@
     },
     {
       "id": "SPRSRI-0202125",
-      "description": "SprintRay OnX Tough 2 - Bleach ",
+      "description": "SprintRay OnX Tough 2 - Bleach",
       "price": 749.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202164",
-      "description": "SprintRay OnX Tough 2 - Hollywood White ",
+      "description": "SprintRay OnX Tough 2 - Hollywood White",
       "price": 749.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202145",
-      "description": "SprintRay NightGuard Flex 2 - Simply Clear ",
+      "description": "SprintRay NightGuard Flex 2 - Simply Clear",
       "price": 535.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202146",
-      "description": "SprintRay NightGuard Flex 2 - Ocean Blue ",
+      "description": "SprintRay NightGuard Flex 2 - Ocean Blue",
       "price": 535.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202147",
-      "description": "SprintRay NightGuard Firm 2 - Midnight Purple ",
+      "description": "SprintRay NightGuard Firm 2 - Midnight Purple",
       "price": 535.0,
       "platform": null,
       "category": "sprintray"
     },
     {
       "id": "SPRSRI-0202187",
-      "description": "SprintRay Apex Flex Base - Standard Pink ",
+      "description": "SprintRay Apex Flex Base - Standard Pink",
       "price": 500.0,
       "platform": null,
       "category": "sprintray"
@@ -16966,7 +16966,7 @@
     },
     {
       "id": "SPRSRI-0202153",
-      "description": "SprintRay APEX Base - Light Pink ",
+      "description": "SprintRay APEX Base - Light Pink",
       "price": 752.0,
       "platform": null,
       "category": "sprintray"
@@ -16994,7 +16994,7 @@
     },
     {
       "id": "SPRSRI-0202157",
-      "description": "SprintRay APEX Teeth - A1 ",
+      "description": "SprintRay APEX Teeth - A1",
       "price": 450.0,
       "platform": null,
       "category": "sprintray"
@@ -17071,7 +17071,7 @@
     },
     {
       "id": "SPRSRI-0904001",
-      "description": "Pro 2 1 Day In-Office Training Bundle\n\n",
+      "description": "Pro 2 1 Day In-Office Training Bundle",
       "price": 2499.99,
       "platform": null,
       "category": "sprintray"
@@ -17119,7 +17119,7 @@
       "category": "sprintray"
     },
     {
-      "id": "SPRSRI-7004130 ",
+      "id": "SPRSRI-7004130",
       "description": "Midas 2-Hour Virtual Training.",
       "price": 500.0,
       "platform": null,
@@ -18264,7 +18264,7 @@
     },
     {
       "id": "8.000.2432",
-      "description": "DEXIS IS Training, virtual, 1 hour ",
+      "description": "DEXIS IS Training, virtual, 1 hour",
       "price": 150.0,
       "platform": null,
       "category": "dexis",
@@ -18272,7 +18272,7 @@
     },
     {
       "id": "8.000.2433",
-      "description": "DEXIS IS Training, in-person, 4 hours ",
+      "description": "DEXIS IS Training, in-person, 4 hours",
       "price": 1000.0,
       "platform": null,
       "category": "dexis",

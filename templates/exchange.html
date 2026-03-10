@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}Exchange Template Generator{% endblock %}
+
+{% block extra_css %}
+<style>
+    #quotePanel,
+    .quote-fab {
+        display: none !important;
+    }
+
+    .main-content {
+        max-width: calc(100vw - var(--sidebar-width));
+        padding-bottom: 3rem;
+    }
+
+    .exchange-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .exchange-card {
+        background: var(--brand-white);
+        border-radius: 8px;
+        padding: 1.25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .exchange-card h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .exchange-fields {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .exchange-field label {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.3rem;
+    }
+
+    .exchange-field input {
+        width: 100%;
+    }
+
+    .drop-zone {
+        border: 2px dashed #d3b05f;
+        background: #fffaf0;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .drop-zone.drag-active {
+        border-color: #000;
+        background: #fff3cf;
+    }
+
+    .upload-list {
+        margin-top: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .upload-pill {
+        background: var(--brand-grey);
+        border-radius: 999px;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .exchange-actions {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.9rem;
+    }
+
+    #ocrStatus {
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        min-height: 1.1rem;
+    }
+
+    .editable-cell input {
+        width: 100%;
+        padding: 0.35rem 0.4rem;
+        font-size: 0.85rem;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+    }
+
+    #templateOutput {
+        width: 100%;
+        min-height: 280px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        padding: 0.75rem;
+        resize: vertical;
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    .confidence-cell {
+        min-width: 80px;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+        .main-content {
+            max-width: calc(100vw - 60px);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Exchange Template Generator</h1>
+    <p>Upload implant box photos, review OCR results, and generate an exchange-ready email template.</p>
+</div>
+
+<div class="exchange-grid">
+    <section class="exchange-card">
+        <h2>Account Details</h2>
+        <div class="exchange-fields">
+            <div class="exchange-field">
+                <label for="accountName">Account Name</label>
+                <input id="accountName" type="text" placeholder="Practice or account name">
+            </div>
+            <div class="exchange-field">
+                <label for="sapId">SAP ID</label>
+                <input id="sapId" type="text" placeholder="SAP account ID">
+            </div>
+            <div class="exchange-field">
+                <label for="repName">Rep Name</label>
+                <input id="repName" type="text" placeholder="Your name">
+            </div>
+        </div>
+    </section>
+
+    <section class="exchange-card">
+        <h2>Image Upload + OCR</h2>
+        <input id="imageInput" type="file" accept="image/*" multiple hidden>
+        <div id="dropZone" class="drop-zone">
+            <strong>Drag and drop implant box photos here</strong>
+            <div style="margin-top: 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">or click to browse files</div>
+        </div>
+        <div id="uploadList" class="upload-list"></div>
+        <div class="exchange-actions">
+            <button id="runOcrBtn" class="btn btn-accent" type="button">Run OCR</button>
+            <button id="clearImagesBtn" class="btn btn-secondary" type="button">Clear Images</button>
+        </div>
+        <div id="ocrStatus"></div>
+    </section>
+
+    <section class="exchange-card">
+        <h2>Extracted Items</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>REF</th>
+                    <th>Description</th>
+                    <th>LOT</th>
+                    <th>Qty</th>
+                    <th>Confidence</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="exchangeItemsBody"></tbody>
+        </table>
+        <div class="exchange-actions">
+            <button id="addRowBtn" class="btn btn-secondary" type="button">Add Row</button>
+            <button id="generateTemplateBtn" class="btn btn-primary" type="button">Generate Template</button>
+        </div>
+    </section>
+
+    <section class="exchange-card">
+        <h2>Template Output</h2>
+        <textarea id="templateOutput" placeholder="Generated exchange template will appear here..."></textarea>
+        <div class="exchange-actions">
+            <button id="copyTemplateBtn" class="btn btn-accent" type="button">Copy Template</button>
+            <button id="downloadTemplateBtn" class="btn btn-secondary" type="button">Download .txt</button>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    window.exchangeRefLookup = {{ ref_lookup | tojson }};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+<script src="{{ url_for('static', filename='js/exchange.js') }}"></script>
+{% endblock %}
